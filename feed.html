@@ -1,65 +1,100 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-	>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+>
 
-<channel>
-	<title>Chromicle</title>
-	<atom:link href="feed.html" rel="self" type="application/rss+xml" />
-	<link>http://chromicle.co/test/index.html</link>
-	<description>Built with SitePad</description>
-	<lastBuildDate>Sat, 09 Nov 2019 04:55:40 +0000</lastBuildDate>
-	<language>en-US</language>
-	<sy:updatePeriod>hourly</sy:updatePeriod>
-	<sy:updateFrequency>1</sy:updateFrequency>
-	<generator>SitePad</generator>
-	<item>
-		<title>How to drag or swipe in Recycle View</title>
-		<link>http://chromicle.co/test/blog/default-post.html</link>
-		<comments>http://chromicle.co/test/blog/default-post/#respond</comments>
-		<pubDate>Fri, 08 Nov 2019 13:43:34 +0000</pubDate>
-		<dc:creator><![CDATA[admin]]></dc:creator>
-		
-		<guid isPermaLink="false">http://chromicle.co/test/blog/2019/11/08/default-post/</guid>
-		<description><![CDATA[]]></description>
-				<content:encoded><![CDATA[<div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
-<div class="sm-span12 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right">
-<figure class="szp-block-image"><img class="szp-image-85" src="https://chromicle.files.wordpress.com/2019/05/gestures-tap-swipe.png" alt="" data-large-file="https://chromicle.files.wordpress.com/2019/05/gestures-tap-swipe.png?w=775" data-medium-file="https://chromicle.files.wordpress.com/2019/05/gestures-tap-swipe.png?w=300" data-image-description="" data-image-title="gestures-tap-swipe" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-comments-opened="1" data-orig-size="861,536" data-orig-file="https://chromicle.files.wordpress.com/2019/05/gestures-tap-swipe.png" data-permalink="https://chromicle.wordpress.com/gestures-tap-swipe/" data-attachment-id="85" /><br />
-<figcaption>Drag or swipe</figcaption>
-</figure>
-<p>There’s actually a <strong>really simple</strong> way to add these features to RecyclerView. It only requires one class, and it’s already part of the Android Support Library called “ItemTouchHelper”</p>
-<p>&nbsp;</p>
-<p>By the help of ItemTouchHelper we can add the swipe and drag features by adding sub class. It’s a subclass of <a href="https://developer.android.com/reference/android/support/v7/widget/RecyclerView.ItemDecoration.html" target="_blank" rel="noreferrer noopener">RecyclerView.ItemDecoration</a>, I’ll demonstrate a simple implementation of ItemTouchHelper.</p>
-<h3 id="81fa">SETTING UP</h3>
-<p>&nbsp;</p>
-<p>First thing we need is a basic RecyclerView setup. If you haven’t already, update your build.gradle to include the RecyclerView dependency.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<pre class="szp-block-preformatted">compile 'com.android.support:recyclerview-v7:22.2.0'</pre>
-<h3 id="449f">BY ITEMTOUCHHELPER AND ITEMTOUCHHELPER.CALLBACK</h3>
-<p>In order to use ItemTouchHelper, you’ll create an <a href="https://developer.android.com/reference/android/support/v7/widget/helper/ItemTouchHelper.Callback.html" target="_blank" rel="noreferrer noopener">ItemTouchHelper.Callback</a>. This is the interface that allows you to listen for “move” and “swipe” events. It’s also where you are able to control the state of the view selected, and override the default animations. There’s a helper class that you can use if you want a basic implementation, <a href="https://developer.android.com/reference/android/support/v7/widget/helper/ItemTouchHelper.SimpleCallback.html" target="_blank" rel="noreferrer noopener">SimpleCallback</a>,</p>
-<p>The main callbacks that we must override to enable basic drag &amp; drop and swipe-to-dismiss are:</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<pre class="szp-block-preformatted">getMovementFlags(RecyclerView, ViewHolder)
+    <channel>
+        <title>Chromicle</title>
+        <atom:link href="feed.html" rel="self" type="application/rss+xml"/>
+        <link>
+        http://chromicle.co/test/index.html</link>
+        <description>Built with SitePad</description>
+        <lastBuildDate>Sat, 09 Nov 2019 04:55:40 +0000</lastBuildDate>
+        <language>en-US</language>
+        <sy:updatePeriod>hourly</sy:updatePeriod>
+        <sy:updateFrequency>1</sy:updateFrequency>
+        <generator>SitePad</generator>
+        <item>
+            <title>How to drag or swipe in Recycle View</title>
+            <link>
+            http://chromicle.co/test/blog/default-post.html</link>
+            <comments>http://chromicle.co/test/blog/default-post/#respond</comments>
+            <pubDate>Fri, 08 Nov 2019 13:43:34 +0000</pubDate>
+            <dc:creator><![CDATA[admin]]></dc:creator>
+
+            <guid isPermaLink="false">http://chromicle.co/test/blog/2019/11/08/default-post/</guid>
+            <description><![CDATA[]]></description>
+            <content:encoded><![CDATA[
+                <div class="sm-row-fluid smue-row sme-dsbl-margin-left sme-dsbl-margin-right">
+                    <div class="sm-span12 smue-clmn  sme-dsbl-margin-left sme-dsbl-margin-right">
+                        <figure class="szp-block-image"><img class="szp-image-85"
+                                                             src="https://chromicle.files.wordpress.com/2019/05/gestures-tap-swipe.png"
+                                                             alt=""
+                                                             data-large-file="https://chromicle.files.wordpress.com/2019/05/gestures-tap-swipe.png?w=775"
+                                                             data-medium-file="https://chromicle.files.wordpress.com/2019/05/gestures-tap-swipe.png?w=300"
+                                                             data-image-description=""
+                                                             data-image-title="gestures-tap-swipe"
+                                                             data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
+                                                             data-comments-opened="1"
+                                                             data-orig-size="861,536"
+                                                             data-orig-file="https://chromicle.files.wordpress.com/2019/05/gestures-tap-swipe.png"
+                                                             data-permalink="https://chromicle.wordpress.com/gestures-tap-swipe/"
+                                                             data-attachment-id="85"/><br/>
+                            <figcaption>Drag or swipe</figcaption>
+                        </figure>
+                        <p>There’s actually a <strong>really simple</strong> way to add these
+                            features to RecyclerView. It only requires one class, and it’s already
+                            part of the Android Support Library called “ItemTouchHelper”</p>
+                        <p>&nbsp;</p>
+                        <p>By the help of ItemTouchHelper we can add the swipe and drag features by
+                            adding sub class. It’s a subclass of <a
+                                    href="https://developer.android.com/reference/android/support/v7/widget/RecyclerView.ItemDecoration.html"
+                                    target="_blank" rel="noreferrer noopener">RecyclerView.ItemDecoration</a>,
+                            I’ll demonstrate a simple implementation of ItemTouchHelper.</p>
+                        <h3 id="81fa">SETTING UP</h3>
+                        <p>&nbsp;</p>
+                        <p>First thing we need is a basic RecyclerView setup. If you haven’t
+                            already, update your build.gradle to include the RecyclerView
+                            dependency.</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <pre class="szp-block-preformatted">compile 'com.android.support:recyclerview-v7:22.2.0'</pre>
+                        <h3 id="449f">BY ITEMTOUCHHELPER AND ITEMTOUCHHELPER.CALLBACK</h3>
+                        <p>In order to use ItemTouchHelper, you’ll create an <a
+                                href="https://developer.android.com/reference/android/support/v7/widget/helper/ItemTouchHelper.Callback.html"
+                                target="_blank"
+                                rel="noreferrer noopener">ItemTouchHelper.Callback</a>. This is the
+                            interface that allows you to listen for “move” and “swipe” events. It’s
+                            also where you are able to control the state of the view selected, and
+                            override the default animations. There’s a helper class that you can use
+                            if you want a basic implementation, <a
+                                    href="https://developer.android.com/reference/android/support/v7/widget/helper/ItemTouchHelper.SimpleCallback.html"
+                                    target="_blank" rel="noreferrer noopener">SimpleCallback</a>,
+                        </p>
+                        <p>The main callbacks that we must override to enable basic drag &amp; drop
+                            and swipe-to-dismiss are:</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <pre class="szp-block-preformatted">getMovementFlags(RecyclerView, ViewHolder)
 onMove(RecyclerView, ViewHolder, ViewHolder)
 onSwiped(ViewHolder, int)</pre>
-<p>&nbsp;</p>
-<p>We can also use a some of helpers:</p>
-<pre class="szp-block-preformatted">
+                        <p>&nbsp;</p>
+                        <p>We can also use a some of helpers:</p>
+                        <pre class="szp-block-preformatted">
 isLongPressDragEnabled()
 isItemViewSwipeEnabled()
 
 
 </pre>
-<p>We’ll go through them one by one.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<pre class="szp-block-preformatted">@Override
+                        <p>We’ll go through them one by one.</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <pre class="szp-block-preformatted">@Override
 public int <strong>getMovementFlags</strong>(RecyclerView recyclerView, 
         RecyclerView<strong>.</strong>ViewHolder viewHolder) {
     int dragFlags = ItemTouchHelper<strong>.UP </strong>| ItemTouchHelper<strong>.DOWN</strong>;
@@ -69,41 +104,51 @@ public int <strong>getMovementFlags</strong>(RecyclerView recyclerView,
 
 
 </pre>
-<p>It will help you get the direction. You must override <strong>getMovementFlags</strong>() to specify which directions of drags and swipes. Use the helper <strong>ItemTouchHelper.makeMovementFlags(int, int)</strong> to build the returned flags. We’re enabling dragging and swiping in both directions here.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<pre class="szp-block-preformatted">@Override
+                        <p>It will help you get the direction. You must override <strong>getMovementFlags</strong>()
+                            to specify which directions of drags and swipes. Use the helper <strong>ItemTouchHelper.makeMovementFlags(int,
+                                int)</strong> to build the returned flags. We’re enabling dragging
+                            and swiping in both directions here.</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <pre class="szp-block-preformatted">@Override
 public boolean <strong>isLongPressDragEnabled</strong>() {
     return true;
 }
 
 
 </pre>
-<p>ItemTouchHelper can be used for drag <em>without</em> swipe (or vice versa), so you must designate exactly what you wish to support. Implementations should return true from <strong>isLongPressDragEnabled()</strong> will detect when we long press the any item in recyclerView</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<pre class="szp-block-preformatted">@Override
+                        <p>ItemTouchHelper can be used for drag <em>without</em> swipe (or vice
+                            versa), so you must designate exactly what you wish to support.
+                            Implementations should return true
+                            from <strong>isLongPressDragEnabled()</strong> will detect when we long
+                            press the any item in recyclerView</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <pre class="szp-block-preformatted">@Override
 public boolean <strong>isItemViewSwipeEnabled</strong>() {
     return true;
 }
 
 
 </pre>
-<p>to enable swiping we have to return true from <strong>isItemViewSwipeEnabled</strong>().</p>
-<p><strong>onMove()</strong> and <strong>onSwiped()</strong> are used to notify anything of updating data. So first we’ll create an interface that allows us to pass these event callbacks back.</p>
-<p>&nbsp;</p>
-<pre class="szp-block-preformatted">public interface <strong>ItemTouchHelperAdapter</strong> {
+                        <p>to enable swiping we have to return true from <strong>isItemViewSwipeEnabled</strong>().
+                        </p>
+                        <p><strong>onMove()</strong> and <strong>onSwiped()</strong> are used to
+                            notify anything of updating data. So first we’ll create an interface
+                            that allows us to pass these event callbacks back.</p>
+                        <p>&nbsp;</p>
+                        <pre class="szp-block-preformatted">public interface <strong>ItemTouchHelperAdapter</strong> {
     void <strong>onItemMove</strong>(int fromPosition, int toPosition);
     void <strong>onItemDismiss</strong>(int position);
 }
 
 </pre>
-<p>ItemTouchHelper.java</p>
-<p>&nbsp;</p>
-<pre class="szp-block-preformatted">public class <strong>RecyclerListAdapter</strong> extends 
+                        <p>ItemTouchHelper.java</p>
+                        <p>&nbsp;</p>
+                        <pre class="szp-block-preformatted">public class <strong>RecyclerListAdapter</strong> extends
         RecyclerView<strong>.</strong>Adapter&lt;ItemViewHolder&gt; 
         <strong>implements ItemTouchHelperAdapter</strong> {</pre>
-<pre class="szp-block-preformatted">@Override
+                        <pre class="szp-block-preformatted">@Override
 public void <strong>onItemDismiss</strong>(int position) {
     mItems<strong>.</strong>remove(position);
     <strong>notifyItemRemoved</strong>(position);
@@ -127,11 +172,16 @@ public boolean <strong>onItemMove</strong>(int fromPosition, int toPosition) {
 
 
 </pre>
-<p>It’s very important to call <strong>notifyItemRemoved() </strong>and<strong> notifyItemMoved()</strong> so the Adapter can identify the changes.</p>
-<p>Now we can go back to building our <strong>SimpleItemTouchHelperCallback</strong> as we still must override onMove() and onSwiped(). First add a constructor and a field for the Adapter:</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<pre class="szp-block-preformatted">private final ItemTouchHelperAdapter <strong>mAdapter</strong>;
+                        <p>It’s very important to
+                            call <strong>notifyItemRemoved() </strong>and<strong> notifyItemMoved()</strong> so
+                            the Adapter can identify the changes.</p>
+                        <p>Now we can go back to building
+                            our <strong>SimpleItemTouchHelperCallback</strong> as we still must
+                            override onMove() and onSwiped(). First add a constructor and a field
+                            for the Adapter:</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <pre class="szp-block-preformatted">private final ItemTouchHelperAdapter <strong>mAdapter</strong>;
 
 public SimpleItemTouchHelperCallback(
         ItemTouchHelperAdapter adapter) {
@@ -139,17 +189,17 @@ public SimpleItemTouchHelperCallback(
 }
 
 </pre>
-<p>Then override the remaining events and notify the adapter:</p>
-<p>&nbsp;</p>
-<pre class="szp-block-preformatted">@Override
+                        <p>Then override the remaining events and notify the adapter:</p>
+                        <p>&nbsp;</p>
+                        <pre class="szp-block-preformatted">@Override
 public boolean <strong>onMove</strong>(RecyclerView recyclerView, 
         RecyclerView<strong>.</strong>ViewHolder viewHolder, 
         RecyclerView<strong>.</strong>ViewHolder target) {</pre>
-<pre class="szp-block-preformatted">mAdapter<strong>.onItemMove</strong>(viewHolder<strong>.</strong>getAdapterPosition(), 
+                        <pre class="szp-block-preformatted">mAdapter<strong>.onItemMove</strong>(viewHolder<strong>.</strong>getAdapterPosition(),
             target<strong>.</strong>getAdapterPosition());</pre>
-<pre class="szp-block-preformatted">    return true;
+                        <pre class="szp-block-preformatted">    return true;
 }</pre>
-<pre class="szp-block-preformatted">@Override
+                        <pre class="szp-block-preformatted">@Override
 public void <strong>onSwiped</strong>(RecyclerView<strong>.</strong>ViewHolder viewHolder, 
         int direction) {
     mAdapter<strong>.onItemDismiss</strong>(viewHolder<strong>.</strong>getAdapterPosition());
@@ -157,17 +207,19 @@ public void <strong>onSwiped</strong>(RecyclerView<strong>.</strong>ViewHolder v
 
 
 </pre>
-<p>With our Callback, we can create our ItemTouchHelper and call <strong>attachToRecyclerView(RecyclerView)</strong>:</p>
-<p>&nbsp;</p>
-<pre class="szp-block-preformatted">ItemTouchHelper<strong>.</strong>Callback callback = 
+                        <p>With our Callback, we can create our ItemTouchHelper and call <strong>attachToRecyclerView(RecyclerView)</strong>:
+                        </p>
+                        <p>&nbsp;</p>
+                        <pre class="szp-block-preformatted">ItemTouchHelper<strong>.</strong>Callback callback =
     new SimpleItemTouchHelperCallback(adapter);
 ItemTouchHelper touchHelper= new ItemTouchHelper(callback);
 touchHelper<strong>.attachToRecyclerView</strong>(recyclerView);</pre>
-</div>
-</div>
-]]></content:encoded>
-			<wfw:commentRss>http://chromicle.co/test/blog/default-post/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		</item>
-	</channel>
+                    </div>
+                </div>
+                ]]>
+            </content:encoded>
+            <wfw:commentRss>http://chromicle.co/test/blog/default-post/feed/</wfw:commentRss>
+            <slash:comments>0</slash:comments>
+        </item>
+    </channel>
 </rss>
