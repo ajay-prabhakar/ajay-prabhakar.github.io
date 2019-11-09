@@ -1,0 +1,104 @@
+/*
+Theme Name: SiteMush
+Theme URI: https://sitemush.com/themes/base/
+Author: Sitemush team
+Author URI: https://sitemush.com
+Description: The base of all themes
+Version: 1.1
+License: Proprietary
+License URI: https://sitemush.com/theme-license
+Tags: basic
+Text Domain: sitemush
+
+Use it to make some cool website and have fun.
+*/
+
+/* Added Media query for grid gallery mobile responsive image.. */
+@media screen and (max-width: 767px){
+.smue-grid-gallery-obj img{width:100%;}
+}
+
+/* We are setting the ol to default style since in our theme's style.css we are setting all the values as none for ol */
+.smue-text-obj ol , .smue-embed-obj ol, .smue-code-obj ol, .smue-service-box-content-section ol, .smue-modal-content ol{
+list-style-type:decimal ;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0;
+margin-right: 0;
+padding-left: 40px;
+}
+
+/* We are setting the ul to default style since in our theme's style.css we are setting all the values as none for ul */
+.smue-text-obj ul, .smue-embed-obj ul, .smue-code-obj ul , .smue-service-box-content-section ul, .smue-modal-content ul{
+list-style-type:disc;
+margin-top: 1em;
+margin-bottom: 1 em;
+margin-left: 0;
+margin-right: 0;
+padding-left: 40px;
+}
+
+.single-featured-image-header {
+	padding-bottom: 30px;
+}
+
+.single-featured-image-header img {
+	display: block;
+	margin: auto;
+	height: auto;
+	max-width: 100%;
+}
+
+.aligncenter{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft{
+	float: left;
+	margin: 0.5em 1em 0.5em 0;
+}
+
+.alignright{
+	float: right;
+	margin: 0.5em 0 0.5em 1em;
+}
+
+/* Added this to wrap the li content correctly, only added for type icon and none as all others are default list types and have their own display property */
+.smue-list-type-icon li,
+.smue-list-type-none li{
+	display: flex;
+}
+
+.post.full_width_blog{
+	display: flex;
+    flex-direction: column;
+}
+
+.post.full_width_blog .entry-content{
+	width: 100%;
+}
+
+.post.full_width_blog .entry-footer{
+	order: 2;
+	display: flex;
+    align-items: center;
+	margin: 2em 0;
+}
+
+.post.full_width_blog .entry-content{
+	order: 3;
+}
+
+.post.full_width_blog .entry-footer span{
+	padding-right: 20px;
+}
+
+.post .entry-footer i.fa{
+	margin-right: 8px;
+}
+
+.post.full_width_blog .entry-title{
+	margin-bottom: 0;
+}

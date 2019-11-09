@@ -1,0 +1,6 @@
+
+RewriteOptions inherit
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^home$ "https\:\/\/chromicle\.co\/home" [R=301,L]
