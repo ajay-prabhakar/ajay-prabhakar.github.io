@@ -1,6 +1,6 @@
-# Hydejack Starter Kit
+# Chromicle.co
 
-A quicker, cleaner way to get started blogging with [Hydejack](https://hydejack.com/).
+My personal Website :flashlight: + blog :cherries:
 
 ## Quick Start
 ### Running locally
