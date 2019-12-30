@@ -36,7 +36,7 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/icons/icon.png
+logo:                  /assets/icons/icon.jpg
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -49,10 +49,8 @@ author:
 menu:
   - title:             Blog
     url:               /blog/
-  - title:             My Problems
+  - title:             Projects
     url:               /myproblems/
-  - title:             Publication
-    url:               /publication/
   - title:             About
     url:               /about/
 
@@ -79,7 +77,7 @@ paginate_path:         /page-:num/
 # ========================================================================================
 
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/back.jpg
 # accent_color:          rgb(79,177,186)
 accent_color:          rgb(32,195,189)
 
@@ -197,12 +195,12 @@ hydejack:
   # Note that this works in the PRO version of Hydejack.
   dark_mode:
     # Set to `true` to always use the dark theme.
-    always:            false
+    always:            true
 
     # Set to `true` to use the dark theme based on visitors' local time.
     dynamic:           true
-    sunrise:           6
-    sunset:            18
+    sunrise:           2
+    sunset:            24
 
     # Set to `true` to allow visitors to switch between light and dark mode.
     icon:              true
