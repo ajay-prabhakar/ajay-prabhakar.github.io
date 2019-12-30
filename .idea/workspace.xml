@@ -2,21 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aae3119-1756-41e9-a7ba-f849339b0b04" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_includes/_portfolio.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_layouts/project.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_projects/2018-06-30-TempleApp.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_projects/2018-06-30-amrita-resource.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_projects/2019-02-2-codeforces.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projects/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/404.md" beforeDir="false" afterPath="$PROJECT_DIR$/404.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_data/authors.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/authors.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_featured_categories/example.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/example/2017-11-23-example-content-ii/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/example/2018-06-01-example-content-iii/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/example/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/blog/2018-12-02-week-48/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/2018-12-02-week-48/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/blog/2018-12-09-week-49/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/2018-12-09-week-49/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/blog/2018-12-16-First-post/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/2018-12-16-First-post/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/_posts/2017-11-23-example-content-ii.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/_posts/2018-06-01-example-content-iii.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +35,74 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="275">
+              <caret line="146" column="28" selection-start-line="146" selection-start-column="28" selection-end-line="146" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_layouts/project.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projects/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+              <folding>
+                <element signature="e#619#680#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/_portfolio.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_projects/2018-06-30-amrita-resource.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-493">
+              <caret line="3" column="157" selection-start-line="3" selection-start-column="157" selection-end-line="3" selection-end-column="157" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_data/authors.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_projects/2019-02-2-codeforces.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_projects/2018-06-30-TempleApp.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" selection-end-line="100" selection-end-column="126" />
             </state>
           </provider>
         </entry>
@@ -42,68 +111,18 @@
         <entry file="file://$PROJECT_DIR$/_featured_categories/blog.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/404.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_site/404.html">
+        <entry file="file://$PROJECT_DIR$/about.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3196">
-              <caret line="188" lean-forward="true" selection-start-line="188" selection-end-line="188" />
+            <state relative-caret-position="1598">
+              <caret line="94" column="97" selection-start-line="94" selection-start-column="97" selection-end-line="94" selection-end-column="97" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/_posts/2018-12-02-week-48.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_data/authors.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/_posts/2018-12-16-First-post.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/_posts/2018-12-09-week-49.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/my-body.html">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -135,6 +154,9 @@
       <find>copy</find>
       <find>no</find>
       <find>not-fou</find>
+      <find>journal</find>
+      <find>projects</find>
+      <find>chromic</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -152,11 +174,20 @@
         <option value="$PROJECT_DIR$/blog/_posts/2018-12-16-First-post.md" />
         <option value="$PROJECT_DIR$/blog/_posts/2018-12-09-week-49.md" />
         <option value="$PROJECT_DIR$/blog/_posts/2018-12-02-week-48.md" />
-        <option value="$PROJECT_DIR$/_data/authors.yml" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_featured_categories/blog.md" />
         <option value="$PROJECT_DIR$/_site/404.html" />
         <option value="$PROJECT_DIR$/404.md" />
+        <option value="$PROJECT_DIR$/_projects/templeApp.md" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/projects/templeApp.md" />
+        <option value="$PROJECT_DIR$/projects.md" />
+        <option value="$PROJECT_DIR$/_layouts/project.html" />
+        <option value="$PROJECT_DIR$/_includes/_portfolio.scss" />
+        <option value="$PROJECT_DIR$/projects/index.html" />
+        <option value="$PROJECT_DIR$/_projects/2018-06-30-TempleApp.md" />
+        <option value="$PROJECT_DIR$/_projects/2018-06-30-demo-project.md" />
+        <option value="$PROJECT_DIR$/_data/authors.yml" />
+        <option value="$PROJECT_DIR$/_projects/2019-02-2-codeforces.md" />
       </list>
     </option>
   </component>
@@ -181,13 +212,12 @@
             <path>
               <item name="chromicle.co" type="b2602c69:ProjectViewProjectNode" />
               <item name="chromicle.co" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="_projects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chromicle.co" type="b2602c69:ProjectViewProjectNode" />
               <item name="chromicle.co" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="_sass" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -272,13 +302,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_site/example/2017-11-23-example-content-ii/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="690" column="71" selection-start-line="690" selection-start-column="71" selection-end-line="690" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/example/2017-11-23-example-content-ii/index.html" />
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -291,114 +315,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_site/example/2018-06-01-example-content-iii/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="729" column="74" selection-start-line="729" selection-start-column="74" selection-end-line="729" selection-end-column="74" />
-          <folding>
-            <element signature="e#10513#10537#0" expanded="true" />
-            <element signature="e#10566#10592#0" expanded="true" />
-            <element signature="e#10623#10648#0" expanded="true" />
-            <element signature="e#10709#10733#0" expanded="true" />
-            <element signature="e#10762#10788#0" expanded="true" />
-            <element signature="e#10819#10844#0" expanded="true" />
-            <element signature="e#10905#10929#0" expanded="true" />
-            <element signature="e#10958#10984#0" expanded="true" />
-            <element signature="e#11015#11040#0" expanded="true" />
-            <element signature="e#11101#11125#0" expanded="true" />
-            <element signature="e#11154#11180#0" expanded="true" />
-            <element signature="e#11211#11236#0" expanded="true" />
-            <element signature="e#11337#11361#0" expanded="true" />
-            <element signature="e#11389#11415#0" expanded="true" />
-            <element signature="e#11442#11467#0" expanded="true" />
-            <element signature="e#11526#11550#0" expanded="true" />
-            <element signature="e#11578#11604#0" expanded="true" />
-            <element signature="e#11631#11656#0" expanded="true" />
-            <element signature="e#11715#11739#0" expanded="true" />
-            <element signature="e#11767#11793#0" expanded="true" />
-            <element signature="e#11820#11845#0" expanded="true" />
-            <element signature="e#11904#11928#0" expanded="true" />
-            <element signature="e#11956#11982#0" expanded="true" />
-            <element signature="e#12009#12034#0" expanded="true" />
-            <element signature="e#12108#12132#0" expanded="true" />
-            <element signature="e#12152#12178#0" expanded="true" />
-            <element signature="e#12218#12243#0" expanded="true" />
-            <element signature="e#12290#12314#0" expanded="true" />
-            <element signature="e#12334#12360#0" expanded="true" />
-            <element signature="e#12400#12425#0" expanded="true" />
-            <element signature="e#12472#12496#0" expanded="true" />
-            <element signature="e#12516#12542#0" expanded="true" />
-            <element signature="e#12582#12607#0" expanded="true" />
-            <element signature="e#12654#12678#0" expanded="true" />
-            <element signature="e#12698#12724#0" expanded="true" />
-            <element signature="e#12764#12789#0" expanded="true" />
-            <element signature="e#12854#12878#0" expanded="true" />
-            <element signature="e#12899#12925#0" expanded="true" />
-            <element signature="e#12945#12970#0" expanded="true" />
-            <element signature="e#13016#13040#0" expanded="true" />
-            <element signature="e#13061#13087#0" expanded="true" />
-            <element signature="e#13107#13132#0" expanded="true" />
-            <element signature="e#13178#13202#0" expanded="true" />
-            <element signature="e#13223#13249#0" expanded="true" />
-            <element signature="e#13269#13294#0" expanded="true" />
-            <element signature="e#13340#13364#0" expanded="true" />
-            <element signature="e#13385#13411#0" expanded="true" />
-            <element signature="e#13431#13456#0" expanded="true" />
-            <element signature="e#13522#13546#0" expanded="true" />
-            <element signature="e#13564#13590#0" expanded="true" />
-            <element signature="e#13608#13633#0" expanded="true" />
-            <element signature="e#13678#13702#0" expanded="true" />
-            <element signature="e#13720#13746#0" expanded="true" />
-            <element signature="e#13764#13789#0" expanded="true" />
-            <element signature="e#13834#13858#0" expanded="true" />
-            <element signature="e#13876#13902#0" expanded="true" />
-            <element signature="e#13920#13945#0" expanded="true" />
-            <element signature="e#13990#14014#0" expanded="true" />
-            <element signature="e#14032#14058#0" expanded="true" />
-            <element signature="e#14076#14101#0" expanded="true" />
-            <element signature="e#14160#14184#0" expanded="true" />
-            <element signature="e#14202#14228#0" expanded="true" />
-            <element signature="e#14246#14271#0" expanded="true" />
-            <element signature="e#14311#14335#0" expanded="true" />
-            <element signature="e#14353#14379#0" expanded="true" />
-            <element signature="e#14397#14422#0" expanded="true" />
-            <element signature="e#14462#14486#0" expanded="true" />
-            <element signature="e#14504#14530#0" expanded="true" />
-            <element signature="e#14548#14573#0" expanded="true" />
-            <element signature="e#14613#14637#0" expanded="true" />
-            <element signature="e#14655#14681#0" expanded="true" />
-            <element signature="e#14699#14724#0" expanded="true" />
-            <element signature="e#14787#14811#0" expanded="true" />
-            <element signature="e#14829#14855#0" expanded="true" />
-            <element signature="e#14873#14898#0" expanded="true" />
-            <element signature="e#14942#14966#0" expanded="true" />
-            <element signature="e#14984#15010#0" expanded="true" />
-            <element signature="e#15028#15053#0" expanded="true" />
-            <element signature="e#15097#15121#0" expanded="true" />
-            <element signature="e#15139#15165#0" expanded="true" />
-            <element signature="e#15183#15208#0" expanded="true" />
-            <element signature="e#15252#15276#0" expanded="true" />
-            <element signature="e#15294#15320#0" expanded="true" />
-            <element signature="e#15338#15363#0" expanded="true" />
-            <element signature="e#16309#16313#0" expanded="true" />
-            <element signature="e#16549#16554#0" expanded="true" />
-            <element signature="e#16636#16641#0" expanded="true" />
-            <element signature="e#16723#16728#0" expanded="true" />
-            <element signature="e#16822#16827#0" expanded="true" />
-            <element signature="e#16835#16840#0" expanded="true" />
-            <element signature="e#16892#16897#0" expanded="true" />
-            <element signature="e#16905#16910#0" expanded="true" />
-            <element signature="e#16962#16967#0" expanded="true" />
-            <element signature="e#16975#16980#0" expanded="true" />
-            <element signature="e#22109#22190#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/example/2018-06-01-example-content-iii/index.html" />
     <entry file="file://$PROJECT_DIR$/_data/social.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2955">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        <state relative-caret-position="228">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -409,16 +330,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_featured_categories/example.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/about.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/_featured_categories/example.md" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -429,13 +341,7 @@
     <entry file="file://$PROJECT_DIR$/_includes/my-body.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/_posts/2018-06-01-example-content-iii.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/example/_posts/2018-06-01-example-content-iii.md" />
     <entry file="file://$PROJECT_DIR$/blog/_posts/2018-12-16-First-post.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -457,27 +363,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_data/authors.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_featured_categories/blog.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_site/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3196">
@@ -489,6 +374,103 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/my-style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/projects/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/projects/templeApp/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_featured_categories/blog.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="94" column="97" selection-start-line="94" selection-start-column="97" selection-end-line="94" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="146" column="28" selection-start-line="146" selection-start-column="28" selection-end-line="146" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/_portfolio.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+          <folding>
+            <element signature="e#619#680#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_projects/2018-06-30-amrita-resource.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="3" column="157" selection-start-line="3" selection-start-column="157" selection-end-line="3" selection-end-column="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/authors.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_projects/2018-06-30-TempleApp.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-end-line="100" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_projects/2019-02-2-codeforces.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
