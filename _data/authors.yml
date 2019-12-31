@@ -9,10 +9,10 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Hi! I’m Ajay Prabhakar. :octocat: ,
-    a learner exploring the innovation-driven world :book: ,
-    a programmer contributing to the opensource projects :computer: ,
-    a photographer appreciating the beauty of life at every moment :camera_flash: ,
+    Hi! I’m Ajay Prabhakar. :octocat: \
+    a learner exploring the innovation-driven world :book: \
+    a programmer contributing to the opensource projects :computer: \
+    a photographer appreciating the beauty of life at every moment :camera_flash: \
     Currently a second year grad student at Amrita university University :school:
 
 
