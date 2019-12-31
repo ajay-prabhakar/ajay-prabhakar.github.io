@@ -33,6 +33,6 @@ Learning coding from scratch, studying concepts of IOT, participating in various
 What I like to do most in my spare time is to pick up my camera and go outside to capture the moment I like. Actually I'd rather think it's the moment that seized me. Just when the moment comes, I know nothing better than smile and press the shutter on the camera. I really enjoy the incredible creativity of nature that presents us with always different scenery. I wait for sunrise and sunset, I chase the moon and the star, I climb mount and cross the sea, to appreciate the moments that nature seizes me.
 
 ### What I'm Doing Now (Updated on Aug. 28, 2019)
-- **An Active contributor for the Gsoc project [skunkworks-crow](https://github.com/opendatakit/skunkworks-crow)**
+- **An Active contributor of Gsoc project [skunkworks-crow](https://github.com/opendatakit/skunkworks-crow) at OpenDataKit**
 - Engaging on some personal projects with help of [amFOSS](https://github.com/amfoss)
 - Practising algorithms and data structure by solving problems on Codeforces & Hackerrank
