@@ -2,121 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aae3119-1756-41e9-a7ba-f849339b0b04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_includes/my-body.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/my-body.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/my-head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/my-head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/my-inline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/my-inline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/my-style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/my-style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/_site/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/html5shiv/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/html5shiv/.bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/.bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/bower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/auto-render.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/auto-render.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/auto-render.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/auto-render.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/auto-render.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/auto-render.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/copy-tex.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/copy-tex.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/copy-tex.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/copy-tex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/copy-tex.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/copy-tex.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/copy-tex.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/copy-tex.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/copy-tex.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/copy-tex.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/mathtex-script-type.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/mathtex-script-type.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/mathtex-script-type.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/mathtex-script-type.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/mathtex-script-type.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/mathtex-script-type.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/mhchem.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/mhchem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/mhchem.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/contrib/mhchem.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_AMS-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_AMS-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_AMS-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_AMS-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_AMS-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_AMS-Regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Caligraphic-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Caligraphic-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Caligraphic-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Caligraphic-Bold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Caligraphic-Bold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Caligraphic-Bold.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Caligraphic-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Caligraphic-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Caligraphic-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Caligraphic-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Caligraphic-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Caligraphic-Regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Fraktur-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Fraktur-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Fraktur-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Fraktur-Bold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Fraktur-Bold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Fraktur-Bold.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Fraktur-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Fraktur-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Fraktur-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Fraktur-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Fraktur-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Fraktur-Regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Bold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Bold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Bold.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-BoldItalic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-BoldItalic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-BoldItalic.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-BoldItalic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-BoldItalic.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Italic.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Italic.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Main-Regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Math-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Math-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Math-Italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Math-Italic.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Math-Italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Math-Italic.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Bold.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Bold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Bold.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Italic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Italic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Italic.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Italic.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Italic.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_SansSerif-Regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Script-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Script-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Script-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Script-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Script-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Script-Regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size1-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size1-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size1-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size1-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size1-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size1-Regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size2-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size2-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size2-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size2-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size2-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size2-Regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size3-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size3-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size3-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size3-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size3-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size3-Regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size4-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size4-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size4-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size4-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size4-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Size4-Regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Typewriter-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Typewriter-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Typewriter-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Typewriter-Regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Typewriter-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/fonts/KaTeX_Typewriter-Regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/katex.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/katex.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/katex.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/katex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/katex.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/katex.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/katex.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/katex.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/katex.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/dist/katex.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/bower_components/katex/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/bower_components/katex/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/css/hydejack-8.5.1.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/hydejack-8.5.1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/icomoon/fonts/icomoon.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/icomoon/selection.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/icomoon/selection.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/icomoon/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/icomoon/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/ieconfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/ieconfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/projects/hy-drawer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/img/projects/hy-drawer.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/projects/hy-img.svg" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/img/projects/hy-img.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/projects/hy-push-state.svg" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/img/projects/hy-push-state.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/swipe.svg" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/img/swipe.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/js/hydejack-8.5.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/js/hydejack-8.5.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/js/hydejack-legacy-8.5.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/js/hydejack-legacy-8.5.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/version.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/version.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/blog/2018-12-02-week-48/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/2018-12-02-week-48/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/blog/2018-12-09-week-49/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/2018-12-09-week-49/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/blog/2018-12-16-First-post/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/2018-12-16-First-post/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CNAME" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_site/CNAME" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jekyll-theme-hydejack-pro.gemspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/__inline__/_avatar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/hydejack/__inline__/_avatar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/hydejack/_avatar.pre.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/hydejack/_avatar.pre.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/css/hydejack-8.1.1.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/hydejack-8.1.1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/2018-06-30-TempleApp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/2018-06-30-TempleApp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/2018-06-30-amrita-resource/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/2018-06-30-amrita-resource/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/2019-02-2-codeforces/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/2019-02-2-codeforces/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/projects/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_site/robots.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -139,80 +36,86 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_site/projects/2019-02-2-codeforces/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="433" column="8" selection-start-line="433" selection-start-column="8" selection-end-line="433" selection-end-column="8" />
+              <folding>
+                <element signature="e#17595#17676#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_includes/body/main.html">
+        <entry file="file://$PROJECT_DIR$/_sass/hydejack/_avatar.pre.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="289">
+              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/_portfolio.scss">
+        <entry file="file://$PROJECT_DIR$/_site/assets/css/hydejack-8.1.1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1666">
-              <caret line="98" selection-start-line="98" selection-end-line="98" />
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_projects/2018-06-30-amrita-resource.md">
+        <entry file="file://$PROJECT_DIR$/_sass/hydejack/__inline__/_avatar.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="157" selection-start-line="3" selection-start-column="157" selection-end-line="3" selection-end-column="157" />
+            <state relative-caret-position="211">
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_data/authors.yml">
+        <entry file="file://$PROJECT_DIR$/CNAME">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
+            <state>
+              <caret column="28" selection-start-column="28" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+        <entry file="file://$PROJECT_DIR$/_includes/my-head.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-766" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-98190" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_projects/2018-06-30-TempleApp.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-end-line="100" selection-end-column="126" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_featured_categories/blog.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="94" column="97" selection-start-line="94" selection-start-column="97" selection-end-line="94" selection-end-column="97" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>6.5re</find>
-      <find>icon-twitter</find>
       <find>icon-twi</find>
       <find>yes</find>
       <find>incre</find>
@@ -239,7 +142,14 @@
       <find>journal</find>
       <find>projects</find>
       <find>chromic</find>
+      <find>class</find>
+      <find>git</find>
+      <find>class=&quot;avatar&quot;</find>
+      <find>6.5rem</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\Users\Ajayprabhakarrao\protofolio\chromicle.github.io</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -270,6 +180,9 @@
         <option value="$PROJECT_DIR$/_projects/2018-06-30-demo-project.md" />
         <option value="$PROJECT_DIR$/_data/authors.yml" />
         <option value="$PROJECT_DIR$/_projects/2019-02-2-codeforces.md" />
+        <option value="$PROJECT_DIR$/CNAME" />
+        <option value="$PROJECT_DIR$/_sass/hydejack/_avatar.pre.scss" />
+        <option value="$PROJECT_DIR$/_sass/hydejack/__inline__/_avatar.scss" />
       </list>
     </option>
   </component>
@@ -300,30 +213,7 @@
             <path>
               <item name="chromicle.github.io" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\Ajayprabhakarrao\protofolio\chromicle.github.io" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="_includes" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="body" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="chromicle.github.io" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Ajayprabhakarrao\protofolio\chromicle.github.io" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="_includes" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="chromicle.github.io" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Ajayprabhakarrao\protofolio\chromicle.github.io" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="_includes" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="head" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="chromicle.github.io" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Ajayprabhakarrao\protofolio\chromicle.github.io" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="_layouts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="chromicle.github.io" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Ajayprabhakarrao\protofolio\chromicle.github.io" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="_plugins" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -377,6 +267,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16717096" />
@@ -579,6 +470,46 @@
     <entry file="file://$PROJECT_DIR$/_includes/body/nav.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/body/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/templates/animation.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/body/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-766" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98190" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/my-head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
@@ -586,13 +517,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/body/sidebar.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/body/main.html">
+    <entry file="file://$PROJECT_DIR$/_site/projects/2019-02-2-codeforces/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="160">
+          <caret line="433" column="8" selection-start-line="433" selection-start-column="8" selection-end-line="433" selection-end-column="8" />
+          <folding>
+            <element signature="e#17595#17676#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/hydejack/__inline__/_avatar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_site/assets/css/hydejack-8.1.1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/hydejack/_avatar.pre.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
         </state>
       </provider>
     </entry>
