@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/blog/</loc>
-<lastmod>2019-12-31T14:46:13+05:30</lastmod>
+<lastmod>2019-12-31T19:15:01+05:30</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/2018-12-02-week-48/</loc>
@@ -39,6 +39,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/assets/Resume.pdf</loc>
-<lastmod>2019-12-31T14:07:24+05:30</lastmod>
+<lastmod>2019-12-31T18:06:56+05:30</lastmod>
 </url>
 </urlset>
