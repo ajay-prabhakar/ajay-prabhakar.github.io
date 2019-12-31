@@ -3,8 +3,7 @@
   <hr/>
   {% if site.copyright.size > 0 %}
     <p><small class="copyright">{{ site.copyright | markdownify | replace:'<p>','' | replace:'</p>','' }}</small></p>
-    <span id="busuanzi_container_site_pv" style="display: inline-block; line-height: 20% !important; ">This site was visited by: <span id="busuanzi_value_site_pv"></span> times</span>
-    {% endif %}
+  {% endif %}
   {% if site.legal.size > 0 %}
     <nav class="legal"><small>
     {% for le in site.legal %}
@@ -13,6 +12,7 @@
     {% endfor %}
     </small></nav>
   {% endif %}
+  <span id="busuanzi_container_site_pv" style="display: inline-block; line-height: 20% !important; ">This site was visited by: <span id="busuanzi_value_site_pv"></span> times</span>
   {% if site.hydejack.advertise %}
     <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">8.1.1</span></small></p>
   {% endif %}
