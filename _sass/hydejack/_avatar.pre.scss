@@ -1,0 +1,29 @@
+.avatar {
+  // <<< inline
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 100%;
+  overflow: hidden;
+  // >>>
+
+  // <<< link
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  img { width: 100%; }
+  // >>>
+
+  // <<< inline
+  @media screen and (min-width: $break-point-5) {
+    width: 7rem;
+    height: 7rem;
+  }
+  // >>>
+}
+
+// <<< inline
+.content .avatar {
+  float: right;
+  margin-left: .5rem;
+}
+// >>>
