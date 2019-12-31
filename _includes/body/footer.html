@@ -12,10 +12,10 @@
     {% endfor %}
     </small></nav>
   {% endif %}
-  <span id="busuanzi_container_site_pv" style="display: inline-block; line-height: 20% !important; ">This site was visited by: <span id="busuanzi_value_site_pv"></span> times</span>
-  {% if site.hydejack.advertise %}
-    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">8.1.1</span></small></p>
-  {% endif %}
+  {% if site.copyright.size > 0 %}
+    <br>
+    <span id="busuanzi_container_site_pv" style="display: inline-block; line-height: 20% !important; "><small>This site was visited by: <span id="busuanzi_value_site_pv"> </span> times</small></span>
+    {% endif %}
   <hr class="sr-only"/>
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
