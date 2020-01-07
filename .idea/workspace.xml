@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aae3119-1756-41e9-a7ba-f849339b0b04" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/_includes/body/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/body/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_data/authors.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_data/authors.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/icons/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/icons/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/blog/2018-12-02-week-48/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/2018-12-02-week-48/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/blog/2018-12-09-week-49/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/2018-12-09-week-49/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/blog/2018-12-16-First-post/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/2018-12-16-First-post/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/blog/2019-06-30-day-out-at-munroe/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/2019-06-30-day-out-at-munroe/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/2018-06-30-TempleApp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/2018-06-30-TempleApp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/2018-06-30-amrita-resource/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/2018-06-30-amrita-resource/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/2019-02-2-codeforces/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/2019-02-2-codeforces/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/projects/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/projects/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_site/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,89 +33,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/project.html">
+        <entry file="file://$PROJECT_DIR$/_includes/head/links.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="76" column="12" selection-start-line="76" selection-start-column="12" selection-end-line="76" selection-end-column="12" />
+            <state relative-caret-position="85">
+              <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.babelrc">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/jekyll-theme-hydejack-pro.gemspec">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="15804" selection-start-line="12" selection-start-column="15793" selection-end-line="12" selection-end-column="15804" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/index.html">
+        <entry file="file://$PROJECT_DIR$/_layouts/resume.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-              <folding>
-                <element signature="e#467#528#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="288">
+              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_includes/body/footer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-              <folding>
-                <element signature="e#722#782#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_data/authors.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="34" lean-forward="true" selection-start-column="34" selection-end-line="1" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="37" column="89" lean-forward="true" selection-start-line="37" selection-start-column="89" selection-end-line="37" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/components/about.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
+            <state relative-caret-position="510">
+              <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -107,8 +72,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>twitt</find>
-      <find>twitter</find>
       <find>chromicl</find>
       <find>logo</find>
       <find>dark</find>
@@ -137,6 +100,8 @@
       <find>copyri</find>
       <find>136</find>
       <find>for the gs</find>
+      <find>favicon</find>
+      <find>favicon.ico</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Ajayprabhakarrao\protofolio\chromicle.github.io</dir>
@@ -177,17 +142,17 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_layouts/project.html" />
         <option value="$PROJECT_DIR$/projects/index.html" />
-        <option value="$PROJECT_DIR$/_data/authors.yml" />
         <option value="$PROJECT_DIR$/about.md" />
         <option value="$PROJECT_DIR$/_includes/body/footer.html" />
+        <option value="$PROJECT_DIR$/_data/authors.yml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="656" />
-    <option name="height" value="456" />
+    <option name="x" value="170" />
+    <option name="y" value="91" />
+    <option name="width" value="1026" />
+    <option name="height" value="546" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
@@ -217,23 +182,6 @@
               <item name="chromicle.github.io" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\Ajayprabhakarrao\protofolio\chromicle.github.io" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="_data" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="chromicle.github.io" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Ajayprabhakarrao\protofolio\chromicle.github.io" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="_includes" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="chromicle.github.io" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Ajayprabhakarrao\protofolio\chromicle.github.io" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="_includes" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="body" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="chromicle.github.io" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\Ajayprabhakarrao\protofolio\chromicle.github.io" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="_includes" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="chromicle.github.io" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -271,7 +219,7 @@
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../v-yuyao.github.io" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -305,7 +253,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16944024" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17170954" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -328,20 +276,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_sass/my-style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_site/projects/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_site/projects/templeApp/index.html" />
     <entry file="file://$PROJECT_DIR$/projects.md" />
     <entry file="file://$PROJECT_DIR$/_projects/2019-02-2-codeforces.md">
@@ -483,11 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/resume.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1004" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/redirect.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -603,13 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_data/authors.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-line="1" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/body/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -617,6 +539,34 @@
           <folding>
             <element signature="e#722#782#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/head/links.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jekyll-theme-hydejack-pro.gemspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="15804" selection-start-line="12" selection-start-column="15793" selection-end-line="12" selection-end-column="15804" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/resume.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/authors.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
         </state>
       </provider>
     </entry>
