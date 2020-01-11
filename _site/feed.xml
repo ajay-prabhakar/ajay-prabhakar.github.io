@@ -1,5 +1,133 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-01-07T21:34:10+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Chromicle</title><subtitle>blog and more
-</subtitle><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><entry><title type="html">Day out at munroe</title><link href="http://localhost:4000/blog/2019-06-30-day-out-at-munroe/" rel="alternate" type="text/html" title="Day out at munroe" /><published>2019-06-30T00:00:00+05:30</published><updated>2019-06-30T00:00:00+05:30</updated><id>http://localhost:4000/blog/day-out-at-munroe</id><content type="html" xml:base="http://localhost:4000/blog/2019-06-30-day-out-at-munroe/">&lt;p&gt;Recently the amFOSS club members planned to keep a day off and plan for a trip. Upon Vipin Sir’s suggestion, six of us went to Munroe Island and spent a whole day there. I would like to share the experience of the trip in this blog post.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-01-11T15:53:39+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Chromicle</title><subtitle>blog and more
+</subtitle><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><entry><title type="html">How to Drag or swipe in RecyclerView</title><link href="http://localhost:4000/blog/2019-07-16-How-to-Drag-or-swipe-in-RecyclerView/" rel="alternate" type="text/html" title="How to Drag or swipe in RecyclerView" /><published>2019-07-16T00:00:00+05:30</published><updated>2019-07-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/How-to-Drag-or-swipe-in-RecyclerView</id><content type="html" xml:base="http://localhost:4000/blog/2019-07-16-How-to-Drag-or-swipe-in-RecyclerView/">&lt;p&gt;&lt;img src=&quot;https://chromicle.files.wordpress.com/2019/05/gestures-tap-swipe.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Drag or swipe&lt;/p&gt;
+
+&lt;p&gt;There’s actually a &lt;strong&gt;really simple&lt;/strong&gt; way to add these features to RecyclerView. It only requires one class, and it’s already part of the Android Support Library called “ItemTouchHelper”&lt;/p&gt;
+
+&lt;p&gt;By the help of ItemTouchHelper we can add the swipe and drag features by adding sub class. It’s a subclass of &lt;a href=&quot;https://developer.android.com/reference/android/support/v7/widget/RecyclerView.ItemDecoration.html&quot;&gt;RecyclerView.ItemDecoration&lt;/a&gt;, I’ll demonstrate a simple implementation of ItemTouchHelper.&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-up&quot;&gt;Setting up&lt;/h3&gt;
+
+&lt;p&gt;First thing we need is a basic RecyclerView setup. If you haven’t already, update your build.gradle to include the RecyclerView dependency.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;compile 'com.android.support:recyclerview-v7:22.2.0'&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;by-itemtouchhelper-and-itemtouchhelpercallback&quot;&gt;BY ItemTouchHelper and ItemTouchHelper.Callback&lt;/h3&gt;
+
+&lt;p&gt;In order to use ItemTouchHelper, you’ll create an &lt;a href=&quot;https://developer.android.com/reference/android/support/v7/widget/helper/ItemTouchHelper.Callback.html&quot;&gt;ItemTouchHelper.Callback&lt;/a&gt;. This is the interface that allows you to listen for “move” and “swipe” events. It’s also where you are able to control the state of the view selected, and override the default animations. There’s a helper class that you can use if you want a basic implementation, &lt;a href=&quot;https://developer.android.com/reference/android/support/v7/widget/helper/ItemTouchHelper.SimpleCallback.html&quot;&gt;SimpleCallback&lt;/a&gt;,&lt;/p&gt;
+
+&lt;p&gt;The main callbacks that we must override to enable basic drag &amp;amp; drop and swipe-to-dismiss are:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;getMovementFlags(RecyclerView, ViewHolder) 
+onMove(RecyclerView, ViewHolder, ViewHolder) 
+onSwiped(ViewHolder, int)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;We can also use a some of helpers:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;isLongPressDragEnabled()
+isItemViewSwipeEnabled()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;We’ll go through them one by one.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@Override  
+public int getMovementFlags(RecyclerView recyclerView,   
+        RecyclerView.ViewHolder viewHolder) {  
+    int dragFlags = ItemTouchHelper.UP | ItemTouchHelper.DOWN;  
+    int swipeFlags = ItemTouchHelper.START | ItemTouchHelper.END;  
+    return makeMovementFlags(dragFlags, swipeFlags);  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It will help you get the direction. You must override &lt;strong&gt;getMovementFlags&lt;/strong&gt;() to specify which directions of drags and swipes. Use the helper &lt;strong&gt;ItemTouchHelper.makeMovementFlags(int, int)&lt;/strong&gt; to build the returned flags. We’re enabling dragging and swiping in both directions here.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@Override  
+public boolean isLongPressDragEnabled() {  
+    return true;  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;ItemTouchHelper can be used for drag &lt;em&gt;without&lt;/em&gt; swipe (or vice versa), so you must designate exactly what you wish to support. Implementations should return true from &lt;strong&gt;isLongPressDragEnabled()&lt;/strong&gt; will detect when we long press the any item in recyclerView&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@Override  
+public boolean isItemViewSwipeEnabled() {  
+    return true;  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;to enable swiping we have to return true from &lt;strong&gt;isItemViewSwipeEnabled&lt;/strong&gt;().&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;onMove()&lt;/strong&gt; and &lt;strong&gt;onSwiped()&lt;/strong&gt; are used to notify anything of updating data. So first we’ll create an interface that allows us to pass these event callbacks back.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public interface ItemTouchHelperAdapter {  
+  
+    void onItemMove(int fromPosition, int toPosition);  
+  
+    void onItemDismiss(int position);  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;ItemTouchHelper.java&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public class RecyclerListAdapter extends   
+        RecyclerView.Adapter&amp;lt;ItemViewHolder&amp;gt;   
+        implements ItemTouchHelperAdapter {
+
+@Override  
+public void onItemDismiss(int position) {  
+    mItems.remove(position);  
+    notifyItemRemoved(position);  
+}  
+  
+@Override  
+public boolean onItemMove(int fromPosition, int toPosition) {  
+    if (fromPosition &amp;lt; toPosition) {  
+        for (int i = fromPosition; i &amp;lt; toPosition; i++) {  
+            Collections.swap(mItems, i, i + 1);  
+        }  
+    } else {  
+        for (int i = fromPosition; i &amp;gt; toPosition; i--) {  
+            Collections.swap(mItems, i, i - 1);  
+        }  
+    }  
+    notifyItemMoved(fromPosition, toPosition);  
+    return true;  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It’s very important to call &lt;strong&gt;notifyItemRemoved()&lt;/strong&gt; and &lt;strong&gt;notifyItemMoved()&lt;/strong&gt; so the Adapter can identify the changes.&lt;/p&gt;
+
+&lt;p&gt;Now we can go back to building our &lt;strong&gt;SimpleItemTouchHelperCallback&lt;/strong&gt; as we still must override onMove() and onSwiped(). First add a constructor and a field for the Adapter:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;private final ItemTouchHelperAdapter mAdapter;  
+  
+public SimpleItemTouchHelperCallback(  
+        ItemTouchHelperAdapter adapter) {  
+    mAdapter = adapter;  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Then override the remaining events and notify the adapter:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@Override  
+public boolean **onMove**(RecyclerView recyclerView,   
+        RecyclerView.ViewHolder viewHolder,   
+        RecyclerView.ViewHolder target) {
+
+mAdapter.onItemMove(viewHolder.getAdapterPosition(),   
+            target.getAdapterPosition());
+
+    return true;  
+}
+
+@Override  
+public void onSwiped(RecyclerView.ViewHolder viewHolder,   
+        int direction) {  
+    mAdapter.onItemDismiss(viewHolder.getAdapterPosition());  
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;With our Callback, we can create our ItemTouchHelper and call &lt;strong&gt;attachToRecyclerView(RecyclerView):&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ItemTouchHelper.Callback callback =   
+new SimpleItemTouchHelperCallback(adapter);  
+ItemTouchHelper touchHelper= new ItemTouchHelper(callback);  
+touchHelper.attachToRecyclerView(recyclerView);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Thanks Happy coding :)&lt;/p&gt;</content><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><summary type="html"></summary></entry><entry><title type="html">Day out at munroe</title><link href="http://localhost:4000/blog/2019-06-30-day-out-at-munroe/" rel="alternate" type="text/html" title="Day out at munroe" /><published>2019-06-30T00:00:00+05:30</published><updated>2019-06-30T00:00:00+05:30</updated><id>http://localhost:4000/blog/day-out-at-munroe</id><content type="html" xml:base="http://localhost:4000/blog/2019-06-30-day-out-at-munroe/">&lt;p&gt;Recently the amFOSS club members planned to keep a day off and plan for a trip. Upon Vipin Sir’s suggestion, six of us went to Munroe Island and spent a whole day there. I would like to share the experience of the trip in this blog post.&lt;/p&gt;
 
 &lt;p&gt;Munroe Island or Mundrothuruthu is an inland island group formed at the confluence of the backwaters of the Ashtamudi Lake and Kallada River. We went to the Island by taking a train from Oachira to Munroturuttu railway station. Just costed 10 rupees, very cheap I know. 🙊&lt;/p&gt;
 
