@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-01-18T16:22:09+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Chromicle</title><subtitle>blog and more
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-01-18T19:47:03+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Chromicle</title><subtitle>blog and more
 </subtitle><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><entry><title type="html">Firebase Android — Realtime Database</title><link href="http://localhost:4000/blog/2019-08-18-FirebaseRealtimeDatabase/" rel="alternate" type="text/html" title="Firebase Android — Realtime Database" /><published>2019-08-18T00:00:00+05:30</published><updated>2019-08-18T00:00:00+05:30</updated><id>http://localhost:4000/blog/FirebaseRealtimeDatabase</id><content type="html" xml:base="http://localhost:4000/blog/2019-08-18-FirebaseRealtimeDatabase/">&lt;p&gt;Hello everyone, From the past some of the projects I used firebase very often so, I think it is really helpfull if I share how to use Firebase Realtime Database to build a realtime database for our app.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-firebase-realtime-database&quot;&gt;What is Firebase Realtime Database&lt;/h2&gt;
@@ -22,51 +22,7 @@
 
 &lt;p&gt;Then, we’re going to create a simple data class to represent the data we want to save for the user, let’s use something every one likes as an example:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public class PoojaUtils {
-    String poojaDate, pilgrimName, poojaName, poojaAmount;
-
-    public PoojaUtils() {}
-
-    public PoojaUtils(String poojaDate, String pilgrimName, String poojaName, String poojaAmount) {
-        this.poojaDate = poojaDate;
-        this.pilgrimName = pilgrimName;
-        this.poojaName = poojaName;
-        this.poojaAmount = poojaAmount;
-    }
-
-    public void setPoojaDate(String poojaDate) {
-        this.poojaDate = poojaDate;
-    }
-
-    public void setPilgrimName(String pilgrimName) {
-        this.pilgrimName = pilgrimName;
-    }
-
-    public void setPoojaName(String poojaName) {
-        this.poojaName = poojaName;
-    }
-
-    public void setPoojaAmount(String poojaAmount) {
-        this.poojaAmount = poojaAmount;
-    }
-
-    public String getPoojaDate() {
-        return poojaDate;
-    }
-
-    public String getPilgrimName() {
-        return pilgrimName;
-    }
-
-    public String getPoojaName() {
-        return poojaName;
-    }
-
-    public String getPoojaAmount() {
-        return poojaAmount;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;script src=&quot;https://gist.github.com/Chromicle/4a64a7024a41bf108b600a908a26e104.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;Cool, we have our &lt;code class=&quot;highlighter-rouge&quot;&gt;PoojsUtils&lt;/code&gt; data class and now we just need to create our simple UI to allow the user to store and visualise his poojas, we’ll look at it later when writing data to our realtime database.&lt;/p&gt;
 
@@ -83,36 +39,7 @@
 
 &lt;p&gt;Before looking into how to write and read data to/from our Firebase Realtime Database, we also need to enable it on the Firebase Console, and when doing that, it’s important to look at the rules for it. With the Firebase Realtime Database Rules we can set how and when our data can be read from and written, other things like how the data is structured and indexed. This is how the 3 most common rules look like:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;// These rules don't allow anyone read or write access to your database
-{
-  &quot;rules&quot;: {
-    &quot;.read&quot;: false,
-    &quot;.write&quot;: false
-  }
-}
-
-// These rules give anyone, even people who are not users of your app,
-// read and write access to your database
-{
-  &quot;rules&quot;: {
-    &quot;.read&quot;: true,
-    &quot;.write&quot;: true
-  }
-}
-
-// These rules grant access to a node matching the authenticated
-// user's ID from the Firebase auth token
-{
-  &quot;rules&quot;: {
-    &quot;users&quot;: {
-      &quot;$uid&quot;: {
-        &quot;.read&quot;: &quot;$uid === auth.uid&quot;,
-        &quot;.write&quot;: &quot;$uid === auth.uid&quot;
-      }
-    }
-  }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;script src=&quot;https://gist.github.com/Chromicle/5999e59898c66d19e39447b5a137e022.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;When enabling the realtime database on the console we have to click on get starteds.
 we’ll pick option 2 with public read and write access. We’ll have a shared database of poojas that everyone can contribute to and read from😄 If you want to know more about to setup proper rules you can check the official &lt;a href=&quot;https://firebase.google.com/docs/database/security/&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
@@ -127,131 +54,8 @@ we’ll pick option 2 with public read and write access. We’ll have a shared d
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;With our database reference sorted, let’s analyse the rest of the code:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public class AddPoojaActivity extends AppCompatActivity {
 
-    @BindView(R.id.editTextDate)
-    EditText editTextDate;
-
-    @BindView(R.id.btn_date)
-    Button btnDate;
-
-    @BindView(R.id.btnRegister)
-    Button btnRegister;
-
-    @BindView(R.id.btnPrint)
-    Button btnPrint;
-
-    @BindView(R.id.editTextPilgrimName)
-    EditText editTextPilgrimName;
-
-    @BindView(R.id.editTextPoojaName)
-    EditText editTextPoojaName;
-
-    @BindView(R.id.editTextPoojaAmount)
-    EditText editTextPoojaAmount;
-
-    private Bundle bundle;
-
-    private UserUtils user;
-    private int mYear, mMonth, mDay;
-    private String poojaDate, pilgrimName, poojaName, poojaAmount;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.add_pooja);
-        ButterKnife.bind(this);
-
-        user = new UserUtils();
-    }
-
-    @OnClick(R.id.btn_date)
-    public void datePickerDialoge(View view) {
-        final Calendar c = Calendar.getInstance();
-        mYear = c.get(Calendar.YEAR);
-        mMonth = c.get(Calendar.MONTH);
-        mDay = c.get(Calendar.DAY_OF_MONTH);
-
-        DatePickerDialog datePickerDialog =
-                new DatePickerDialog(
-                        this,
-                        new DatePickerDialog.OnDateSetListener() {
-                            @Override
-                            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-
-                                poojaDate = dayOfMonth + &quot;-&quot; + (monthOfYear + 1) + &quot;-&quot; + year;
-                                editTextDate.setText(poojaDate);
-                            }
-                        },
-                        mYear,
-                        mMonth,
-                        mDay);
-        datePickerDialog.show();
-    }
-
-    @OnClick(R.id.btnRegister)
-    public void registerPooja(View view) {
-
-        getPoojaValues();
-        if (!checkErrors()) {
-            return;
-        }
-        verifyDetails();
-    }
-
-    @OnClick(R.id.btnDetailsCorrect)
-    public void uploadPoojaDetails(View view) {
-        String id = poojaDb.push().getKey();
-
-        PoojaUtils poojaDetails = new PoojaUtils(poojaDate, pilgrimName, poojaName, poojaAmount);
-        poojaDb
-                .child(DB_POOJAS_NAME)
-                .child(id)
-                .setValue(poojaDetails)
-                .addOnSuccessListener(
-                        new OnSuccessListener&amp;lt;Void&amp;gt;() {
-                            @Override
-                            public void onSuccess(Void aVoid) {
-                                Toast.makeText(ConfirmDetailsPoojaActivity.this, &quot;Pooja Added&quot;, Toast.LENGTH_SHORT)
-                                        .show();
-                            }
-                        })
-                .addOnFailureListener(
-                        new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                Toast.makeText(ConfirmDetailsPoojaActivity.this, e.getMessage(), Toast.LENGTH_SHORT)
-                                        .show();
-                            }
-                        });
-    }
-
-    private boolean checkErrors() {
-        EditText[] allFields = {
-            editTextDate, editTextPilgrimName, editTextPoojaAmount, editTextPoojaName
-        };
-        List&amp;lt;EditText&amp;gt; ErrorFields = new ArrayList&amp;lt;EditText&amp;gt;();
-        for (EditText edit : allFields) {
-            if (TextUtils.isEmpty(edit.getText())) {
-                ErrorFields.add(edit);
-                for (int i = 0; i &amp;lt; ErrorFields.size(); i++) {
-                    EditText currentField = ErrorFields.get(i);
-                    currentField.setError(&quot;this field required&quot;);
-                    currentField.requestFocus();
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
-
-    private void getPoojaValues() {
-        pilgrimName = editTextPilgrimName.getText().toString().trim();
-        poojaAmount = editTextPoojaAmount.getText().toString().trim();
-        poojaName = editTextPoojaName.getText().toString().trim();
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;script src=&quot;https://gist.github.com/Chromicle/d08733531e54a2a69c8ea3a8329d5234.js&quot;&gt;&lt;/script&gt;
 
 &lt;ol&gt;
   &lt;li&gt;By using &lt;code class=&quot;highlighter-rouge&quot;&gt;push()&lt;/code&gt; we’re basically adding an element on the &lt;code class=&quot;highlighter-rouge&quot;&gt;PoojaUtils&lt;/code&gt; table on Firebase. The first time we do this, if the table doesn’t exist it just gets created. Firebase adds an element and automatically generates and return the ID for that element that we can use later to update the value.&lt;/li&gt;
@@ -265,95 +69,7 @@ we’ll pick option 2 with public read and write access. We’ll have a shared d
 
 &lt;p&gt;Writing data is sorted, let’s look at how to read data from our database. With Firebase Realtime Database is really simple, it basically works using event listeners on the data, so it’s a very common callback pattern that we’re all very used to, let’s see:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public class PoojaFragment extends Fragment {
-
-    @BindView(R.id.fab_pooja)
-    FloatingActionButton fab;
-
-    @BindView(R.id.poojaRecyclerView)
-    RecyclerView poojaRecycleView;
-
-    @BindView(R.id.poojaprogressBarLoading)
-    ProgressBar poojaProgressBar;
-
-    @BindView(R.id.textViewAddPooja)
-    TextView textViewAddPooja;
-
-    List&amp;lt;PoojaUtils&amp;gt; poojaUtilsArrayList;
-    PoojaAdapter poojaAdapter;
-
-    DatabaseReference poojaDb;
-
-    public PoojaFragment() {
-        // Required empty public constructor
-    }
-
-    @Override
-    public View onCreateView(
-            LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_pooja, container, false);
-        ButterKnife.bind(this, rootView);
-
-        addFirebaseInstance();
-
-        fetchPoojas();
-
-        return rootView;
-    }
-
-    private void fetchPoojas() {
-
-        poojaRecycleView.setLayoutManager(new LinearLayoutManager(getContext()));
-
-        poojaUtilsArrayList = new ArrayList&amp;lt;&amp;gt;();
-
-        poojaDb.addValueEventListener(
-                new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
-                            PoojaUtils poojaValue = postSnapshot.getValue(PoojaUtils.class);
-                            poojaUtilsArrayList.add(poojaValue);
-                        }
-
-                        poojaAdapter = new PoojaAdapter(getActivity(), poojaUtilsArrayList);
-                        poojaRecycleView.setAdapter(poojaAdapter);
-                        poojaProgressBar.setVisibility(View.GONE);
-                        changeFabPosition();
-                    }
-
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-                        Toast.makeText(getContext(), databaseError.getMessage(), Toast.LENGTH_SHORT).show();
-                    }
-                });
-    }
-
-    private void addFirebaseInstance() {
-        UserUtils user = new UserUtils();
-        String dbUserName = user.getDbUserName();
-        poojaDb = FirebaseDatabase.getInstance().getReference(dbUserName).child(&quot;poojas&quot;);
-    }
-
-    private void changeFabPosition() {
-        RelativeLayout.LayoutParams lay =
-                new RelativeLayout.LayoutParams(
-                        ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        lay.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
-        lay.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
-        lay.setMargins(2, 2, 75, 75);
-        fab.setLayoutParams(lay);
-        textViewAddPooja.setVisibility(View.GONE);
-    }
-
-    @OnClick(R.id.fab_pooja)
-    public void setUpFab(View view) {
-        Intent intent = new Intent(getActivity(), AddPoojaActivity.class);
-        startActivity(intent);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;script src=&quot;https://gist.github.com/Chromicle/0a4dea97d43c36800e6b95b871a71486.js&quot;&gt;&lt;/script&gt;
 
 &lt;p&gt;The code is quite self explanatory, but as with the reading part, let’s analyse it:&lt;/p&gt;
 
