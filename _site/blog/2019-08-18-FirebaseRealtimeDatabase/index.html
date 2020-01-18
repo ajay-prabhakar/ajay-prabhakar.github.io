@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">   
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+  
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Firebase Android — Realtime Database | Chromicle</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Firebase Android — Realtime Database" />
+<meta name="author" content="Ajay prabhakar" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Hello everyone, From the past some of the projects I used firebase very often so, I think it is really helpfull if I share how to use Firebase Realtime Database to build a realtime database for our app." />
+<meta property="og:description" content="Hello everyone, From the past some of the projects I used firebase very often so, I think it is really helpfull if I share how to use Firebase Realtime Database to build a realtime database for our app." />
+<link rel="canonical" href="http://localhost:4000/blog/2019-08-18-FirebaseRealtimeDatabase/" />
+<meta property="og:url" content="http://localhost:4000/blog/2019-08-18-FirebaseRealtimeDatabase/" />
+<meta property="og:site_name" content="Chromicle" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-08-18T00:00:00+05:30" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2019-08-18-FirebaseRealtimeDatabase/"},"author":{"@type":"Person","name":"Ajay prabhakar"},"url":"http://localhost:4000/blog/2019-08-18-FirebaseRealtimeDatabase/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/icons/icon.jpg"},"name":"Ajay prabhakar"},"headline":"Firebase Android — Realtime Database","dateModified":"2019-08-18T00:00:00+05:30","datePublished":"2019-08-18T00:00:00+05:30","description":"Hello everyone, From the past some of the projects I used firebase very often so, I think it is really helpfull if I share how to use Firebase Realtime Database to build a realtime database for our app.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Chromicle">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="application-name" content="Chromicle">
+<meta name="msapplication-config" content="/assets/ieconfig.xml">
+
+
+<meta name="theme-color" content="rgb(25,55,71)">
+
+
+<meta name="generator" content="Hydejack v8.1.1" />
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Chromicle" />
+
+
+
+<link rel="alternate" href="http://localhost:4000/blog/2019-08-18-FirebaseRealtimeDatabase/" hreflang="en">
+
+<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon.png">
+
+<link rel="manifest" href="/assets/manifest.json">
+
+
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+
+
+<link rel="dns-prefetch" href="/" id="_baseURL">
+<link rel="dns-prefetch" href="/assets/js/hydejack-8.1.1.js" id="_hrefJS">
+<link rel="dns-prefetch" href="/sw.js" id="_hrefSW">
+<link rel="dns-prefetch" href="/assets/bower_components/fontfaceobserver/fontfaceobserver.standalone.js" id="_hrefFFO">
+<link rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.js" id="_hrefKatexJS">
+<link rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.css" id="_hrefKatexCSS">
+<link rel="dns-prefetch" href="/assets/img/swipe.svg" id="_hrefSwipeSVG">
+
+
+
+
+<script>!function(e,t){"use strict";function n(e,t,n,r){e.addEventListener?e.addEventListener(t,n,r):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}e.loadJS=function(e,r){var o=t.createElement("script");o.src=e,r&&n(o,"load",r,{once:!0});var a=t.scripts[0];return a.parentNode.insertBefore(o,a),o},e._loaded=!1,e.loadJSDeferred=function(r,o){function a(){e._loaded=!0,o&&n(d,"load",o,{once:!0});var r=t.scripts[0];r.parentNode.insertBefore(d,r)}var d=t.createElement("script");return d.src=r,e._loaded?a():n(e,"load",a,{once:!0}),d},e.setRel=e.setRelStylesheet=function(e){function n(){this.rel="stylesheet"}var r=t.getElementById(e);r.addEventListener?r.addEventListener("load",n,{once:!0}):r.onload=n}}(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+</script>
+
+<script>!function(w, d) {
+    w._noPushState = false;
+    w._noDrawer = false;
+
+    /**/
+    loadJS(d.getElementById('_hrefFFO').href, function() {
+      if ('Promise' in w) Promise.all([
+        new FontFaceObserver('Noto Sans').load(),
+        new FontFaceObserver('Roboto Slab').load(),
+      ]).then(function f() { d.body.classList.add('font-active'); }, function() {});
+    });
+    /**/
+}(window, document);</script>
+
+<!--[if gt IE 8]><!---->
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/hydejack-8.1.1.css">
+  <link rel="stylesheet" href="/assets/icomoon/style.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400|Noto+Sans:400,400i,700,700i">
+    <noscript>
+      <style>
+        html { font-family: Noto Sans, Helvetica, Arial, sans-serif!important; }
+        h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: Roboto Slab, Helvetica, Arial, sans-serif!important; }
+      </style>
+    </noscript>
+  
+
+
+<style id="_pageStyle">
+.content a:not(.btn){color:#20c3bd;border-color:rgba(32,195,189,0.2)}.content a:not(.btn):hover{border-color:#20c3bd}:focus{outline-color:#20c3bd !important}.btn-primary{color:#fff;background-color:#20c3bd;border-color:#20c3bd}.btn-primary:focus,.btn-primary.focus,.form-control:focus,.form-control.focus{box-shadow:0 0 0 3px rgba(32,195,189,0.5)}.btn-primary:hover,.btn-primary.hover{color:#fff;background-color:#1ba29d;border-color:#1ba29d}.btn-primary:disabled,.btn-primary.disabled{color:#fff;background-color:#20c3bd;border-color:#20c3bd}.btn-primary:active,.btn-primary.active{color:#fff;background-color:#1ba29d;border-color:#1ba29d}body.dark-mode{--body-bg: #2d3539;--border-color: #384248}::selection{color:#fff;background:#20c3bd}::-moz-selection{color:#fff;background:#20c3bd}
+
+</style>
+
+<!--<![endif]-->
+
+
+
+
+</head>
+
+<body class="no-color-transition dark-mode">
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <div class="nav-btn-bar">
+      <span class="sr-only">Jump to:</span>
+      <a id="_menu" class="nav-btn no-hover fl" href="#_navigation">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <!-- <a id="_search" class="nav-btn no-hover fl" href="#_search">
+        <span class="sr-only">Search</span>
+        <span class="icon-search"></span>
+      </a>
+      <form action="https://duckduckgo.com/" method="GET">
+        <div class="form-group fr">
+          <label class="sr-only" for="_search">Search</label>
+          <input id="_search" name="q" class="form-control" type="search" />
+        </div>
+        <input type="hidden" name="q" value="site:hydejack.com" />
+        <input type="hidden" name="ia" value="web" />
+      </form> -->
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden>
+
+
+<hy-push-state replace-ids="_main" link-selector="a[href]:not([href*='/assets/']):not(.external):not(.no-push-state)" duration="250" script-selector="script:not([type^='math/tex'])" prefetch>
+  
+    <main id="_main" class="content fade-in layout-post" role="main" data-color="rgb(32,195,189)" data-theme-color="rgb(25,55,71)" data-image="/assets/img/back.jpg" data-overlay>
+  
+
+
+
+
+<article id="post-blog-FirebaseRealtimeDatabase" class="page post mb6" role="article">
+    <header>
+        <h1 class="post-title">
+            
+            Firebase Android — Realtime Database
+            
+        </h1>
+
+        <p>18 August 2019
+            <span> • <i class="fa fa-clock"></i> <span class="read-time" title="Estimated read time">
+  
+  
+    9 mins read
+  
+</span></span>
+        </p>
+
+        
+        
+
+        
+
+
+
+  <div class="hr pb0"></div>
+
+
+    </header>
+
+    
+    <p>Hello everyone, From the past some of the projects I used firebase very often so, I think it is really helpfull if I share how to use Firebase Realtime Database to build a realtime database for our app.</p>
+
+<h2 id="what-is-firebase-realtime-database">What is Firebase Realtime Database</h2>
+
+<p>The Firebase Realtime Database is basically a cloud hosted database stored in JSON format, it offers automatic offline support and it’s synchronised in realtime with every connected client. Let’s see what that means in more detail:</p>
+
+<p><strong>Realtime Synchronisation:</strong> Firebase realtime database uses data synchronisation, so every time the data changes will get updated, no more traditional HTPP requests needed, you can do it very simple</p>
+
+<p><strong>Offline Support:</strong> with firebase you can do automatic sync when the app goes back online, so don’t need to worry about offline status. You can let your users add, edit and remove data when they’re offline, and the firebase will take care of syncing everything properly when the app is back online.</p>
+
+<p>Firebase now offers another cloud hosted database called <a href="https://firebase.google.com/docs/firestore/">Cloud Firestore</a>. According to Firebase, this new solution to improve on top of Firebase Realtime Database, and it offers a more cool data models, and also has faster queries and can scales better, and our app is quite small, You can check a list of the main differences between both in the <code class="highlighter-rouge">[Choose a Database](https://firebase.google.com/docs/database/rtdb-vs-firestore)</code> section on the Firebase docs website.</p>
+
+<hr>
+
+<h2 id="time-to-build-something">Time to build something</h2>
+
+<p>The plan is to build something I done with my past project <a href="https://github.com/amfoss/TempleApp">TempleApp</a> so, I am explainig with I done😄. As usual, let’s start with adding dependencies and add the following line to our application level <code class="highlighter-rouge">build.gradle</code> script:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>implementation ‘com.google.firebase:firebase-database:16.0.1’
+</code></pre></div></div>
+
+<p>Then, we’re going to create a simple data class to represent the data we want to save for the user, let’s use something every one likes as an example:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class PoojaUtils {
+    String poojaDate, pilgrimName, poojaName, poojaAmount;
+
+    public PoojaUtils() {}
+
+    public PoojaUtils(String poojaDate, String pilgrimName, String poojaName, String poojaAmount) {
+        this.poojaDate = poojaDate;
+        this.pilgrimName = pilgrimName;
+        this.poojaName = poojaName;
+        this.poojaAmount = poojaAmount;
+    }
+
+    public void setPoojaDate(String poojaDate) {
+        this.poojaDate = poojaDate;
+    }
+
+    public void setPilgrimName(String pilgrimName) {
+        this.pilgrimName = pilgrimName;
+    }
+
+    public void setPoojaName(String poojaName) {
+        this.poojaName = poojaName;
+    }
+
+    public void setPoojaAmount(String poojaAmount) {
+        this.poojaAmount = poojaAmount;
+    }
+
+    public String getPoojaDate() {
+        return poojaDate;
+    }
+
+    public String getPilgrimName() {
+        return pilgrimName;
+    }
+
+    public String getPoojaName() {
+        return poojaName;
+    }
+
+    public String getPoojaAmount() {
+        return poojaAmount;
+    }
+}
+</code></pre></div></div>
+
+<p>Cool, we have our <code class="highlighter-rouge">PoojsUtils</code> data class and now we just need to create our simple UI to allow the user to store and visualise his poojas, we’ll look at it later when writing data to our realtime database.</p>
+
+<p>So, for the UI, we’ll add a button in our <code class="highlighter-rouge">MainActivity</code> to open a new <code class="highlighter-rouge">AddPoojaActivity</code> and in here the top part will be a basic form for the user to add his games, and the bottom section will be a recycler view to list those</p>
+
+<table>
+     <tr>
+          <td>
+<img height="500" src="https://user-images.githubusercontent.com/48018942/72662481-aaa2c000-3a0d-11ea-82af-0ef696c77fe8.jpg"><br><center><b>AddPoojaActivity</b></center>
+</td>
+          <td>
+<img height="500" src="https://user-images.githubusercontent.com/48018942/72662494-c60dcb00-3a0d-11ea-9030-e80f14eded6f.jpg"><br><center><b>MainActivity</b></center>
+</td>
+     </tr>
+</table>
+
+<h2 id="enabling-realtime-database-and-setting-rules">Enabling Realtime Database and setting Rules</h2>
+
+<p>Before looking into how to write and read data to/from our Firebase Realtime Database, we also need to enable it on the Firebase Console, and when doing that, it’s important to look at the rules for it. With the Firebase Realtime Database Rules we can set how and when our data can be read from and written, other things like how the data is structured and indexed. This is how the 3 most common rules look like:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// These rules don't allow anyone read or write access to your database
+{
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+
+// These rules give anyone, even people who are not users of your app,
+// read and write access to your database
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+
+// These rules grant access to a node matching the authenticated
+// user's ID from the Firebase auth token
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    }
+  }
+}
+</code></pre></div></div>
+
+<p>When enabling the realtime database on the console we have to click on get starteds.
+we’ll pick option 2 with public read and write access. We’ll have a shared database of poojas that everyone can contribute to and read from😄 If you want to know more about to setup proper rules you can check the official <a href="https://firebase.google.com/docs/database/security/">documentation</a>.</p>
+
+<h2 id="write-data">Write data</h2>
+
+<p>Now that we have our database created let’s go ahead and see how we can write data there using the form in our AddPoojaActivity:</p>
+
+<p>we will focus in the important part. The only important piece missing is how to get our <code class="highlighter-rouge">databaseReference</code> but it’s as easy as this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>databaseReference = FirebaseDatabase.getInstance_()_._reference_
+</code></pre></div></div>
+
+<p>With our database reference sorted, let’s analyse the rest of the code:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class AddPoojaActivity extends AppCompatActivity {
+
+    @BindView(R.id.editTextDate)
+    EditText editTextDate;
+
+    @BindView(R.id.btn_date)
+    Button btnDate;
+
+    @BindView(R.id.btnRegister)
+    Button btnRegister;
+
+    @BindView(R.id.btnPrint)
+    Button btnPrint;
+
+    @BindView(R.id.editTextPilgrimName)
+    EditText editTextPilgrimName;
+
+    @BindView(R.id.editTextPoojaName)
+    EditText editTextPoojaName;
+
+    @BindView(R.id.editTextPoojaAmount)
+    EditText editTextPoojaAmount;
+
+    private Bundle bundle;
+
+    private UserUtils user;
+    private int mYear, mMonth, mDay;
+    private String poojaDate, pilgrimName, poojaName, poojaAmount;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.add_pooja);
+        ButterKnife.bind(this);
+
+        user = new UserUtils();
+    }
+
+    @OnClick(R.id.btn_date)
+    public void datePickerDialoge(View view) {
+        final Calendar c = Calendar.getInstance();
+        mYear = c.get(Calendar.YEAR);
+        mMonth = c.get(Calendar.MONTH);
+        mDay = c.get(Calendar.DAY_OF_MONTH);
+
+        DatePickerDialog datePickerDialog =
+                new DatePickerDialog(
+                        this,
+                        new DatePickerDialog.OnDateSetListener() {
+                            @Override
+                            public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+
+                                poojaDate = dayOfMonth + "-" + (monthOfYear + 1) + "-" + year;
+                                editTextDate.setText(poojaDate);
+                            }
+                        },
+                        mYear,
+                        mMonth,
+                        mDay);
+        datePickerDialog.show();
+    }
+
+    @OnClick(R.id.btnRegister)
+    public void registerPooja(View view) {
+
+        getPoojaValues();
+        if (!checkErrors()) {
+            return;
+        }
+        verifyDetails();
+    }
+
+    @OnClick(R.id.btnDetailsCorrect)
+    public void uploadPoojaDetails(View view) {
+        String id = poojaDb.push().getKey();
+
+        PoojaUtils poojaDetails = new PoojaUtils(poojaDate, pilgrimName, poojaName, poojaAmount);
+        poojaDb
+                .child(DB_POOJAS_NAME)
+                .child(id)
+                .setValue(poojaDetails)
+                .addOnSuccessListener(
+                        new OnSuccessListener&lt;Void&gt;() {
+                            @Override
+                            public void onSuccess(Void aVoid) {
+                                Toast.makeText(ConfirmDetailsPoojaActivity.this, "Pooja Added", Toast.LENGTH_SHORT)
+                                        .show();
+                            }
+                        })
+                .addOnFailureListener(
+                        new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast.makeText(ConfirmDetailsPoojaActivity.this, e.getMessage(), Toast.LENGTH_SHORT)
+                                        .show();
+                            }
+                        });
+    }
+
+    private boolean checkErrors() {
+        EditText[] allFields = {
+            editTextDate, editTextPilgrimName, editTextPoojaAmount, editTextPoojaName
+        };
+        List&lt;EditText&gt; ErrorFields = new ArrayList&lt;EditText&gt;();
+        for (EditText edit : allFields) {
+            if (TextUtils.isEmpty(edit.getText())) {
+                ErrorFields.add(edit);
+                for (int i = 0; i &lt; ErrorFields.size(); i++) {
+                    EditText currentField = ErrorFields.get(i);
+                    currentField.setError("this field required");
+                    currentField.requestFocus();
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    private void getPoojaValues() {
+        pilgrimName = editTextPilgrimName.getText().toString().trim();
+        poojaAmount = editTextPoojaAmount.getText().toString().trim();
+        poojaName = editTextPoojaName.getText().toString().trim();
+    }
+}
+</code></pre></div></div>
+
+<ol>
+  <li>By using <code class="highlighter-rouge">push()</code> we’re basically adding an element on the <code class="highlighter-rouge">PoojaUtils</code> table on Firebase. The first time we do this, if the table doesn’t exist it just gets created. Firebase adds an element and automatically generates and return the ID for that element that we can use later to update the value.</li>
+  <li>we basically create a <code class="highlighter-rouge">poojaUtils</code> instance to whatever was submitted in the form, easy right.</li>
+  <li>we just tell the adapter we added a new game to the list and that’s it we’re done.</li>
+</ol>
+
+<p>And this is how easy it is to write data, let’s go ahead and use the form to add some of my favourite games, so many hours spent on these 😄. If we go back to the Firebase Console now, we can see how the 3 games were added to our database:</p>
+
+<h2 id="read-data">Read data</h2>
+
+<p>Writing data is sorted, let’s look at how to read data from our database. With Firebase Realtime Database is really simple, it basically works using event listeners on the data, so it’s a very common callback pattern that we’re all very used to, let’s see:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class PoojaFragment extends Fragment {
+
+    @BindView(R.id.fab_pooja)
+    FloatingActionButton fab;
+
+    @BindView(R.id.poojaRecyclerView)
+    RecyclerView poojaRecycleView;
+
+    @BindView(R.id.poojaprogressBarLoading)
+    ProgressBar poojaProgressBar;
+
+    @BindView(R.id.textViewAddPooja)
+    TextView textViewAddPooja;
+
+    List&lt;PoojaUtils&gt; poojaUtilsArrayList;
+    PoojaAdapter poojaAdapter;
+
+    DatabaseReference poojaDb;
+
+    public PoojaFragment() {
+        // Required empty public constructor
+    }
+
+    @Override
+    public View onCreateView(
+            LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View rootView = inflater.inflate(R.layout.fragment_pooja, container, false);
+        ButterKnife.bind(this, rootView);
+
+        addFirebaseInstance();
+
+        fetchPoojas();
+
+        return rootView;
+    }
+
+    private void fetchPoojas() {
+
+        poojaRecycleView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        poojaUtilsArrayList = new ArrayList&lt;&gt;();
+
+        poojaDb.addValueEventListener(
+                new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                            PoojaUtils poojaValue = postSnapshot.getValue(PoojaUtils.class);
+                            poojaUtilsArrayList.add(poojaValue);
+                        }
+
+                        poojaAdapter = new PoojaAdapter(getActivity(), poojaUtilsArrayList);
+                        poojaRecycleView.setAdapter(poojaAdapter);
+                        poojaProgressBar.setVisibility(View.GONE);
+                        changeFabPosition();
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+                        Toast.makeText(getContext(), databaseError.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
+    private void addFirebaseInstance() {
+        UserUtils user = new UserUtils();
+        String dbUserName = user.getDbUserName();
+        poojaDb = FirebaseDatabase.getInstance().getReference(dbUserName).child("poojas");
+    }
+
+    private void changeFabPosition() {
+        RelativeLayout.LayoutParams lay =
+                new RelativeLayout.LayoutParams(
+                        ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        lay.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+        lay.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
+        lay.setMargins(2, 2, 75, 75);
+        fab.setLayoutParams(lay);
+        textViewAddPooja.setVisibility(View.GONE);
+    }
+
+    @OnClick(R.id.fab_pooja)
+    public void setUpFab(View view) {
+        Intent intent = new Intent(getActivity(), AddPoojaActivity.class);
+        startActivity(intent);
+    }
+}
+</code></pre></div></div>
+
+<p>The code is quite self explanatory, but as with the reading part, let’s analyse it:</p>
+
+<ol>
+  <li>we add a <code class="highlighter-rouge">ValueEventListener</code> to our table reference and implement the required methods, so every time there’s a change on the <code class="highlighter-rouge">poojaUtils</code> table in the database we get notified and receive a data snapshot of the database table.</li>
+  <li>we’re just showing a Toast in case of error when trying to read from the database.</li>
+  <li>we just extract the actual list of games from the DataSnapshot object and pass it to our adapter. If we implement a diff callback (which I didn’t 😃)</li>
+</ol>
+
+<p>And if writing was easy, reading is even more, right? This is all we need to do to be constantly listening for events on the database. In a more realistic example we should keep a reference to our <code class="highlighter-rouge">ValueEventListener</code> so we can unsubscribe when required.</p>
+
+<p>If we just want to read the data once and not get all the update events we can use the <code class="highlighter-rouge">addListenerForSingleValueEvent()</code> function instead. When dealing with lists like in our case there’s also an option to get notified of events on a single child on the database table. Not relevant for our example, but if we want that we can use the <code class="highlighter-rouge">addChildEventListener()</code> function and pass an instance of <code class="highlighter-rouge">ChildEventListener</code> that will give us more events.</p>
+
+<p>You can get more reference at <a href="https://github.com/amfoss/TempleApp">sourcecode</a></p>
+
+    
+</article>
+
+
+
+<hr class="dingbat related">
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+  <hy-img src="/assets/img/me.jpg" class="avatar" alt="Ajay Prabhakar" srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x" root-margin="512px">
+    <noscript><img data-ignore src="/assets/img/me.jpg" class="avatar" alt="Ajay Prabhakar" srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x"></noscript>
+    <span class="loading" slot="loading" hidden>
+      <span class="icon-cog"></span>
+    </span>
+  </hy-img>
+
+
+  
+
+  
+  
+  <h2 class="page-title hr">
+    About
+  </h2>
+
+  <p>Hi! I’m Ajay Prabhakar. <img class="emoji" title=":octocat:" alt=":octocat:" src="https://github.githubassets.com/images/icons/emoji/octocat.png" height="20" width="20"> |
+A learner exploring the innovation-driven world <img class="emoji" title=":book:" alt=":book:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png" height="20" width="20"> |
+A programmer contributing to the opensource projects <img class="emoji" title=":computer:" alt=":computer:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png" height="20" width="20"> |
+A photographer appreciating the beauty of life at every moment <img class="emoji" title=":camera_flash:" alt=":camera_flash:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f8.png" height="20" width="20"> |
+Currently a second year grad student at Amrita university University <img class="emoji" title=":school:" alt=":school:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f3eb.png" height="20" width="20"></p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://twitter.com/chromicle_3" title="Twitter" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/chromicle" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="mailto:%20ajayprabhakar369@gmail.com" title="Email" class="no-mark-external">
+      <span class="icon-mail"></span>
+      <span class="sr-only">Email</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://t.me/chromicle" title="Telegram" class="no-mark-external">
+      <span class="icon-telegram"></span>
+      <span class="sr-only">Telegram</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/ajay-prabhakar-461587174" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  
+    
+
+
+
+
+<aside class="related mb4" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
+      
+
+
+<li>
+  <a href="/blog/2019-07-16-How-to-Drag-or-swipe-in-RecyclerView/" class="h4 flip-title">
+    <span>How to Drag or swipe in RecyclerView</span>
+  </a>
+  <time class="heading faded fine" datetime="2019-07-16T00:00:00+05:30">16 Jul 2019</time>
+</li>
+
+    
+      
+
+
+<li>
+  <a href="/blog/2019-06-30-day-out-at-munroe/" class="h4 flip-title">
+    <span>Day out at munroe</span>
+  </a>
+  <time class="heading faded fine" datetime="2019-06-30T00:00:00+05:30">30 Jun 2019</time>
+</li>
+
+    
+      
+
+
+<li>
+  <a href="/blog/2018-12-16-First-post/" class="h4 flip-title">
+    <span>First post</span>
+  </a>
+  <time class="heading faded fine" datetime="2018-12-16T00:00:00+05:30">16 Dec 2018</time>
+</li>
+
+    
+  </ul>
+</aside>
+
+
+  
+
+  
+  
+
+
+  
+
+  
+<footer role="contentinfo">
+  <hr>
+  
+    <p><small class="copyright">© 2018-2020. Chromicle.
+</small></p>
+  
+  
+  
+    <br>
+    <span id="busuanzi_container_site_pv" style="display: inline-block; line-height: 20% !important; "><small>This site was visited by: <span id="busuanzi_value_site_pv"> </span> times</small></span>
+    
+  <hr class="sr-only">
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</footer>
+
+
+</main>
+
+    <hy-drawer class="" align="left" threshold="10" touch-events prevent-default>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+    <div class="sidebar-bg sidebar-overlay" style="background-color:rgb(25,55,71);background-image:url(/assets/img/back.jpg)"></div>
+
+    <div class="sidebar-sticky">
+      <div class="sidebar-about">
+        
+          <a class="no-hover" href="/" tabindex="-1">
+            <img src="/assets/icons/icon.jpg" class="avatar" alt="Chromicle" data-ignore>
+          </a>
+        
+        <h2 class="h1"><a href="/">Chromicle</a></h2>
+        
+        
+          <p class="">
+            Yesterday is history, tomorrow is mystery but today is gift that’s why it is called present.
+
+          </p>
+        
+      </div>
+
+      <nav class="sidebar-nav heading" role="navigation">
+        <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a id="_navigation" href="/blog/" class="sidebar-nav-item active">
+          Blog
+        </a>
+      </li>
+    
+      
+      <li>
+        <a href="/projects/" class="sidebar-nav-item">
+          Projects
+        </a>
+      </li>
+    
+      
+      <li>
+        <a href="/about/" class="sidebar-nav-item">
+          About
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </nav>
+
+      
+
+      <div class="sidebar-social">
+        <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://twitter.com/chromicle_3" title="Twitter" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/chromicle" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="mailto:%20ajayprabhakar369@gmail.com" title="Email" class="no-mark-external">
+      <span class="icon-mail"></span>
+      <span class="sr-only">Email</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://t.me/chromicle" title="Telegram" class="no-mark-external">
+      <span class="icon-telegram"></span>
+      <span class="sr-only">Telegram</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://www.linkedin.com/in/ajay-prabhakar-461587174" title="LinkedIn" class="no-mark-external">
+      <span class="icon-linkedin2"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+      </div>
+    </div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden>
+
+  
+</hy-push-state>
+
+
+  <script>!function(w, d) {
+    var h = new Date().getHours();
+    var m = h <= 2 || h >= 24 ? 'add' : 'remove';
+    d.body.classList[m]('dark-mode');
+  }(window, document);</script>
+
+
+
+  <!--[if !IE]><!---->
+  <script>loadJSDeferred(document.getElementById('_hrefJS').href);</script>
+  
+
+  <!--<![endif]-->
+
+  
+
+
+  <script>!function(w, d) {
+    if ('serviceWorker' in w.navigator) {
+      /**/
+      w.navigator.serviceWorker.getRegistration()
+        .then(r => r.unregister())
+        .catch(() => {});
+      /**/
+    }
+  }(window, document);</script>
+
+
+
+
+
+
+<h2 class="sr-only" hidden>Templates (for web app):</h2>
+
+<template id="_animation-template" hidden>
+  <div class="animation-main fixed-top">
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+<template id="_loading-template" hidden>
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+<template id="_error-template" hidden>
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+
+<template id="_permalink-template" hidden>
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="icon-link"></span>
+  </a>
+</template>
+
+
+
+  <template id="_dark-mode-template" hidden>
+  <button id="_dark-mode" class="nav-btn no-hover fl">
+    <span class="sr-only">Dark Mode</span>
+    <span class="icon-contrast"></span>
+  </button>
+</template>
+
+
+
+
+</body>
+</html>
