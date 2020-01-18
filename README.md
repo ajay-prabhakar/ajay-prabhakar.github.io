@@ -1,4 +1,4 @@
-# Chromicle.co
+# chromicle.github.io
 
 My personal Website :flashlight: + blog :cherries:
 
