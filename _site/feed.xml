@@ -1,5 +1,90 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-01-18T19:47:03+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Chromicle</title><subtitle>blog and more
-</subtitle><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><entry><title type="html">Firebase Android — Realtime Database</title><link href="http://localhost:4000/blog/2019-08-18-FirebaseRealtimeDatabase/" rel="alternate" type="text/html" title="Firebase Android — Realtime Database" /><published>2019-08-18T00:00:00+05:30</published><updated>2019-08-18T00:00:00+05:30</updated><id>http://localhost:4000/blog/FirebaseRealtimeDatabase</id><content type="html" xml:base="http://localhost:4000/blog/2019-08-18-FirebaseRealtimeDatabase/">&lt;p&gt;Hello everyone, From the past some of the projects I used firebase very often so, I think it is really helpfull if I share how to use Firebase Realtime Database to build a realtime database for our app.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2020-03-11T12:22:01+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Chromicle</title><subtitle>blog and more
+</subtitle><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><entry><title type="html">MVVM with Dagger 2, Retrofit, RxJava</title><link href="http://localhost:4000/blog/2020-01-02-MVVM-with-Dagger2-Retrofit-RxJava/" rel="alternate" type="text/html" title="MVVM with Dagger 2, Retrofit, RxJava" /><published>2020-01-02T00:00:00+05:30</published><updated>2020-01-02T00:00:00+05:30</updated><id>http://localhost:4000/blog/MVVM-with-Dagger2-Retrofit-RxJava</id><content type="html" xml:base="http://localhost:4000/blog/2020-01-02-MVVM-with-Dagger2-Retrofit-RxJava/">&lt;p&gt;I used to work with MVP pattern until now. However, when Google released nice-to-use components like the &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt; along with the &lt;a href=&quot;https://developer.android.com/jetpack/&quot;&gt;&lt;strong&gt;Android Jetpack&lt;/strong&gt;&lt;/a&gt;, I have tried to work with &lt;strong&gt;MVVM&lt;/strong&gt; pattern. In this article, we will see how can we use the MVVM pattern with &lt;a href=&quot;https://github.com/square/retrofit&quot;&gt;Retrofit&lt;/a&gt;, &lt;a href=&quot;https://github.com/ReactiveX/RxJava&quot;&gt;RxJava&lt;/a&gt;, and &lt;a href=&quot;https://github.com/google/dagger&quot;&gt;Dagger 2&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-mvvm&quot;&gt;What is MVVM?&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Model-View-ViewModel&lt;/em&gt; architecture consists of 3 parts.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The &lt;strong&gt;View&lt;/strong&gt; gets user’s actions and sends to the &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt;, or listens live data stream from the &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt; and provides to the users.&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;ViewModel&lt;/strong&gt; gets user’s actions from the &lt;code class=&quot;highlighter-rouge&quot;&gt;View&lt;/code&gt; or provides data to &lt;code class=&quot;highlighter-rouge&quot;&gt;View&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;Model&lt;/strong&gt; abstracts the data source. &lt;code class=&quot;highlighter-rouge&quot;&gt;View&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt; uses that on data stream.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;project-configuration&quot;&gt;Project Configuration&lt;/h2&gt;
+
+&lt;p&gt;We implement Android Lifecycle, Retrofit, RxJava, ButterKnife and Dagger 2 libraries in addition to Support libraries.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-retrofit-interface&quot;&gt;Setting Up Retrofit Interface&lt;/h2&gt;
+
+&lt;p&gt;We have used Github API for &lt;em&gt;Json&lt;/em&gt; source and as you see &lt;code class=&quot;highlighter-rouge&quot;&gt;Single&amp;lt;&amp;gt;&lt;/code&gt; return type in order to observe data with &lt;code class=&quot;highlighter-rouge&quot;&gt;RxJava&lt;/code&gt;.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Chromicle/70d99c35f6b28984c912e52addfd4423.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;setting-up-application-class-base-activity-base-fragment&quot;&gt;Setting Up Application Class, Base Activity, Base Fragment&lt;/h2&gt;
+
+&lt;p&gt;We have to use &lt;code class=&quot;highlighter-rouge&quot;&gt;DaggerApplication&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DaggerAppCompatActivity&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;DaggerFragment&lt;/code&gt; classes for injecting objects with &lt;code class=&quot;highlighter-rouge&quot;&gt;ContributesAndroidInjector&lt;/code&gt; annotation.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Chromicle/3ced1f5c5ce514110ccd8fc3c9df4e6d.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;https://gist.github.com/Chromicle/ad7233980ccbf8639abc82b4c31cc5f7.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;We have used abstract &lt;code class=&quot;highlighter-rouge&quot;&gt;layoutRes()&lt;/code&gt; function in order to get resource layout id from Activity which extends &lt;code class=&quot;highlighter-rouge&quot;&gt;BaseActivity&lt;/code&gt;.
+&lt;script src=&quot;https://gist.github.com/Chromicle/c2020f1aec05e385783f77b3c362c3de.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-dagger-2-component--modules&quot;&gt;Setting Up Dagger 2 Component &amp;amp; Modules&lt;/h2&gt;
+&lt;script src=&quot;https://gist.github.com/Chromicle/9dff782d9801caddeab827490f2c55bf.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;As you can see, we have wrote only &lt;code class=&quot;highlighter-rouge&quot;&gt;AndroidSupportInjectionModule&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ActivityBindingModule&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModelModule&lt;/code&gt; to the module parameter. We will write other required modules in which Activity or Fragment they needed.&lt;/p&gt;
+
+&lt;p&gt;If explain what we have did in that code snippet;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;provideRetrofit&lt;/code&gt; — Provides Retrofit adjusted with &lt;code class=&quot;highlighter-rouge&quot;&gt;base url&lt;/code&gt;, adapter and converter factories. &lt;code class=&quot;highlighter-rouge&quot;&gt;addCallAdapterFactory()&lt;/code&gt; function gets adapter factory for supporting service method return types, add instance of &lt;code class=&quot;highlighter-rouge&quot;&gt;RxJava2CallAdapterFactory&lt;/code&gt;  for RxJava support.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;provideRepoService&lt;/code&gt;— Provides Retrofit interface class for making requests.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;script src=&quot;https://gist.github.com/Chromicle/3aab7323c9afb4312b3e43a2c20254fc.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;creating-custom-viewmodel-factory&quot;&gt;Creating Custom ViewModel Factory&lt;/h2&gt;
+
+&lt;p&gt;ViewModelFactory is a factory that extends &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModelProvider.Factory&lt;/code&gt; in order to provide &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt; instances to consumer fragment classes. We have injected that class with the &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModelModule&lt;/code&gt;.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Chromicle/70d0a83b9b1f1f1959446f8af9dd59f8.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;setting-up-viewmodel&quot;&gt;Setting Up ViewModel&lt;/h2&gt;
+
+&lt;p&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt;, we will assign the data which loaded with Retrofit to the &lt;code class=&quot;highlighter-rouge&quot;&gt;MutableLiveData&lt;/code&gt;. So, how we can use &lt;a href=&quot;https://developer.android.com/reference/android/arch/lifecycle/MutableLiveData&quot;&gt;MutableLiveData&lt;/a&gt;? We assign the data to MutableLiveData with &lt;code class=&quot;highlighter-rouge&quot;&gt;setValue&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;postValue&lt;/code&gt; methods, and observe this data in &lt;code class=&quot;highlighter-rouge&quot;&gt;LifeCycleOwner&lt;/code&gt; (Activity or Fragment). When we make any changes on the &lt;code class=&quot;highlighter-rouge&quot;&gt;MutableLiveData&lt;/code&gt;, this change is dynamically declared to the view. Also, It does not oblige us to check whether &lt;code class=&quot;highlighter-rouge&quot;&gt;View&lt;/code&gt; is alive in every transaction.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Chromicle/b04ebb6a267d2d40a8c5f6989a4d7bc5.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;As you can see, we didn’t use any &lt;code class=&quot;highlighter-rouge&quot;&gt;component&lt;/code&gt; injecting code, because we have injected all required classes in the &lt;code class=&quot;highlighter-rouge&quot;&gt;MainFragmentBindingModule&lt;/code&gt; and also we have did same thing for activities in the &lt;code class=&quot;highlighter-rouge&quot;&gt;ActivityBindingModule&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-fragment&quot;&gt;Setting Up Fragment&lt;/h2&gt;
+
+&lt;p&gt;As you know, fragment is our &lt;code class=&quot;highlighter-rouge&quot;&gt;View&lt;/code&gt; part. We have injected &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModelFactory&lt;/code&gt; and started to observe &lt;code class=&quot;highlighter-rouge&quot;&gt;LiveData&lt;/code&gt; objects.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Chromicle/facff74cdba76330c8c70fb768d6eb88.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;creating-recyclerview-adapter&quot;&gt;Creating RecyclerView Adapter&lt;/h2&gt;
+
+&lt;p&gt;In recyclerView adapter, we have only observed &lt;code class=&quot;highlighter-rouge&quot;&gt;List&amp;lt;Repo&amp;gt;&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;LiveData&lt;/code&gt; and bind them to the &lt;code class=&quot;highlighter-rouge&quot;&gt;recyclerView&lt;/code&gt;.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/Chromicle/429b1ff54c460f4f740a0053cc8f5500.js&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;mvvm-vs-mvp&quot;&gt;MVVM vs MVP&lt;/h2&gt;
+
+&lt;p&gt;Previously I implemented a very similar app using MVP architecture here. Let’s compare the two architectures:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Goodbye Presenter, Hello ViewModel! ViewModel in MVVM is an equivalent to Presenter in MVP architecture.
+MVP contains slightly more code. For instance, my Presenter extended a common base Presenter. I had View and Presenter interfaces and Contract interface to tie them together.&lt;/li&gt;
+  &lt;li&gt;In MVP Activity#onSaveInstanceState() and Activity#onRestoreInstanceState() callbacks can be used to save state between configuration changes such as device rotation. If you use the new architecture component ViewModel in MVVM, data survives rotations automatically.&lt;/li&gt;
+  &lt;li&gt;MVP requires tighter component coupling. The Presenter keeps a reference to the View, albeit via an interface. It is necessary because the View often needs to inform the Presenter of lifecycle events such as onStop() or onDestroy() so that the Presenter can clear RxJava Subscriptions, etc. In MVVM you simply override ViewModel#onCleared() to do the cleanup without the View getting involved.&lt;/li&gt;
+  &lt;li&gt;In MVP, the View delegates all the work to the Presenter and the latter then tells the View what results to display. Similarly, in MVVM, the View delegates all the work to the ViewModel but then the View observes and reacts to the responses from the ViewModel.&lt;/li&gt;
+  &lt;li&gt;While there is no one-size-fits-all when it comes to Android apps, for the reasons outlined above, MVVM architecture seems to have an advantage over MVP. While both are great at keeping business logic away from the View, abstracting data layer and making the code highly testable and maintainable, going forward, whenever I architect a new Android application, I will likely consider MVVM first&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Thanks a lot for reading, Happy coding :)&lt;/p&gt;</content><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><category term="Android," /><category term="MVVM" /><summary type="html">I used to work with MVP pattern until now. However, when Google released nice-to-use components like the ViewModel along with the Android Jetpack, I have tried to work with MVVM pattern. In this article, we will see how can we use the MVVM pattern with Retrofit, RxJava, and Dagger 2.</summary></entry><entry><title type="html">Firebase Android — Realtime Database</title><link href="http://localhost:4000/blog/2019-08-18-FirebaseRealtimeDatabase/" rel="alternate" type="text/html" title="Firebase Android — Realtime Database" /><published>2019-08-18T00:00:00+05:30</published><updated>2019-08-18T00:00:00+05:30</updated><id>http://localhost:4000/blog/FirebaseRealtimeDatabase</id><content type="html" xml:base="http://localhost:4000/blog/2019-08-18-FirebaseRealtimeDatabase/">&lt;p&gt;Hello everyone, From the past some of the projects I used firebase very often so, I think it is really helpfull if I share how to use Firebase Realtime Database to build a realtime database for our app.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-firebase-realtime-database&quot;&gt;What is Firebase Realtime Database&lt;/h2&gt;
 
