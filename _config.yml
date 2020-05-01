@@ -54,7 +54,7 @@ menu:
   - title:             About
     url:               /about/
   - title:             curriculum vitae 
-    url:               /cv.pdf/
+    url:               /cv.pdf
 
 
 # Add links to the footer.
