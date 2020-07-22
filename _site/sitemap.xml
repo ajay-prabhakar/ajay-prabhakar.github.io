@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/blog/</loc>
-<lastmod>2020-05-01T16:52:58+05:30</lastmod>
+<lastmod>2020-07-22T20:29:28+05:30</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/2018-12-02-week-48/</loc>
@@ -54,11 +54,25 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/portfolio/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/portfolio/ios/Runner/Assets.xcassets/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/cv.pdf</loc>
 <lastmod>2020-04-30T10:48:28+05:30</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/flutter-portfolio/</loc>
+<lastmod>2020-05-28T12:45:19+05:30</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/portfolio/web/</loc>
+<lastmod>2020-05-28T12:48:54+05:30</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/assets/Resume.pdf</loc>
-<lastmod>2020-05-01T16:52:58+05:30</lastmod>
+<lastmod>2020-07-22T20:25:26+05:30</lastmod>
 </url>
 </urlset>

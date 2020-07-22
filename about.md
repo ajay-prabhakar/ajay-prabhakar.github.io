@@ -19,7 +19,7 @@ hide_description: true
 image: /assets/img/blog/hydejack-8.png
 ---
 
-I'm Ajay Prabhakar, a learner, a programmer and a photographer.
+I'm Ajay Prabhakar, a designer, a programmer and a photographer.
 
 ### Me as a learner :mortar_board:
 I started learning about Android during my freshman year on a summer course with udacity.   
@@ -32,7 +32,7 @@ Learning coding from scratch, studying concepts of IOT, participating in various
 ### Me as a photographer :camera_flash:
 What I like to do most in my spare time is to pick up my camera and go outside to capture the moment I like. Actually I'd rather think it's the moment that seized me. Just when the moment comes, I know nothing better than smile and press the shutter on the camera. I really enjoy the incredible creativity of nature that presents us with always different scenery. I wait for sunrise and sunset, I chase the moon and the star, I climb mount and cross the sea, to appreciate the moments that nature seizes me.
 
-### What I'm Doing Now (Updated on Aug. 28, 2019)
-- **An Active contributor of Gsoc project [skunkworks-crow](https://github.com/opendatakit/skunkworks-crow) at OpenDataKit**
+### What I'm Doing Now (Updated on Jul. 22, 2020)
+- Android developer at [cometchat](https://www.cometchat.com/)
 - Engaging on some personal projects with help of [amFOSS](https://github.com/amfoss)
 - Practising algorithms and data structure by solving problems on Codeforces & Hackerrank
