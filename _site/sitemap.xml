@@ -2,19 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/blog/</loc>
-<lastmod>2020-07-22T20:34:33+05:30</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/blog/2018-12-02-week-48/</loc>
-<lastmod>2018-12-02T00:00:00+05:30</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/blog/2018-12-09-week-49/</loc>
-<lastmod>2018-12-09T00:00:00+05:30</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/blog/2018-12-16-First-post/</loc>
-<lastmod>2018-12-16T00:00:00+05:30</lastmod>
+<lastmod>2021-01-09T11:20:25+05:30</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/2019-06-30-day-out-at-munroe/</loc>
@@ -64,8 +52,8 @@
 <loc>http://localhost:4000/portfolio/ios/Runner/Assets.xcassets/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/cv.pdf</loc>
-<lastmod>2020-04-30T10:48:28+05:30</lastmod>
+<loc>http://localhost:4000/docs/iresume.pdf</loc>
+<lastmod>2020-09-05T21:35:01+05:30</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/flutter-portfolio/</loc>
@@ -76,7 +64,11 @@
 <lastmod>2020-05-28T12:48:54+05:30</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/resume.pdf</loc>
+<lastmod>2020-09-05T21:35:01+05:30</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/assets/Resume.pdf</loc>
-<lastmod>2020-07-22T20:25:26+05:30</lastmod>
+<lastmod>2021-01-09T10:49:59+05:30</lastmod>
 </url>
 </urlset>

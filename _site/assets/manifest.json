@@ -1,7 +1,7 @@
 {
   "lang": "en",
-  "name": "Chromicle",
-  "short_name": "Chromicle",
+  "name": "chromicle",
+  "short_name": "chromicle",
   "description": "blog and more",
   "start_url": "/?utm_source=homescreen",
   "theme_color": "rgb(25,55,71)",

@@ -31,7 +31,7 @@ author1:
     github:          chromicle
     # download:        <url>
     email:           ajayprabhakar369@gmail.com
-    telegram:        chromicle
+    # telegram:        chromicle
     # rss:             https://<url>/feed.xml
     # facebook:        chromicle
     # google:          <number>
@@ -45,7 +45,7 @@ author1:
     # instagram:       <username>
     # flickr:          <string@string>
     # 500px:           <username>
-    # dribbble:        <username>
+    dribbble:        chromicle
     # behance:         <username>
     # deviantart:      <username>
     # ello:            <username>

@@ -34,5 +34,6 @@ What I like to do most in my spare time is to pick up my camera and go outside t
 
 ### What I'm Doing Now (Updated on Jul. 22, 2020)
 - Android developer at [cometchat](https://www.cometchat.com/)
+- D
 - Engaging on some personal projects with help of [amFOSS](https://github.com/amfoss)
 - Practising algorithms and data structure by solving problems on Codeforces & Hackerrank
