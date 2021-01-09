@@ -66,7 +66,7 @@ menu:
 #     url:               /cookies-policy/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2018-2020. Chromicle.
+copyright:             © 2018-2021. Chromicle.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
