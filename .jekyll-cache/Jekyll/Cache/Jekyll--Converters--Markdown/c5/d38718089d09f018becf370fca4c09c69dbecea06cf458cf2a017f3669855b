@@ -1,0 +1,86 @@
+I"!<p>Hello everyone, From the past some of the projects I used firebase very often so, I think it is really helpfull if I share how to use Firebase Realtime Database to build a realtime database for our app.</p>
+
+<h2 id="what-is-firebase-realtime-database">What is Firebase Realtime Database</h2>
+
+<p>The Firebase Realtime Database is basically a cloud hosted database stored in JSON format, it offers automatic offline support and it’s synchronised in realtime with every connected client. Let’s see what that means in more detail:</p>
+
+<p><strong>Realtime Synchronisation:</strong> Firebase realtime database uses data synchronisation, so every time the data changes will get updated, no more traditional HTPP requests needed, you can do it very simple</p>
+
+<p><strong>Offline Support:</strong> with firebase you can do automatic sync when the app goes back online, so don’t need to worry about offline status. You can let your users add, edit and remove data when they’re offline, and the firebase will take care of syncing everything properly when the app is back online.</p>
+
+<p>Firebase now offers another cloud hosted database called <a href="https://firebase.google.com/docs/firestore/">Cloud Firestore</a>. According to Firebase, this new solution to improve on top of Firebase Realtime Database, and it offers a more cool data models, and also has faster queries and can scales better, and our app is quite small, You can check a list of the main differences between both in the <code class="language-plaintext highlighter-rouge">[Choose a Database](https://firebase.google.com/docs/database/rtdb-vs-firestore)</code> section on the Firebase docs website.</p>
+
+<hr />
+
+<h2 id="time-to-build-something">Time to build something</h2>
+
+<p>The plan is to build something I done with my past project <a href="https://github.com/amfoss/TempleApp">TempleApp</a> so, I am explainig with I done😄. As usual, let’s start with adding dependencies and add the following line to our application level <code class="language-plaintext highlighter-rouge">build.gradle</code> script:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>implementation ‘com.google.firebase:firebase-database:16.0.1’
+</code></pre></div></div>
+
+<p>Then, we’re going to create a simple data class to represent the data we want to save for the user, let’s use something every one likes as an example:</p>
+
+<script src="https://gist.github.com/Chromicle/4a64a7024a41bf108b600a908a26e104.js"></script>
+
+<p>Cool, we have our <code class="language-plaintext highlighter-rouge">PoojsUtils</code> data class and now we just need to create our simple UI to allow the user to store and visualise his poojas, we’ll look at it later when writing data to our realtime database.</p>
+
+<p>So, for the UI, we’ll add a button in our <code class="language-plaintext highlighter-rouge">MainActivity</code> to open a new <code class="language-plaintext highlighter-rouge">AddPoojaActivity</code> and in here the top part will be a basic form for the user to add his games, and the bottom section will be a recycler view to list those</p>
+
+<table>
+     <tr>
+          <td><img height="500" src="https://user-images.githubusercontent.com/48018942/72662481-aaa2c000-3a0d-11ea-82af-0ef696c77fe8.jpg" /><br /><center><b>AddPoojaActivity</b></center></td>
+          <td><img height="500" src="https://user-images.githubusercontent.com/48018942/72662494-c60dcb00-3a0d-11ea-9030-e80f14eded6f.jpg" /><br /><center><b>MainActivity</b></center></td>
+     </tr>
+</table>
+
+<h2 id="enabling-realtime-database-and-setting-rules">Enabling Realtime Database and setting Rules</h2>
+
+<p>Before looking into how to write and read data to/from our Firebase Realtime Database, we also need to enable it on the Firebase Console, and when doing that, it’s important to look at the rules for it. With the Firebase Realtime Database Rules we can set how and when our data can be read from and written, other things like how the data is structured and indexed. This is how the 3 most common rules look like:</p>
+
+<script src="https://gist.github.com/Chromicle/5999e59898c66d19e39447b5a137e022.js"></script>
+
+<p>When enabling the realtime database on the console we have to click on get starteds.
+we’ll pick option 2 with public read and write access. We’ll have a shared database of poojas that everyone can contribute to and read from😄 If you want to know more about to setup proper rules you can check the official <a href="https://firebase.google.com/docs/database/security/">documentation</a>.</p>
+
+<h2 id="write-data">Write data</h2>
+
+<p>Now that we have our database created let’s go ahead and see how we can write data there using the form in our AddPoojaActivity:</p>
+
+<p>we will focus in the important part. The only important piece missing is how to get our <code class="language-plaintext highlighter-rouge">databaseReference</code> but it’s as easy as this:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>databaseReference = FirebaseDatabase.getInstance_()_._reference_
+</code></pre></div></div>
+
+<p>With our database reference sorted, let’s analyse the rest of the code:</p>
+
+<script src="https://gist.github.com/Chromicle/d08733531e54a2a69c8ea3a8329d5234.js"></script>
+
+<ol>
+  <li>By using <code class="language-plaintext highlighter-rouge">push()</code> we’re basically adding an element on the <code class="language-plaintext highlighter-rouge">PoojaUtils</code> table on Firebase. The first time we do this, if the table doesn’t exist it just gets created. Firebase adds an element and automatically generates and return the ID for that element that we can use later to update the value.</li>
+  <li>we basically create a <code class="language-plaintext highlighter-rouge">poojaUtils</code> instance to whatever was submitted in the form, easy right.</li>
+  <li>we just tell the adapter we added a new game to the list and that’s it we’re done.</li>
+</ol>
+
+<p>And this is how easy it is to write data, let’s go ahead and use the form to add some of my favourite games, so many hours spent on these 😄. If we go back to the Firebase Console now, we can see how the 3 games were added to our database:</p>
+
+<h2 id="read-data">Read data</h2>
+
+<p>Writing data is sorted, let’s look at how to read data from our database. With Firebase Realtime Database is really simple, it basically works using event listeners on the data, so it’s a very common callback pattern that we’re all very used to, let’s see:</p>
+
+<script src="https://gist.github.com/Chromicle/0a4dea97d43c36800e6b95b871a71486.js"></script>
+
+<p>The code is quite self explanatory, but as with the reading part, let’s analyse it:</p>
+
+<ol>
+  <li>we add a <code class="language-plaintext highlighter-rouge">ValueEventListener</code> to our table reference and implement the required methods, so every time there’s a change on the <code class="language-plaintext highlighter-rouge">poojaUtils</code> table in the database we get notified and receive a data snapshot of the database table.</li>
+  <li>we’re just showing a Toast in case of error when trying to read from the database.</li>
+  <li>we just extract the actual list of games from the DataSnapshot object and pass it to our adapter. If we implement a diff callback (which I didn’t 😃)</li>
+</ol>
+
+<p>And if writing was easy, reading is even more, right? This is all we need to do to be constantly listening for events on the database. In a more realistic example we should keep a reference to our <code class="language-plaintext highlighter-rouge">ValueEventListener</code> so we can unsubscribe when required.</p>
+
+<p>If we just want to read the data once and not get all the update events we can use the <code class="language-plaintext highlighter-rouge">addListenerForSingleValueEvent()</code> function instead. When dealing with lists like in our case there’s also an option to get notified of events on a single child on the database table. Not relevant for our example, but if we want that we can use the <code class="language-plaintext highlighter-rouge">addChildEventListener()</code> function and pass an instance of <code class="language-plaintext highlighter-rouge">ChildEventListener</code> that will give us more events.</p>
+
+<p>You can get more reference at <a href="https://github.com/amfoss/TempleApp">sourcecode</a></p>
+:ET

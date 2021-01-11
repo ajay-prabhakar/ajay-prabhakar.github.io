@@ -1,0 +1,87 @@
+I"i$<p>I used to work with MVP pattern until now. However, when Google released nice-to-use components like the <code class="language-plaintext highlighter-rouge">ViewModel</code> along with the <a href="https://developer.android.com/jetpack/"><strong>Android Jetpack</strong></a>, I have tried to work with <strong>MVVM</strong> pattern. In this article, we will see how can we use the MVVM pattern with <a href="https://github.com/square/retrofit">Retrofit</a>, <a href="https://github.com/ReactiveX/RxJava">RxJava</a>, and <a href="https://github.com/google/dagger">Dagger 2</a>.</p>
+
+<h2 id="what-is-mvvm">What is MVVM?</h2>
+
+<p><em>Model-View-ViewModel</em> architecture consists of 3 parts.</p>
+
+<ul>
+  <li>The <strong>View</strong> gets user’s actions and sends to the <code class="language-plaintext highlighter-rouge">ViewModel</code>, or listens live data stream from the <code class="language-plaintext highlighter-rouge">ViewModel</code> and provides to the users.</li>
+  <li>The <strong>ViewModel</strong> gets user’s actions from the <code class="language-plaintext highlighter-rouge">View</code> or provides data to <code class="language-plaintext highlighter-rouge">View</code>.</li>
+  <li>The <strong>Model</strong> abstracts the data source. <code class="language-plaintext highlighter-rouge">View</code> and <code class="language-plaintext highlighter-rouge">ViewModel</code> uses that on data stream.</li>
+</ul>
+
+<h2 id="project-configuration">Project Configuration</h2>
+
+<p>We implement Android Lifecycle, Retrofit, RxJava, ButterKnife and Dagger 2 libraries in addition to Support libraries.</p>
+
+<h2 id="setting-up-retrofit-interface">Setting Up Retrofit Interface</h2>
+
+<p>We have used Github API for <em>Json</em> source and as you see <code class="language-plaintext highlighter-rouge">Single&lt;&gt;</code> return type in order to observe data with <code class="language-plaintext highlighter-rouge">RxJava</code>.</p>
+
+<script src="https://gist.github.com/Chromicle/70d99c35f6b28984c912e52addfd4423.js"></script>
+
+<h2 id="setting-up-application-class-base-activity-base-fragment">Setting Up Application Class, Base Activity, Base Fragment</h2>
+
+<p>We have to use <code class="language-plaintext highlighter-rouge">DaggerApplication</code>, <code class="language-plaintext highlighter-rouge">DaggerAppCompatActivity</code> and <code class="language-plaintext highlighter-rouge">DaggerFragment</code> classes for injecting objects with <code class="language-plaintext highlighter-rouge">ContributesAndroidInjector</code> annotation.</p>
+
+<script src="https://gist.github.com/Chromicle/3ced1f5c5ce514110ccd8fc3c9df4e6d.js"></script>
+
+<script src="https://gist.github.com/Chromicle/ad7233980ccbf8639abc82b4c31cc5f7.js"></script>
+
+<p>We have used abstract <code class="language-plaintext highlighter-rouge">layoutRes()</code> function in order to get resource layout id from Activity which extends <code class="language-plaintext highlighter-rouge">BaseActivity</code>.
+<script src="https://gist.github.com/Chromicle/c2020f1aec05e385783f77b3c362c3de.js"></script></p>
+
+<h2 id="setting-up-dagger-2-component--modules">Setting Up Dagger 2 Component &amp; Modules</h2>
+<script src="https://gist.github.com/Chromicle/9dff782d9801caddeab827490f2c55bf.js"></script>
+
+<p>As you can see, we have wrote only <code class="language-plaintext highlighter-rouge">AndroidSupportInjectionModule</code>, <code class="language-plaintext highlighter-rouge">ActivityBindingModule</code> and <code class="language-plaintext highlighter-rouge">ViewModelModule</code> to the module parameter. We will write other required modules in which Activity or Fragment they needed.</p>
+
+<p>If explain what we have did in that code snippet;</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">provideRetrofit</code> — Provides Retrofit adjusted with <code class="language-plaintext highlighter-rouge">base url</code>, adapter and converter factories. <code class="language-plaintext highlighter-rouge">addCallAdapterFactory()</code> function gets adapter factory for supporting service method return types, add instance of <code class="language-plaintext highlighter-rouge">RxJava2CallAdapterFactory</code>  for RxJava support.</li>
+  <li><code class="language-plaintext highlighter-rouge">provideRepoService</code>— Provides Retrofit interface class for making requests.</li>
+</ul>
+
+<script src="https://gist.github.com/Chromicle/3aab7323c9afb4312b3e43a2c20254fc.js"></script>
+
+<h2 id="creating-custom-viewmodel-factory">Creating Custom ViewModel Factory</h2>
+
+<p>ViewModelFactory is a factory that extends <code class="language-plaintext highlighter-rouge">ViewModelProvider.Factory</code> in order to provide <code class="language-plaintext highlighter-rouge">ViewModel</code> instances to consumer fragment classes. We have injected that class with the <code class="language-plaintext highlighter-rouge">ViewModelModule</code>.</p>
+
+<script src="https://gist.github.com/Chromicle/70d0a83b9b1f1f1959446f8af9dd59f8.js"></script>
+
+<h2 id="setting-up-viewmodel">Setting Up ViewModel</h2>
+
+<p>In <code class="language-plaintext highlighter-rouge">ViewModel</code>, we will assign the data which loaded with Retrofit to the <code class="language-plaintext highlighter-rouge">MutableLiveData</code>. So, how we can use <a href="https://developer.android.com/reference/android/arch/lifecycle/MutableLiveData">MutableLiveData</a>? We assign the data to MutableLiveData with <code class="language-plaintext highlighter-rouge">setValue</code> or <code class="language-plaintext highlighter-rouge">postValue</code> methods, and observe this data in <code class="language-plaintext highlighter-rouge">LifeCycleOwner</code> (Activity or Fragment). When we make any changes on the <code class="language-plaintext highlighter-rouge">MutableLiveData</code>, this change is dynamically declared to the view. Also, It does not oblige us to check whether <code class="language-plaintext highlighter-rouge">View</code> is alive in every transaction.</p>
+
+<script src="https://gist.github.com/Chromicle/b04ebb6a267d2d40a8c5f6989a4d7bc5.js"></script>
+
+<p>As you can see, we didn’t use any <code class="language-plaintext highlighter-rouge">component</code> injecting code, because we have injected all required classes in the <code class="language-plaintext highlighter-rouge">MainFragmentBindingModule</code> and also we have did same thing for activities in the <code class="language-plaintext highlighter-rouge">ActivityBindingModule</code>.</p>
+
+<h2 id="setting-up-fragment">Setting Up Fragment</h2>
+
+<p>As you know, fragment is our <code class="language-plaintext highlighter-rouge">View</code> part. We have injected <code class="language-plaintext highlighter-rouge">ViewModelFactory</code> and started to observe <code class="language-plaintext highlighter-rouge">LiveData</code> objects.</p>
+
+<script src="https://gist.github.com/Chromicle/facff74cdba76330c8c70fb768d6eb88.js"></script>
+
+<h2 id="creating-recyclerview-adapter">Creating RecyclerView Adapter</h2>
+
+<p>In recyclerView adapter, we have only observed <code class="language-plaintext highlighter-rouge">List&lt;Repo&gt;</code> <code class="language-plaintext highlighter-rouge">LiveData</code> and bind them to the <code class="language-plaintext highlighter-rouge">recyclerView</code>.</p>
+
+<script src="https://gist.github.com/Chromicle/429b1ff54c460f4f740a0053cc8f5500.js"></script>
+
+<h2 id="mvvm-vs-mvp">MVVM vs MVP</h2>
+
+<p>Previously I implemented a very similar app using MVP architecture here. Let’s compare the two architectures:</p>
+<ol>
+  <li>Goodbye Presenter, Hello ViewModel! ViewModel in MVVM is an equivalent to Presenter in MVP architecture.
+MVP contains slightly more code. For instance, my Presenter extended a common base Presenter. I had View and Presenter interfaces and Contract interface to tie them together.</li>
+  <li>In MVP Activity#onSaveInstanceState() and Activity#onRestoreInstanceState() callbacks can be used to save state between configuration changes such as device rotation. If you use the new architecture component ViewModel in MVVM, data survives rotations automatically.</li>
+  <li>MVP requires tighter component coupling. The Presenter keeps a reference to the View, albeit via an interface. It is necessary because the View often needs to inform the Presenter of lifecycle events such as onStop() or onDestroy() so that the Presenter can clear RxJava Subscriptions, etc. In MVVM you simply override ViewModel#onCleared() to do the cleanup without the View getting involved.</li>
+  <li>In MVP, the View delegates all the work to the Presenter and the latter then tells the View what results to display. Similarly, in MVVM, the View delegates all the work to the ViewModel but then the View observes and reacts to the responses from the ViewModel.</li>
+  <li>While there is no one-size-fits-all when it comes to Android apps, for the reasons outlined above, MVVM architecture seems to have an advantage over MVP. While both are great at keeping business logic away from the View, abstracting data layer and making the code highly testable and maintainable, going forward, whenever I architect a new Android application, I will likely consider MVVM first</li>
+</ol>
+
+<p>Thanks a lot for reading, Happy coding :)</p>
+:ET

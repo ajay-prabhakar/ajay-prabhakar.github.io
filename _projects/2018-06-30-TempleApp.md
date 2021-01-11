@@ -1,9 +1,12 @@
 ---
-layout: default
+layout: project
 title: 'TempleApp'
-subtitle: 'This app is a cost-efficient way of maintaining records of poojas, donations made by people and also all the financial records in temples. Using this app, people in the temple counter will be able to enter all the details regarding the poojas they want or some donations they want to do for the temple. This app is connected to a printer so that it will print the details of pooja registrations of users.'
+caption: 'This app is a cost-efficient way of maintaining records of poojas, donations made by people and also all the financial records in temples. Using this app, people in the temple counter will be able to enter all the details regarding the poojas they want or some donations they want to do for the temple.'
 date: 2018-06-30 00:00:00
-featured_image: '/images/demo/demo-square.jpg'
+screenshot: /assets/projects/temple.jpg
+links:
+  - title: Github Link
+    url: https://github.com/amfoss/templeApp
 ---
 
 

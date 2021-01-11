@@ -54,7 +54,7 @@ menu:
   - title:             About
     url:               /about/
   - title:             curriculum vitae 
-    url:               /resume.pdfa
+    url:               /resume.pdf
 
 
 # Add links to the footer.
@@ -269,7 +269,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-titles-from-headings
   - jemoji
-  - jekyll-gist
+  - jekyll-include-cache
+  - jekyll-last-modified-at
 
 # Theme
 # ---------------------------------------------------------------------------------------

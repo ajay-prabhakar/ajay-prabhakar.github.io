@@ -1,9 +1,12 @@
 ---
-layout: default
+layout: project
 title: 'Amrita resource'
-subtitle: 'A platform for University Students to share Documents such as Exam Papers and Study Material. Users can Upload/Download Documents shared by Users.'
-date: 2018-06-30 00:00:00
-featured_image: 'https://img-resize.com/view/ef0a5a78c811d8caca9fc48ff4f0a82c.png'
+caption: 'A platform for University Students to share Documents such as Exam Papers and Study Material. Users can Upload/Download Documents shared by Users.'
+date: 18 AUG 2018
+screenshot: /assets/projects/amrita.jpg
+links:
+  - title: Github Link
+    url: https://github.com/Chromicle/amrita-resource
 ---
 
 [![Travis CI](https://travis-ci.com/chromicle/AmritaResource.svg?branch=master)](https://travis-ci.com/chromicle/AmritaResource)

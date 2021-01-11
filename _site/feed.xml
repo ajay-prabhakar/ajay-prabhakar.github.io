@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-01-09T12:03:15+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">chromicle</title><subtitle>blog and more
-</subtitle><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><entry><title type="html">MVVM with Dagger 2, Retrofit, RxJava</title><link href="http://localhost:4000/blog/2020-01-02-MVVM-with-Dagger2-Retrofit-RxJava/" rel="alternate" type="text/html" title="MVVM with Dagger 2, Retrofit, RxJava" /><published>2020-01-02T00:00:00+05:30</published><updated>2020-01-02T00:00:00+05:30</updated><id>http://localhost:4000/blog/MVVM-with-Dagger2-Retrofit-RxJava</id><content type="html" xml:base="http://localhost:4000/blog/2020-01-02-MVVM-with-Dagger2-Retrofit-RxJava/">&lt;p&gt;I used to work with MVP pattern until now. However, when Google released nice-to-use components like the &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt; along with the &lt;a href=&quot;https://developer.android.com/jetpack/&quot;&gt;&lt;strong&gt;Android Jetpack&lt;/strong&gt;&lt;/a&gt;, I have tried to work with &lt;strong&gt;MVVM&lt;/strong&gt; pattern. In this article, we will see how can we use the MVVM pattern with &lt;a href=&quot;https://github.com/square/retrofit&quot;&gt;Retrofit&lt;/a&gt;, &lt;a href=&quot;https://github.com/ReactiveX/RxJava&quot;&gt;RxJava&lt;/a&gt;, and &lt;a href=&quot;https://github.com/google/dagger&quot;&gt;Dagger 2&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="en" /><updated>2021-01-11T13:35:56+05:30</updated><id>/feed.xml</id><title type="html">chromicle</title><subtitle>blog and more
+</subtitle><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><entry><title type="html">MVVM with Dagger 2, Retrofit, RxJava</title><link href="/blog/2020-01-02-MVVM-with-Dagger2-Retrofit-RxJava/" rel="alternate" type="text/html" title="MVVM with Dagger 2, Retrofit, RxJava" /><published>2020-01-02T00:00:00+05:30</published><updated>2020-03-11T12:22:01+05:30</updated><id>/blog/MVVM-with-Dagger2-Retrofit-RxJava</id><content type="html" xml:base="/blog/2020-01-02-MVVM-with-Dagger2-Retrofit-RxJava/">&lt;p&gt;I used to work with MVP pattern until now. However, when Google released nice-to-use components like the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt; along with the &lt;a href=&quot;https://developer.android.com/jetpack/&quot;&gt;&lt;strong&gt;Android Jetpack&lt;/strong&gt;&lt;/a&gt;, I have tried to work with &lt;strong&gt;MVVM&lt;/strong&gt; pattern. In this article, we will see how can we use the MVVM pattern with &lt;a href=&quot;https://github.com/square/retrofit&quot;&gt;Retrofit&lt;/a&gt;, &lt;a href=&quot;https://github.com/ReactiveX/RxJava&quot;&gt;RxJava&lt;/a&gt;, and &lt;a href=&quot;https://github.com/google/dagger&quot;&gt;Dagger 2&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-mvvm&quot;&gt;What is MVVM?&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;Model-View-ViewModel&lt;/em&gt; architecture consists of 3 parts.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;The &lt;strong&gt;View&lt;/strong&gt; gets user’s actions and sends to the &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt;, or listens live data stream from the &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt; and provides to the users.&lt;/li&gt;
-  &lt;li&gt;The &lt;strong&gt;ViewModel&lt;/strong&gt; gets user’s actions from the &lt;code class=&quot;highlighter-rouge&quot;&gt;View&lt;/code&gt; or provides data to &lt;code class=&quot;highlighter-rouge&quot;&gt;View&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;The &lt;strong&gt;Model&lt;/strong&gt; abstracts the data source. &lt;code class=&quot;highlighter-rouge&quot;&gt;View&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt; uses that on data stream.&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;View&lt;/strong&gt; gets user’s actions and sends to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt;, or listens live data stream from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt; and provides to the users.&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;ViewModel&lt;/strong&gt; gets user’s actions from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;View&lt;/code&gt; or provides data to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;View&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;Model&lt;/strong&gt; abstracts the data source. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;View&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt; uses that on data stream.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;project-configuration&quot;&gt;Project Configuration&lt;/h2&gt;
@@ -17,58 +17,58 @@
 
 &lt;h2 id=&quot;setting-up-retrofit-interface&quot;&gt;Setting Up Retrofit Interface&lt;/h2&gt;
 
-&lt;p&gt;We have used Github API for &lt;em&gt;Json&lt;/em&gt; source and as you see &lt;code class=&quot;highlighter-rouge&quot;&gt;Single&amp;lt;&amp;gt;&lt;/code&gt; return type in order to observe data with &lt;code class=&quot;highlighter-rouge&quot;&gt;RxJava&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We have used Github API for &lt;em&gt;Json&lt;/em&gt; source and as you see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Single&amp;lt;&amp;gt;&lt;/code&gt; return type in order to observe data with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RxJava&lt;/code&gt;.&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/Chromicle/70d99c35f6b28984c912e52addfd4423.js&quot;&gt;&lt;/script&gt;
 
 &lt;h2 id=&quot;setting-up-application-class-base-activity-base-fragment&quot;&gt;Setting Up Application Class, Base Activity, Base Fragment&lt;/h2&gt;
 
-&lt;p&gt;We have to use &lt;code class=&quot;highlighter-rouge&quot;&gt;DaggerApplication&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;DaggerAppCompatActivity&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;DaggerFragment&lt;/code&gt; classes for injecting objects with &lt;code class=&quot;highlighter-rouge&quot;&gt;ContributesAndroidInjector&lt;/code&gt; annotation.&lt;/p&gt;
+&lt;p&gt;We have to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DaggerApplication&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DaggerAppCompatActivity&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DaggerFragment&lt;/code&gt; classes for injecting objects with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ContributesAndroidInjector&lt;/code&gt; annotation.&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/Chromicle/3ced1f5c5ce514110ccd8fc3c9df4e6d.js&quot;&gt;&lt;/script&gt;
 
 &lt;script src=&quot;https://gist.github.com/Chromicle/ad7233980ccbf8639abc82b4c31cc5f7.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;We have used abstract &lt;code class=&quot;highlighter-rouge&quot;&gt;layoutRes()&lt;/code&gt; function in order to get resource layout id from Activity which extends &lt;code class=&quot;highlighter-rouge&quot;&gt;BaseActivity&lt;/code&gt;.
+&lt;p&gt;We have used abstract &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;layoutRes()&lt;/code&gt; function in order to get resource layout id from Activity which extends &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BaseActivity&lt;/code&gt;.
 &lt;script src=&quot;https://gist.github.com/Chromicle/c2020f1aec05e385783f77b3c362c3de.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;setting-up-dagger-2-component--modules&quot;&gt;Setting Up Dagger 2 Component &amp;amp; Modules&lt;/h2&gt;
 &lt;script src=&quot;https://gist.github.com/Chromicle/9dff782d9801caddeab827490f2c55bf.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;As you can see, we have wrote only &lt;code class=&quot;highlighter-rouge&quot;&gt;AndroidSupportInjectionModule&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;ActivityBindingModule&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModelModule&lt;/code&gt; to the module parameter. We will write other required modules in which Activity or Fragment they needed.&lt;/p&gt;
+&lt;p&gt;As you can see, we have wrote only &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AndroidSupportInjectionModule&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ActivityBindingModule&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ViewModelModule&lt;/code&gt; to the module parameter. We will write other required modules in which Activity or Fragment they needed.&lt;/p&gt;
 
 &lt;p&gt;If explain what we have did in that code snippet;&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;provideRetrofit&lt;/code&gt; — Provides Retrofit adjusted with &lt;code class=&quot;highlighter-rouge&quot;&gt;base url&lt;/code&gt;, adapter and converter factories. &lt;code class=&quot;highlighter-rouge&quot;&gt;addCallAdapterFactory()&lt;/code&gt; function gets adapter factory for supporting service method return types, add instance of &lt;code class=&quot;highlighter-rouge&quot;&gt;RxJava2CallAdapterFactory&lt;/code&gt;  for RxJava support.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;provideRepoService&lt;/code&gt;— Provides Retrofit interface class for making requests.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;provideRetrofit&lt;/code&gt; — Provides Retrofit adjusted with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;base url&lt;/code&gt;, adapter and converter factories. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;addCallAdapterFactory()&lt;/code&gt; function gets adapter factory for supporting service method return types, add instance of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RxJava2CallAdapterFactory&lt;/code&gt;  for RxJava support.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;provideRepoService&lt;/code&gt;— Provides Retrofit interface class for making requests.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;script src=&quot;https://gist.github.com/Chromicle/3aab7323c9afb4312b3e43a2c20254fc.js&quot;&gt;&lt;/script&gt;
 
 &lt;h2 id=&quot;creating-custom-viewmodel-factory&quot;&gt;Creating Custom ViewModel Factory&lt;/h2&gt;
 
-&lt;p&gt;ViewModelFactory is a factory that extends &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModelProvider.Factory&lt;/code&gt; in order to provide &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt; instances to consumer fragment classes. We have injected that class with the &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModelModule&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;ViewModelFactory is a factory that extends &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ViewModelProvider.Factory&lt;/code&gt; in order to provide &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt; instances to consumer fragment classes. We have injected that class with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ViewModelModule&lt;/code&gt;.&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/Chromicle/70d0a83b9b1f1f1959446f8af9dd59f8.js&quot;&gt;&lt;/script&gt;
 
 &lt;h2 id=&quot;setting-up-viewmodel&quot;&gt;Setting Up ViewModel&lt;/h2&gt;
 
-&lt;p&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt;, we will assign the data which loaded with Retrofit to the &lt;code class=&quot;highlighter-rouge&quot;&gt;MutableLiveData&lt;/code&gt;. So, how we can use &lt;a href=&quot;https://developer.android.com/reference/android/arch/lifecycle/MutableLiveData&quot;&gt;MutableLiveData&lt;/a&gt;? We assign the data to MutableLiveData with &lt;code class=&quot;highlighter-rouge&quot;&gt;setValue&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;postValue&lt;/code&gt; methods, and observe this data in &lt;code class=&quot;highlighter-rouge&quot;&gt;LifeCycleOwner&lt;/code&gt; (Activity or Fragment). When we make any changes on the &lt;code class=&quot;highlighter-rouge&quot;&gt;MutableLiveData&lt;/code&gt;, this change is dynamically declared to the view. Also, It does not oblige us to check whether &lt;code class=&quot;highlighter-rouge&quot;&gt;View&lt;/code&gt; is alive in every transaction.&lt;/p&gt;
+&lt;p&gt;In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ViewModel&lt;/code&gt;, we will assign the data which loaded with Retrofit to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MutableLiveData&lt;/code&gt;. So, how we can use &lt;a href=&quot;https://developer.android.com/reference/android/arch/lifecycle/MutableLiveData&quot;&gt;MutableLiveData&lt;/a&gt;? We assign the data to MutableLiveData with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setValue&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;postValue&lt;/code&gt; methods, and observe this data in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LifeCycleOwner&lt;/code&gt; (Activity or Fragment). When we make any changes on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MutableLiveData&lt;/code&gt;, this change is dynamically declared to the view. Also, It does not oblige us to check whether &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;View&lt;/code&gt; is alive in every transaction.&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/Chromicle/b04ebb6a267d2d40a8c5f6989a4d7bc5.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;As you can see, we didn’t use any &lt;code class=&quot;highlighter-rouge&quot;&gt;component&lt;/code&gt; injecting code, because we have injected all required classes in the &lt;code class=&quot;highlighter-rouge&quot;&gt;MainFragmentBindingModule&lt;/code&gt; and also we have did same thing for activities in the &lt;code class=&quot;highlighter-rouge&quot;&gt;ActivityBindingModule&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;As you can see, we didn’t use any &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;component&lt;/code&gt; injecting code, because we have injected all required classes in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MainFragmentBindingModule&lt;/code&gt; and also we have did same thing for activities in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ActivityBindingModule&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;setting-up-fragment&quot;&gt;Setting Up Fragment&lt;/h2&gt;
 
-&lt;p&gt;As you know, fragment is our &lt;code class=&quot;highlighter-rouge&quot;&gt;View&lt;/code&gt; part. We have injected &lt;code class=&quot;highlighter-rouge&quot;&gt;ViewModelFactory&lt;/code&gt; and started to observe &lt;code class=&quot;highlighter-rouge&quot;&gt;LiveData&lt;/code&gt; objects.&lt;/p&gt;
+&lt;p&gt;As you know, fragment is our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;View&lt;/code&gt; part. We have injected &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ViewModelFactory&lt;/code&gt; and started to observe &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LiveData&lt;/code&gt; objects.&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/Chromicle/facff74cdba76330c8c70fb768d6eb88.js&quot;&gt;&lt;/script&gt;
 
 &lt;h2 id=&quot;creating-recyclerview-adapter&quot;&gt;Creating RecyclerView Adapter&lt;/h2&gt;
 
-&lt;p&gt;In recyclerView adapter, we have only observed &lt;code class=&quot;highlighter-rouge&quot;&gt;List&amp;lt;Repo&amp;gt;&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;LiveData&lt;/code&gt; and bind them to the &lt;code class=&quot;highlighter-rouge&quot;&gt;recyclerView&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In recyclerView adapter, we have only observed &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;List&amp;lt;Repo&amp;gt;&lt;/code&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;LiveData&lt;/code&gt; and bind them to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;recyclerView&lt;/code&gt;.&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/Chromicle/429b1ff54c460f4f740a0053cc8f5500.js&quot;&gt;&lt;/script&gt;
 
@@ -84,7 +84,7 @@ MVP contains slightly more code. For instance, my Presenter extended a common ba
   &lt;li&gt;While there is no one-size-fits-all when it comes to Android apps, for the reasons outlined above, MVVM architecture seems to have an advantage over MVP. While both are great at keeping business logic away from the View, abstracting data layer and making the code highly testable and maintainable, going forward, whenever I architect a new Android application, I will likely consider MVVM first&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Thanks a lot for reading, Happy coding :)&lt;/p&gt;</content><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><category term="Android," /><category term="MVVM" /><summary type="html">I used to work with MVP pattern until now. However, when Google released nice-to-use components like the ViewModel along with the Android Jetpack, I have tried to work with MVVM pattern. In this article, we will see how can we use the MVVM pattern with Retrofit, RxJava, and Dagger 2.</summary></entry><entry><title type="html">Firebase Android — Realtime Database</title><link href="http://localhost:4000/blog/2019-08-18-FirebaseRealtimeDatabase/" rel="alternate" type="text/html" title="Firebase Android — Realtime Database" /><published>2019-08-18T00:00:00+05:30</published><updated>2019-08-18T00:00:00+05:30</updated><id>http://localhost:4000/blog/FirebaseRealtimeDatabase</id><content type="html" xml:base="http://localhost:4000/blog/2019-08-18-FirebaseRealtimeDatabase/">&lt;p&gt;Hello everyone, From the past some of the projects I used firebase very often so, I think it is really helpfull if I share how to use Firebase Realtime Database to build a realtime database for our app.&lt;/p&gt;
+&lt;p&gt;Thanks a lot for reading, Happy coding :)&lt;/p&gt;</content><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><category term="blog" /><category term="Android," /><category term="MVVM" /><summary type="html">I used to work with MVP pattern until now. However, when Google released nice-to-use components like the ViewModel along with the Android Jetpack, I have tried to work with MVVM pattern. In this article, we will see how can we use the MVVM pattern with Retrofit, RxJava, and Dagger 2.</summary></entry><entry><title type="html">Firebase Android — Realtime Database</title><link href="/blog/2019-08-18-FirebaseRealtimeDatabase/" rel="alternate" type="text/html" title="Firebase Android — Realtime Database" /><published>2019-08-18T00:00:00+05:30</published><updated>2020-01-18T19:45:21+05:30</updated><id>/blog/FirebaseRealtimeDatabase</id><content type="html" xml:base="/blog/2019-08-18-FirebaseRealtimeDatabase/">&lt;p&gt;Hello everyone, From the past some of the projects I used firebase very often so, I think it is really helpfull if I share how to use Firebase Realtime Database to build a realtime database for our app.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-firebase-realtime-database&quot;&gt;What is Firebase Realtime Database&lt;/h2&gt;
 
@@ -94,24 +94,24 @@ MVP contains slightly more code. For instance, my Presenter extended a common ba
 
 &lt;p&gt;&lt;strong&gt;Offline Support:&lt;/strong&gt; with firebase you can do automatic sync when the app goes back online, so don’t need to worry about offline status. You can let your users add, edit and remove data when they’re offline, and the firebase will take care of syncing everything properly when the app is back online.&lt;/p&gt;
 
-&lt;p&gt;Firebase now offers another cloud hosted database called &lt;a href=&quot;https://firebase.google.com/docs/firestore/&quot;&gt;Cloud Firestore&lt;/a&gt;. According to Firebase, this new solution to improve on top of Firebase Realtime Database, and it offers a more cool data models, and also has faster queries and can scales better, and our app is quite small, You can check a list of the main differences between both in the &lt;code class=&quot;highlighter-rouge&quot;&gt;[Choose a Database](https://firebase.google.com/docs/database/rtdb-vs-firestore)&lt;/code&gt; section on the Firebase docs website.&lt;/p&gt;
+&lt;p&gt;Firebase now offers another cloud hosted database called &lt;a href=&quot;https://firebase.google.com/docs/firestore/&quot;&gt;Cloud Firestore&lt;/a&gt;. According to Firebase, this new solution to improve on top of Firebase Realtime Database, and it offers a more cool data models, and also has faster queries and can scales better, and our app is quite small, You can check a list of the main differences between both in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[Choose a Database](https://firebase.google.com/docs/database/rtdb-vs-firestore)&lt;/code&gt; section on the Firebase docs website.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;h2 id=&quot;time-to-build-something&quot;&gt;Time to build something&lt;/h2&gt;
 
-&lt;p&gt;The plan is to build something I done with my past project &lt;a href=&quot;https://github.com/amfoss/TempleApp&quot;&gt;TempleApp&lt;/a&gt; so, I am explainig with I done😄. As usual, let’s start with adding dependencies and add the following line to our application level &lt;code class=&quot;highlighter-rouge&quot;&gt;build.gradle&lt;/code&gt; script:&lt;/p&gt;
+&lt;p&gt;The plan is to build something I done with my past project &lt;a href=&quot;https://github.com/amfoss/TempleApp&quot;&gt;TempleApp&lt;/a&gt; so, I am explainig with I done😄. As usual, let’s start with adding dependencies and add the following line to our application level &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.gradle&lt;/code&gt; script:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;implementation ‘com.google.firebase:firebase-database:16.0.1’
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;implementation ‘com.google.firebase:firebase-database:16.0.1’
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Then, we’re going to create a simple data class to represent the data we want to save for the user, let’s use something every one likes as an example:&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/Chromicle/4a64a7024a41bf108b600a908a26e104.js&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;Cool, we have our &lt;code class=&quot;highlighter-rouge&quot;&gt;PoojsUtils&lt;/code&gt; data class and now we just need to create our simple UI to allow the user to store and visualise his poojas, we’ll look at it later when writing data to our realtime database.&lt;/p&gt;
+&lt;p&gt;Cool, we have our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PoojsUtils&lt;/code&gt; data class and now we just need to create our simple UI to allow the user to store and visualise his poojas, we’ll look at it later when writing data to our realtime database.&lt;/p&gt;
 
-&lt;p&gt;So, for the UI, we’ll add a button in our &lt;code class=&quot;highlighter-rouge&quot;&gt;MainActivity&lt;/code&gt; to open a new &lt;code class=&quot;highlighter-rouge&quot;&gt;AddPoojaActivity&lt;/code&gt; and in here the top part will be a basic form for the user to add his games, and the bottom section will be a recycler view to list those&lt;/p&gt;
+&lt;p&gt;So, for the UI, we’ll add a button in our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MainActivity&lt;/code&gt; to open a new &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AddPoojaActivity&lt;/code&gt; and in here the top part will be a basic form for the user to add his games, and the bottom section will be a recycler view to list those&lt;/p&gt;
 
 &lt;table&gt;
      &lt;tr&gt;
@@ -133,9 +133,9 @@ we’ll pick option 2 with public read and write access. We’ll have a shared d
 
 &lt;p&gt;Now that we have our database created let’s go ahead and see how we can write data there using the form in our AddPoojaActivity:&lt;/p&gt;
 
-&lt;p&gt;we will focus in the important part. The only important piece missing is how to get our &lt;code class=&quot;highlighter-rouge&quot;&gt;databaseReference&lt;/code&gt; but it’s as easy as this:&lt;/p&gt;
+&lt;p&gt;we will focus in the important part. The only important piece missing is how to get our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;databaseReference&lt;/code&gt; but it’s as easy as this:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;databaseReference = FirebaseDatabase.getInstance_()_._reference_
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;databaseReference = FirebaseDatabase.getInstance_()_._reference_
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;With our database reference sorted, let’s analyse the rest of the code:&lt;/p&gt;
@@ -143,8 +143,8 @@ we’ll pick option 2 with public read and write access. We’ll have a shared d
 &lt;script src=&quot;https://gist.github.com/Chromicle/d08733531e54a2a69c8ea3a8329d5234.js&quot;&gt;&lt;/script&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;By using &lt;code class=&quot;highlighter-rouge&quot;&gt;push()&lt;/code&gt; we’re basically adding an element on the &lt;code class=&quot;highlighter-rouge&quot;&gt;PoojaUtils&lt;/code&gt; table on Firebase. The first time we do this, if the table doesn’t exist it just gets created. Firebase adds an element and automatically generates and return the ID for that element that we can use later to update the value.&lt;/li&gt;
-  &lt;li&gt;we basically create a &lt;code class=&quot;highlighter-rouge&quot;&gt;poojaUtils&lt;/code&gt; instance to whatever was submitted in the form, easy right.&lt;/li&gt;
+  &lt;li&gt;By using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;push()&lt;/code&gt; we’re basically adding an element on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PoojaUtils&lt;/code&gt; table on Firebase. The first time we do this, if the table doesn’t exist it just gets created. Firebase adds an element and automatically generates and return the ID for that element that we can use later to update the value.&lt;/li&gt;
+  &lt;li&gt;we basically create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;poojaUtils&lt;/code&gt; instance to whatever was submitted in the form, easy right.&lt;/li&gt;
   &lt;li&gt;we just tell the adapter we added a new game to the list and that’s it we’re done.&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -159,16 +159,16 @@ we’ll pick option 2 with public read and write access. We’ll have a shared d
 &lt;p&gt;The code is quite self explanatory, but as with the reading part, let’s analyse it:&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;we add a &lt;code class=&quot;highlighter-rouge&quot;&gt;ValueEventListener&lt;/code&gt; to our table reference and implement the required methods, so every time there’s a change on the &lt;code class=&quot;highlighter-rouge&quot;&gt;poojaUtils&lt;/code&gt; table in the database we get notified and receive a data snapshot of the database table.&lt;/li&gt;
+  &lt;li&gt;we add a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ValueEventListener&lt;/code&gt; to our table reference and implement the required methods, so every time there’s a change on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;poojaUtils&lt;/code&gt; table in the database we get notified and receive a data snapshot of the database table.&lt;/li&gt;
   &lt;li&gt;we’re just showing a Toast in case of error when trying to read from the database.&lt;/li&gt;
   &lt;li&gt;we just extract the actual list of games from the DataSnapshot object and pass it to our adapter. If we implement a diff callback (which I didn’t 😃)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;And if writing was easy, reading is even more, right? This is all we need to do to be constantly listening for events on the database. In a more realistic example we should keep a reference to our &lt;code class=&quot;highlighter-rouge&quot;&gt;ValueEventListener&lt;/code&gt; so we can unsubscribe when required.&lt;/p&gt;
+&lt;p&gt;And if writing was easy, reading is even more, right? This is all we need to do to be constantly listening for events on the database. In a more realistic example we should keep a reference to our &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ValueEventListener&lt;/code&gt; so we can unsubscribe when required.&lt;/p&gt;
 
-&lt;p&gt;If we just want to read the data once and not get all the update events we can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;addListenerForSingleValueEvent()&lt;/code&gt; function instead. When dealing with lists like in our case there’s also an option to get notified of events on a single child on the database table. Not relevant for our example, but if we want that we can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;addChildEventListener()&lt;/code&gt; function and pass an instance of &lt;code class=&quot;highlighter-rouge&quot;&gt;ChildEventListener&lt;/code&gt; that will give us more events.&lt;/p&gt;
+&lt;p&gt;If we just want to read the data once and not get all the update events we can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;addListenerForSingleValueEvent()&lt;/code&gt; function instead. When dealing with lists like in our case there’s also an option to get notified of events on a single child on the database table. Not relevant for our example, but if we want that we can use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;addChildEventListener()&lt;/code&gt; function and pass an instance of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ChildEventListener&lt;/code&gt; that will give us more events.&lt;/p&gt;
 
-&lt;p&gt;You can get more reference at &lt;a href=&quot;https://github.com/amfoss/TempleApp&quot;&gt;sourcecode&lt;/a&gt;&lt;/p&gt;</content><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><summary type="html">Hello everyone, From the past some of the projects I used firebase very often so, I think it is really helpfull if I share how to use Firebase Realtime Database to build a realtime database for our app.</summary></entry><entry><title type="html">How to Drag or swipe in RecyclerView</title><link href="http://localhost:4000/blog/2019-07-16-How-to-Drag-or-swipe-in-RecyclerView/" rel="alternate" type="text/html" title="How to Drag or swipe in RecyclerView" /><published>2019-07-16T00:00:00+05:30</published><updated>2019-07-16T00:00:00+05:30</updated><id>http://localhost:4000/blog/How-to-Drag-or-swipe-in-RecyclerView</id><content type="html" xml:base="http://localhost:4000/blog/2019-07-16-How-to-Drag-or-swipe-in-RecyclerView/">&lt;p&gt;&lt;img src=&quot;https://chromicle.files.wordpress.com/2019/05/gestures-tap-swipe.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;You can get more reference at &lt;a href=&quot;https://github.com/amfoss/TempleApp&quot;&gt;sourcecode&lt;/a&gt;&lt;/p&gt;</content><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><category term="blog" /><summary type="html">Hello everyone, From the past some of the projects I used firebase very often so, I think it is really helpfull if I share how to use Firebase Realtime Database to build a realtime database for our app.</summary></entry><entry><title type="html">How to Drag or swipe in RecyclerView</title><link href="/blog/2019-07-16-How-to-Drag-or-swipe-in-RecyclerView/" rel="alternate" type="text/html" title="How to Drag or swipe in RecyclerView" /><published>2019-07-16T00:00:00+05:30</published><updated>2020-01-11T15:45:05+05:30</updated><id>/blog/How-to-Drag-or-swipe-in-RecyclerView</id><content type="html" xml:base="/blog/2019-07-16-How-to-Drag-or-swipe-in-RecyclerView/">&lt;p&gt;&lt;img src=&quot;https://chromicle.files.wordpress.com/2019/05/gestures-tap-swipe.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Drag or swipe&lt;/p&gt;
 
@@ -180,7 +180,7 @@ we’ll pick option 2 with public read and write access. We’ll have a shared d
 
 &lt;p&gt;First thing we need is a basic RecyclerView setup. If you haven’t already, update your build.gradle to include the RecyclerView dependency.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;compile 'com.android.support:recyclerview-v7:22.2.0'&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;compile 'com.android.support:recyclerview-v7:22.2.0'&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;by-itemtouchhelper-and-itemtouchhelpercallback&quot;&gt;BY ItemTouchHelper and ItemTouchHelper.Callback&lt;/h3&gt;
 
@@ -188,18 +188,18 @@ we’ll pick option 2 with public read and write access. We’ll have a shared d
 
 &lt;p&gt;The main callbacks that we must override to enable basic drag &amp;amp; drop and swipe-to-dismiss are:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;getMovementFlags(RecyclerView, ViewHolder) 
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;getMovementFlags(RecyclerView, ViewHolder) 
 onMove(RecyclerView, ViewHolder, ViewHolder) 
 onSwiped(ViewHolder, int)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;We can also use a some of helpers:&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;isLongPressDragEnabled()
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;isLongPressDragEnabled()
 isItemViewSwipeEnabled()
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;We’ll go through them one by one.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@Override  
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@Override  
 public int getMovementFlags(RecyclerView recyclerView,   
         RecyclerView.ViewHolder viewHolder) {  
     int dragFlags = ItemTouchHelper.UP | ItemTouchHelper.DOWN;  
@@ -210,14 +210,14 @@ public int getMovementFlags(RecyclerView recyclerView,
 
 &lt;p&gt;It will help you get the direction. You must override &lt;strong&gt;getMovementFlags&lt;/strong&gt;() to specify which directions of drags and swipes. Use the helper &lt;strong&gt;ItemTouchHelper.makeMovementFlags(int, int)&lt;/strong&gt; to build the returned flags. We’re enabling dragging and swiping in both directions here.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@Override  
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@Override  
 public boolean isLongPressDragEnabled() {  
     return true;  
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;ItemTouchHelper can be used for drag &lt;em&gt;without&lt;/em&gt; swipe (or vice versa), so you must designate exactly what you wish to support. Implementations should return true from &lt;strong&gt;isLongPressDragEnabled()&lt;/strong&gt; will detect when we long press the any item in recyclerView&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@Override  
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@Override  
 public boolean isItemViewSwipeEnabled() {  
     return true;  
 }
@@ -225,7 +225,7 @@ public boolean isItemViewSwipeEnabled() {
 &lt;p&gt;to enable swiping we have to return true from &lt;strong&gt;isItemViewSwipeEnabled&lt;/strong&gt;().&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;onMove()&lt;/strong&gt; and &lt;strong&gt;onSwiped()&lt;/strong&gt; are used to notify anything of updating data. So first we’ll create an interface that allows us to pass these event callbacks back.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public interface ItemTouchHelperAdapter {  
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public interface ItemTouchHelperAdapter {  
   
     void onItemMove(int fromPosition, int toPosition);  
   
@@ -233,7 +233,7 @@ public boolean isItemViewSwipeEnabled() {
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;ItemTouchHelper.java&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public class RecyclerListAdapter extends   
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public class RecyclerListAdapter extends   
         RecyclerView.Adapter&amp;lt;ItemViewHolder&amp;gt;   
         implements ItemTouchHelperAdapter {
 
@@ -263,7 +263,7 @@ public boolean onItemMove(int fromPosition, int toPosition) {
 
 &lt;p&gt;Now we can go back to building our &lt;strong&gt;SimpleItemTouchHelperCallback&lt;/strong&gt; as we still must override onMove() and onSwiped(). First add a constructor and a field for the Adapter:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;private final ItemTouchHelperAdapter mAdapter;  
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;private final ItemTouchHelperAdapter mAdapter;  
   
 public SimpleItemTouchHelperCallback(  
         ItemTouchHelperAdapter adapter) {  
@@ -272,7 +272,7 @@ public SimpleItemTouchHelperCallback(
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Then override the remaining events and notify the adapter:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@Override  
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@Override  
 public boolean **onMove**(RecyclerView recyclerView,   
         RecyclerView.ViewHolder viewHolder,   
         RecyclerView.ViewHolder target) {
@@ -290,13 +290,13 @@ public void onSwiped(RecyclerView.ViewHolder viewHolder,
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;With our Callback, we can create our ItemTouchHelper and call &lt;strong&gt;attachToRecyclerView(RecyclerView):&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ItemTouchHelper.Callback callback =   
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ItemTouchHelper.Callback callback =   
 new SimpleItemTouchHelperCallback(adapter);  
 ItemTouchHelper touchHelper= new ItemTouchHelper(callback);  
 touchHelper.attachToRecyclerView(recyclerView);
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Thanks Happy coding :)&lt;/p&gt;</content><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><summary type="html"></summary></entry><entry><title type="html">Day out at munroe</title><link href="http://localhost:4000/blog/2019-06-30-day-out-at-munroe/" rel="alternate" type="text/html" title="Day out at munroe" /><published>2019-06-30T00:00:00+05:30</published><updated>2019-06-30T00:00:00+05:30</updated><id>http://localhost:4000/blog/day-out-at-munroe</id><content type="html" xml:base="http://localhost:4000/blog/2019-06-30-day-out-at-munroe/">&lt;p&gt;Recently the amFOSS club members planned to keep a day off and plan for a trip. Upon Vipin Sir’s suggestion, six of us went to Munroe Island and spent a whole day there. I would like to share the experience of the trip in this blog post.&lt;/p&gt;
+&lt;p&gt;Thanks Happy coding :)&lt;/p&gt;</content><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><category term="blog" /><summary type="html"></summary></entry><entry><title type="html">Day out at munroe</title><link href="/blog/2019-06-30-day-out-at-munroe/" rel="alternate" type="text/html" title="Day out at munroe" /><published>2019-06-30T00:00:00+05:30</published><updated>2019-12-31T19:48:37+05:30</updated><id>/blog/day-out-at-munroe</id><content type="html" xml:base="/blog/2019-06-30-day-out-at-munroe/">&lt;p&gt;Recently the amFOSS club members planned to keep a day off and plan for a trip. Upon Vipin Sir’s suggestion, six of us went to Munroe Island and spent a whole day there. I would like to share the experience of the trip in this blog post.&lt;/p&gt;
 
 &lt;p&gt;Munroe Island or Mundrothuruthu is an inland island group formed at the confluence of the backwaters of the Ashtamudi Lake and Kallada River. We went to the Island by taking a train from Oachira to Munroturuttu railway station. Just costed 10 rupees, very cheap I know. 🙊&lt;/p&gt;
 
@@ -365,4 +365,4 @@ touchHelper.attachToRecyclerView(recyclerView);
 	&lt;img height=&quot;200&quot; width=&quot;300&quot; src=&quot;/assets/day-out-at-munroe/38.jpg&quot; /&gt;
 &lt;/div&gt;
 
-&lt;p&gt;After two hours of boating over there, we returned back to the place had lunch. We had snacks over there and the etta dropped us at the railway station and we headed back to Amritapuri, with the beautiful experiences of the day at Munroe. Next on list - Thanjavur, Gokarna and many more. 😁&lt;/p&gt;</content><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><summary type="html">Recently the amFOSS club members planned to keep a day off and plan for a trip. Upon Vipin Sir’s suggestion, six of us went to Munroe Island and spent a whole day there. I would like to share the experience of the trip in this blog post.</summary></entry></feed>
+&lt;p&gt;After two hours of boating over there, we returned back to the place had lunch. We had snacks over there and the etta dropped us at the railway station and we headed back to Amritapuri, with the beautiful experiences of the day at Munroe. Next on list - Thanjavur, Gokarna and many more. 😁&lt;/p&gt;</content><author><name>Ajay prabhakar</name><email>ajayprabhakar369@gmail.com</email></author><category term="blog" /><summary type="html">Recently the amFOSS club members planned to keep a day off and plan for a trip. Upon Vipin Sir’s suggestion, six of us went to Munroe Island and spent a whole day there. I would like to share the experience of the trip in this blog post.</summary></entry></feed>

@@ -1,9 +1,12 @@
 ---
-layout: default
+layout: project
 title: 'Codeforces'
-subtitle: 'Codeforces is an unofficial Android version of Codeforces web. This app is made to integrate all the available Codeforces API into this app. This way the users can have a mobile version of their handle and can get key information on the go.'
+caption: 'Codeforces is an unofficial Android version of Codeforces web. This app is made to integrate all the available Codeforces API into this app. This way the users can have a mobile version of their handle and can get key information on the go.'
 date: 2018-06-30 00:00:00
-featured_image: '/images/demo/demo-square.jpg'
+screenshot: /assets/projects/codeforces.jpg
+links:
+  - title: Github Link
+    url: https://github.com/Chromicle/Codeforces
 ---
 
 

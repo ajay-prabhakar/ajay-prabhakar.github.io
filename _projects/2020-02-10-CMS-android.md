@@ -1,9 +1,12 @@
 ---
-layout: default
+layout: project
 title: 'CMS Mobile'
-subtitle: 'cms-mobile is a flutter application for the amFOSS CMS. Using the application, club members can login into the CMS and view club attendence, their profile and status updates.'
+caption: 'cms-mobile is a flutter application for the amFOSS CMS. Using the application, club members can login into the CMS and view club attendence, their profile and status updates.'
 date: 2020-02-10 00:00:00
-featured_image: '/images/demo/demo-square.jpg'
+screenshot: /assets/projects/cms.jpg
+links:
+  - title: Github Link
+    url: https://github.com/amfoss/cms-mobile
 ---
 
 # CMS mobile

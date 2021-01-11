@@ -1,0 +1,130 @@
+I"_<p><img src="https://chromicle.files.wordpress.com/2019/05/gestures-tap-swipe.png" alt="" /></p>
+
+<p>Drag or swipe</p>
+
+<p>There’s actually a <strong>really simple</strong> way to add these features to RecyclerView. It only requires one class, and it’s already part of the Android Support Library called “ItemTouchHelper”</p>
+
+<p>By the help of ItemTouchHelper we can add the swipe and drag features by adding sub class. It’s a subclass of <a href="https://developer.android.com/reference/android/support/v7/widget/RecyclerView.ItemDecoration.html">RecyclerView.ItemDecoration</a>, I’ll demonstrate a simple implementation of ItemTouchHelper.</p>
+
+<h3 id="setting-up">Setting up</h3>
+
+<p>First thing we need is a basic RecyclerView setup. If you haven’t already, update your build.gradle to include the RecyclerView dependency.</p>
+
+<p><code class="language-plaintext highlighter-rouge">compile 'com.android.support:recyclerview-v7:22.2.0'</code></p>
+
+<h3 id="by-itemtouchhelper-and-itemtouchhelpercallback">BY ItemTouchHelper and ItemTouchHelper.Callback</h3>
+
+<p>In order to use ItemTouchHelper, you’ll create an <a href="https://developer.android.com/reference/android/support/v7/widget/helper/ItemTouchHelper.Callback.html">ItemTouchHelper.Callback</a>. This is the interface that allows you to listen for “move” and “swipe” events. It’s also where you are able to control the state of the view selected, and override the default animations. There’s a helper class that you can use if you want a basic implementation, <a href="https://developer.android.com/reference/android/support/v7/widget/helper/ItemTouchHelper.SimpleCallback.html">SimpleCallback</a>,</p>
+
+<p>The main callbacks that we must override to enable basic drag &amp; drop and swipe-to-dismiss are:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>getMovementFlags(RecyclerView, ViewHolder) 
+onMove(RecyclerView, ViewHolder, ViewHolder) 
+onSwiped(ViewHolder, int)
+</code></pre></div></div>
+
+<p><strong>We can also use a some of helpers:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>isLongPressDragEnabled()
+isItemViewSwipeEnabled()
+</code></pre></div></div>
+<p>We’ll go through them one by one.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@Override  
+public int getMovementFlags(RecyclerView recyclerView,   
+        RecyclerView.ViewHolder viewHolder) {  
+    int dragFlags = ItemTouchHelper.UP | ItemTouchHelper.DOWN;  
+    int swipeFlags = ItemTouchHelper.START | ItemTouchHelper.END;  
+    return makeMovementFlags(dragFlags, swipeFlags);  
+}
+</code></pre></div></div>
+
+<p>It will help you get the direction. You must override <strong>getMovementFlags</strong>() to specify which directions of drags and swipes. Use the helper <strong>ItemTouchHelper.makeMovementFlags(int, int)</strong> to build the returned flags. We’re enabling dragging and swiping in both directions here.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@Override  
+public boolean isLongPressDragEnabled() {  
+    return true;  
+}
+</code></pre></div></div>
+<p>ItemTouchHelper can be used for drag <em>without</em> swipe (or vice versa), so you must designate exactly what you wish to support. Implementations should return true from <strong>isLongPressDragEnabled()</strong> will detect when we long press the any item in recyclerView</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@Override  
+public boolean isItemViewSwipeEnabled() {  
+    return true;  
+}
+</code></pre></div></div>
+<p>to enable swiping we have to return true from <strong>isItemViewSwipeEnabled</strong>().</p>
+
+<p><strong>onMove()</strong> and <strong>onSwiped()</strong> are used to notify anything of updating data. So first we’ll create an interface that allows us to pass these event callbacks back.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public interface ItemTouchHelperAdapter {  
+  
+    void onItemMove(int fromPosition, int toPosition);  
+  
+    void onItemDismiss(int position);  
+}
+</code></pre></div></div>
+<p><strong>ItemTouchHelper.java</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public class RecyclerListAdapter extends   
+        RecyclerView.Adapter&lt;ItemViewHolder&gt;   
+        implements ItemTouchHelperAdapter {
+
+@Override  
+public void onItemDismiss(int position) {  
+    mItems.remove(position);  
+    notifyItemRemoved(position);  
+}  
+  
+@Override  
+public boolean onItemMove(int fromPosition, int toPosition) {  
+    if (fromPosition &lt; toPosition) {  
+        for (int i = fromPosition; i &lt; toPosition; i++) {  
+            Collections.swap(mItems, i, i + 1);  
+        }  
+    } else {  
+        for (int i = fromPosition; i &gt; toPosition; i--) {  
+            Collections.swap(mItems, i, i - 1);  
+        }  
+    }  
+    notifyItemMoved(fromPosition, toPosition);  
+    return true;  
+}
+</code></pre></div></div>
+
+<p>It’s very important to call <strong>notifyItemRemoved()</strong> and <strong>notifyItemMoved()</strong> so the Adapter can identify the changes.</p>
+
+<p>Now we can go back to building our <strong>SimpleItemTouchHelperCallback</strong> as we still must override onMove() and onSwiped(). First add a constructor and a field for the Adapter:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>private final ItemTouchHelperAdapter mAdapter;  
+  
+public SimpleItemTouchHelperCallback(  
+        ItemTouchHelperAdapter adapter) {  
+    mAdapter = adapter;  
+}
+</code></pre></div></div>
+<p>Then override the remaining events and notify the adapter:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@Override  
+public boolean **onMove**(RecyclerView recyclerView,   
+        RecyclerView.ViewHolder viewHolder,   
+        RecyclerView.ViewHolder target) {
+
+mAdapter.onItemMove(viewHolder.getAdapterPosition(),   
+            target.getAdapterPosition());
+
+    return true;  
+}
+
+@Override  
+public void onSwiped(RecyclerView.ViewHolder viewHolder,   
+        int direction) {  
+    mAdapter.onItemDismiss(viewHolder.getAdapterPosition());  
+}
+</code></pre></div></div>
+<p>With our Callback, we can create our ItemTouchHelper and call <strong>attachToRecyclerView(RecyclerView):</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ItemTouchHelper.Callback callback =   
+new SimpleItemTouchHelperCallback(adapter);  
+ItemTouchHelper touchHelper= new ItemTouchHelper(callback);  
+touchHelper.attachToRecyclerView(recyclerView);
+</code></pre></div></div>
+
+<p>Thanks Happy coding :)</p>
+:ET
