@@ -1,0 +1,48 @@
+I"¿<p>Lorax is a Flutter application that helps people to be motivated to grow plants and trees. The user could track the progress of the growth of the tree, set reminders. gamify the process of planting trees and using social media platform to challenge peers on joining the movement todecrease carbon footprint of the world.</p>
+
+<h2 id="tech-stack">Tech Stack</h2>
+
+<p>Flutter
+Firebase SDK</p>
+
+<h2 id="boilerplate-features">Boilerplate Features:</h2>
+
+<ul>
+  <li>Login</li>
+  <li>Database</li>
+  <li>user notification</li>
+</ul>
+
+<h3 id="folder-structure">Folder Structure</h3>
+<p>Here is the core folder structure which flutter provides.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Lorax/
+|- .github
+|- android
+|- assests
+|- ios
+|- lib
+|- test
+|- web
+</code></pre></div></div>
+
+<h2 id="setting-up-your-development-environment">Setting up your development environment</h2>
+
+<p><strong>Step 1:</strong></p>
+
+<p>Fork and clone this repo locally. At command line:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/YOUR-GITHUB-USERNAME/lorax.git
+</code></pre></div></div>
+
+<p>Set the upstream remote</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add upstream https://github.com/ashwinkey04/lorax.git
+</code></pre></div></div>
+
+<p><strong>Step 2:</strong></p>
+
+<p>Go to project root and execute the following command in console to get the required dependencies:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>flutter pub get
+</code></pre></div></div>
+:ET
