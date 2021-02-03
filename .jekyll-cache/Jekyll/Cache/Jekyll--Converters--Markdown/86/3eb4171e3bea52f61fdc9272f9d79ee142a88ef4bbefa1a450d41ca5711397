@@ -1,0 +1,32 @@
+I"<p><a href="https://t.me/SaveTheEarthDeveloperChat">Telegram</a></p>
+
+<p>We are saving the Earth. Yay!</p>
+
+<h2 id="satellite-technology-stack">:satellite: Technology Stack</h2>
+
+<p>The project is built using the following technology -</p>
+
+<ol>
+  <li>Android Application Developement in Java using the latest version of Android Studio</li>
+  <li><code class="language-plaintext highlighter-rouge">Git</code> as a <code class="language-plaintext highlighter-rouge">Version Control System</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Java</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Firebase ML Kit</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Google fit api</code></li>
+</ol>
+
+<h2 id="rocket-how-to-build-the-project">:rocket: How to build the project?</h2>
+
+<p>Please follow the below mentioned points to build the project -</p>
+
+<ol>
+  <li>Install Java Development Kit (preferably JDK 8).</li>
+  <li>Install the latest version of Android Studio (Preferably Android Studio 5.0+).</li>
+  <li>Download the project and import it to Android Studio</li>
+  <li>Click on the build button and wait for the gradle to finish building</li>
+  <li>Click on the play button and select you’r android device</li>
+</ol>
+
+<p>You have the app running :sunglasses:</p>
+
+<h3 id="astonished-if-that-feels-like-too-much-work-click-here-to-download-the-apk-and-install-it-to-your-android-phone">:astonished: If that feels like too much work <a href="https://drive.google.com/file/d/19IcSP1h7L01xReBvOKihTy1zpEnMiuOF/view?usp=sharing">click here</a> to download the apk and install it to your Android phone</h3>
+:ET
