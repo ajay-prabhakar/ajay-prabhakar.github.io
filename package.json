@@ -1,72 +1,46 @@
 {
-  "name": "hydejack",
-  "version": "8.1.1",
-  "description": "The best Jekyll theme by a mile",
-  "scripts": {
-    "clean": "rm -f assets/js/hydejack-*.js",
-    "test": "exit 0",
-    "format": "prettier --write \"_js/src/**/*.js\"",
-    "build": "npm run build:js & npm run build:css & wait",
-    "build:js": "webpack --mode production",
-    "build:css": ".scripts/build-css.js",
-    "watch": "npm run watch:js & npm run watch:css",
-    "watch:js": "webpack --watch --mode development --progress --colors",
-    "watch:css": "npm run build:css && onchange '_sass/**/*.scss' -e '_sass/**/__*/*' -- npm run build:css '{{changed}}'",
-    "serve": "bundle exec jekyll serve --port=$npm_package_config_port --host=0.0.0.0",
-    "dev": "npm run watch & npm run serve",
-    "prepare": "npm run test && npm run clean && npm run build",
-    "resume": "json2yaml _data/resume.json > _data/resume.yml",
-    "version": "npm run format && npm run build && git add ."
-  },
-  "config": {
-    "port": 4000
-  },
-  "author": "Florian Klampfer <mail@qwtel.com> (https://qwtel.com/)",
-  "license": "GPL-3.0",
-  "private": true,
-  "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "babel-loader": "^8.0.0",
-    "color": "^3.0.0",
-    "dedent": "^0.7.0",
-    "json2yaml": "^1.1.0",
-    "onchange": "^4.1.0",
-    "prettier": "^1.14.2",
-    "re-template-tag": "^2.0.1",
-    "webpack": "^4.17.1",
-    "webpack-cli": "^3.1.0",
-    "webpack-merge": "^4.1.4",
-    "yargs": "^12.0.1"
-  },
-  "dependencies": {
-    "@webcomponents/webcomponentsjs": "2.0.4",
-    "core-js": "^2.5.7",
-    "elem-dataset": "^1.1.1",
-    "hy-drawer": "^1.0.0-pre.25",
-    "hy-img": "^1.0.0-hydejack.10",
-    "hy-push-state": "^1.0.0-pre.25",
-    "intersection-observer": "^0.5.0",
-    "resize-observer-polyfill": "^1.5.0",
-    "rxjs": "^6.3.0",
-    "smoothscroll-polyfill": "^0.4.3",
-    "web-animations-js": "^2.3.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/qwtel/hydejack.git"
-  },
-  "bugs": {
-    "url": "https://github.com/qwtel/hydejack/issues"
-  },
-  "homepage": "https://hydejack.com/",
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
-  },
-  "prettier": {
-    "printWidth": 100,
-    "trailingComma": "es5"
-  }
+	"name": "website",
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "svelte-kit dev",
+		"build": "svelte-kit build",
+		"preview": "svelte-kit preview",
+		"check": "svelte-check --compiler-warnings \"unused-export-let:ignore\"",
+		"lint": "prettier --check .",
+		"format": "prettier --write ."
+	},
+	"dependencies": {
+		"@mdi/js": "^6.5.95",
+		"common-tags": "^1.8.0",
+		"p-map": "^5.3.0"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-vercel": "next",
+		"@sveltejs/kit": "next",
+		"@types/common-tags": "^1.8.0",
+		"@types/node": "^17.0.5",
+		"autoprefixer": "^10.2.4",
+		"hastscript": "^7.0.0",
+		"mdsvex": "^0.9.6",
+		"postcss": "^8.2.6",
+		"postcss-load-config": "^3.0.1",
+		"postcss-nested": "^5.0.5",
+		"postcss-pseudo-class-any-link": "^7.0.1",
+		"postcss-pseudo-is": "^0.3.0",
+		"prettier": "^2.2.1",
+		"prettier-plugin-svelte": "^2.2.0",
+		"rehype-add-classes": "^1.0.0",
+		"rehype-autolink-headings": "^6.1.0",
+		"rehype-slug": "^5.0.0",
+		"rehype-urls": "^1.1.1",
+		"remark-abbr": "^1.4.1",
+		"svelte": "^3.44.3",
+		"svelte-check": "^2.2.4",
+		"svelte-preprocess": "^4.7.2",
+		"tslib": "^2.0.1",
+		"typescript": "^4.0.3",
+		"unist-util-visit": "^4.0.0",
+		"vite-imagetools": "^4.0.2"
+	}
 }

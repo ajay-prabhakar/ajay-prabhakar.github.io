@@ -1,4 +1,0 @@
-I"¹<p>You can customize the launch screen with your own desired assets by replacing the image files in this directory.</p>
-
-<p>You can also do it by opening your Flutter projectâ€™s Xcode project with <code class="language-plaintext highlighter-rouge">open ios/Runner.xcworkspace</code>, selecting <code class="language-plaintext highlighter-rouge">Runner/Assets.xcassets</code> in the Project Navigator and dropping in the desired images.</p>
-:ET
