@@ -3,7 +3,13 @@
   import { updateFragmentLinkTarget } from "$lib/link";
   import { onMount } from "svelte";
   import Nav from "../components/Nav.svelte";
-  import "../app.css";
+  
+  // import "../app.css";
+
+  import "../styles/reset.postcss";
+  import "../styles/global.postcss";
+  import "../styles/theme.postcss";
+  import "../styles/code.postcss";
 
   const { page } = getStores();
   let element: HTMLElement;
