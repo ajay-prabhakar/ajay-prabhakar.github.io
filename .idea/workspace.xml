@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19d49d50-6db5-409b-82b1-e251140bcad7" name="Changes" comment="[feat] add gh pages and static adapter" />
+    <list default="true" id="19d49d50-6db5-409b-82b1-e251140bcad7" name="Changes" comment="[feat] add navigation bar and navigations">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +45,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690309442717</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[feat] add navigation bar and navigations">
+      <created>1690310662156</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690310662156</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -58,6 +70,7 @@
     <MESSAGE value="[test] new website" />
     <MESSAGE value="[feat] init svelte project" />
     <MESSAGE value="[feat] add gh pages and static adapter" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] add gh pages and static adapter" />
+    <MESSAGE value="[feat] add navigation bar and navigations" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] add navigation bar and navigations" />
   </component>
 </project>
