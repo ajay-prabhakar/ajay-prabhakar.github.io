@@ -1,24 +1,38 @@
-# [website](https://furudean.com/)
+# create-svelte
 
-<img src="static/favicon.svg" 
-  width="128" 
-  height="128" 
-  align="right" 
-  alt="Logotype" />
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-Personal portfolio website. Built with Svelte + Svelte Kit.
+## Creating a project
 
-## Quick start
-
-Make sure you have at least Node.js 14 installed, then run this in your shell:
+If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
-npm install
-npm run dev
+# create a new project in the current directory
+npm create svelte@latest
+
+# create a new project in my-app
+npm create svelte@latest my-app
 ```
 
-This will install the dependencies needed, then start the development server on localhost:3000.
+## Developing
 
-## Thanks to
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-- [Feather icons, for logotype](https://feathericons.com/)
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
