@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19d49d50-6db5-409b-82b1-e251140bcad7" name="Changes" comment="[feat] init svelte project">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
-    </list>
+    <list default="true" id="19d49d50-6db5-409b-82b1-e251140bcad7" name="Changes" comment="[feat] add gh pages and static adapter" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +33,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690307661170</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[feat] add gh pages and static adapter">
+      <created>1690309442717</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690309442717</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -54,6 +57,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[test] new website" />
     <MESSAGE value="[feat] init svelte project" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] init svelte project" />
+    <MESSAGE value="[feat] add gh pages and static adapter" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] add gh pages and static adapter" />
   </component>
 </project>
