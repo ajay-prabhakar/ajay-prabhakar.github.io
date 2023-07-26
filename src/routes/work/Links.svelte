@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
   import { mdiGithub, mdiLink } from "@mdi/js";
   import Icon from "../../components/Icon.svelte";
 
@@ -67,4 +67,4 @@
 			text-decoration: underline;
 		} */
 	}
-</style>
+</style> -->
