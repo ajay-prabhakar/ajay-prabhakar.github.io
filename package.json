@@ -26,6 +26,8 @@
   },
   "type": "module",
   "dependencies": {
-    "@mdi/js": "^7.2.96"
+    "@mdi/js": "^7.2.96",
+    "p-map": "^6.0.0",
+    "path-browserify": "^1.0.1"
   }
 }

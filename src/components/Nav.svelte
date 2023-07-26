@@ -67,7 +67,7 @@
   nav {
     display: flex;
     align-items: center;
-    margin: calc(1.5 * var(--line-space)) 0;
+    padding: calc(1.5 * var(--line-space)) 0;
   }
 
   .logo :global(.svg-icon) {

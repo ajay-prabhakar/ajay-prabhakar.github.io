@@ -33,7 +33,9 @@
 />
 
 <div class="container" bind:this={element}>
-  <Nav />
+  <div class="navbar" bind:this={element}>
+    <Nav />
+  </div>
 
   <main>
     <slot />
@@ -66,5 +68,12 @@
     bottom: 0;
     left: 0;
     right: 0;
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #000000; 
   }
 </style>
