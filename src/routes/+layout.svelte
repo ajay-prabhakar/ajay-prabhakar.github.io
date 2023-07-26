@@ -4,7 +4,7 @@
   import { onMount } from "svelte";
   import Nav from "../components/Nav.svelte";
 
-  // import "../app.css";
+  import "../app.css";
 
   import "../styles/reset.postcss";
   import "../styles/global.postcss";
@@ -34,6 +34,7 @@
 
 <div class="container" bind:this={element}>
   <Nav />
+
   <main>
     <slot />
   </main>
@@ -42,7 +43,9 @@
     <p>
       Created by <a href="#" style="color: var(--color-primary-400)">Ajay</a>
       with
-      <a href="https://kit.svelte.dev/" style="color: var(--color-primary-400);">Svelte ❤️</a>
+      <a href="https://kit.svelte.dev/" style="color: var(--color-primary-400);"
+        >Svelte ❤️</a
+      >
     </p>
   </footer>
 </div>
@@ -57,7 +60,7 @@
   }
 
   .footer {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     position: absolute;
     bottom: 0;
