@@ -3,7 +3,7 @@
   import { updateFragmentLinkTarget } from "$lib/link";
   import { onMount } from "svelte";
   import Nav from "../components/Nav.svelte";
-  
+
   // import "../app.css";
 
   import "../styles/reset.postcss";
@@ -37,6 +37,14 @@
   <main>
     <slot />
   </main>
+
+  <footer class="footer">
+    <p>
+      Created by <a href="#" style="color: var(--color-primary-400)">Ajay</a>
+      with
+      <a href="https://kit.svelte.dev/" style="color: var(--color-primary-400);">Svelte ❤️</a>
+    </p>
+  </footer>
 </div>
 
 <style>
@@ -46,5 +54,14 @@
   }
   main {
     position: relative;
+  }
+
+  .footer {
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 </style>

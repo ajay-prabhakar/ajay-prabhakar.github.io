@@ -31,12 +31,12 @@
 </script>
 
 <svelte:head>
-	<title>Merilynn Bandy</title>
+	<title>Ajay Prabhakar</title>
 </svelte:head>
 
 <Meta
-	title="Merilynn Bandy"
-	description="Merilynn Bandy is a full-stack engineer based in UT, USA."
+	title="Ajay Prabhakar"
+	description="Ajay Prabhakar is a full-stack engineer in Nuclei."
 	image={new URL("/embed.png", BASE_URL).href}
 	isRoot={true}
 />
