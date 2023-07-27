@@ -1,6 +1,7 @@
 <script lang="ts">
   import { friendlyDate } from "$lib/dateTime";
   import Breadcrumbs from "../../../components/Breadcrumbs.svelte";
+  import Links from "./Links.svelte";
 
   type DateStyle = Intl.DateTimeFormatOptions["dateStyle"];
 
@@ -31,20 +32,15 @@
     <time datetime={data.meta.date}>{friendlyDate(data.meta.date)}</time>
   </div>
 
-  <!-- Tags -->
-  <div class="tags">
-    {#each data.meta.categories as category}
-      <span class="surface-4">&num;{category}</span>
-    {/each}
-  </div>
+  <Links repo={data.meta.repo} url={data.meta.url}></Links>
 
   <!-- Post -->
   <div class="prose">
-    <svelte:component this={data.content} />
+    <svelte:component this={data.content}/>
   </div>
 </article>
 
-<style lang="postcss" src="./work.postcss">
+<style lang="postcss">
   article {
     max-inline-size: var(--size-content-3);
     margin-inline: auto;

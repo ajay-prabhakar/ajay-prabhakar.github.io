@@ -7,4 +7,6 @@ export interface Project {
   date: string;
   categories: Categories[];
   published: boolean;
+  url: string;
+  repo: string;
 }

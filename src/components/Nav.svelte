@@ -72,8 +72,8 @@
 
   .logo :global(.svg-icon) {
     display: flex;
-		vertical-align: middle;
-		align-items: center;
+    vertical-align: middle;
+    align-items: center;
   }
 
   .divider {
@@ -84,14 +84,18 @@
     flex-shrink: 0;
   }
 
-  ul {
+  ul,
+  ol {
     display: flex;
+
+    margin-bottom: 0px;
   }
 
   li {
     display: block;
     position: relative;
     cursor: pointer;
+    margin-left: 0px;
 
     &:not(:last-of-type) {
       margin-right: 1.5em;

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { friendlyDate } from "$lib/dateTime";
 
-	export let data
+  export let data;
 </script>
 
 <svelte:head>

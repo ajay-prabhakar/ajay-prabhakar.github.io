@@ -54,6 +54,10 @@
 		margin-bottom: var(--line-space);
 	}
 
+	li {
+		margin-left: 0px;
+	}
+
 	ul.links li {
 		float: left;
 		margin-bottom: var(--line-space);
