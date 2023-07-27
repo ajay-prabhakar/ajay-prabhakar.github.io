@@ -44,7 +44,7 @@
   </div>
 </article>
 
-<style>
+<style lang="postcss" src="./work.postcss">
   article {
     max-inline-size: var(--size-content-3);
     margin-inline: auto;
@@ -65,17 +65,9 @@
     margin: calc(0.5 * var(--line-space)) 0;
   }
 
-  hr {
-    margin: var(--line-space) 0;
-  }
-
   .project-info {
     color: var(--color-text-300);
     line-height: 1;
     margin-bottom: var(--line-space);
-  }
-
-  .quiet {
-    color: var(--color-text-300);
   }
 </style>

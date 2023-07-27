@@ -4,7 +4,7 @@
   import { onMount } from "svelte";
   import Nav from "../components/Nav.svelte";
 
-  import "../app.css";
+  // import "../app.css";
 
   import "../styles/reset.postcss";
   import "../styles/global.postcss";

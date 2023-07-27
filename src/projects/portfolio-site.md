@@ -28,20 +28,20 @@ Implementing object detection to classify a valid sampling plantation from an in
 The project is built using the following technology -
 
 1. Android Application Developement in Java using the latest version of Android Studio
-1. ```Git``` as a ```Version Control System```
-1. ```Java```
-1. ``` Firebase ML Kit ```
-1. ``` Google fit api ```
+2. ```Git``` as a ```Version Control System```
+3. ```Java```
+4. ``` Firebase ML Kit ```
+5. ``` Google fit api ```
 
 ## :rocket: How to build the project?
 
 Please follow the below mentioned points to build the project -
 
 1.  Install Java Development Kit (preferably JDK 8).
-1.  Install the latest version of Android Studio (Preferably Android Studio 5.0+).
-1.  Download the project and import it to Android Studio
-1.  Click on the build button and wait for the gradle to finish building
-1.  Click on the play button and select you'r android device
+2.  Install the latest version of Android Studio (Preferably Android Studio 5.0+).
+3.  Download the project and import it to Android Studio
+4.  Click on the build button and wait for the gradle to finish building
+5.  Click on the play button and select you'r android device
 
 You have the app running :sunglasses:
 
