@@ -1,12 +1,18 @@
 import * as path from "path";
 import { fileURLToPath } from "url";
-import abbr from "remark-abbr";
 import urls from "rehype-urls";
 import slug from "rehype-slug";
 import autoLinkHeadings from "rehype-autolink-headings";
 import addClasses from "rehype-add-classes";
 import { visit } from "unist-util-visit";
 import { h } from "hastscript";
+import rehypeSlug from "rehype-slug";
+import remarkUnwrapImages from "remark-unwrap-images";
+import remarkToc from "remark-toc";
+import emoji from "remark-emoji";
+import remarkLintListItemBulletIndent from "remark-lint-list-item-bullet-indent";
+import remarkGfm from "remark-gfm";
+import remarkAbbr from "remark-abbr";
 
 const dirname = path.resolve(fileURLToPath(import.meta.url), "../");
 
@@ -44,7 +50,7 @@ function processUrl(url, node) {
 
     if (!url.href.startsWith("/")) {
       // is external link
-      node.properties.target = "_blank";
+      node.properties.target = "blank";
       node.properties.rel = "noopener";
     }
   }
@@ -56,12 +62,19 @@ export default {
     work: path.join(dirname, "./src/routes/work/+page.svelte"),
   },
   smartypants: true,
-  remarkPlugins: [abbr], // adds support for footnote-like abbreviations
+  remarkPlugins: [
+    emoji,
+    remarkGfm,
+    remarkAbbr,
+    remarkUnwrapImages,
+    remarkToc,
+  ], // adds support for footnote-like abbreviations
   rehypePlugins: [
     figure, // convert images into <figure> elements
     [urls, processUrl], // adds rel and target to <a> elements
     slug, // adds slug to <h1>-<h6> elements
-    [autoLinkHeadings, { behavior: "wrap" }], // adds a <a> around slugged <h1>-<h6> elements
+    rehypeSlug,
+    [(autoLinkHeadings, { behavior: "wrap" })], // adds a <a> around slugged <h1>-<h6> elements
     [addClasses, { "ul,ol": "list" }], // add classes to these elements
   ],
 };
