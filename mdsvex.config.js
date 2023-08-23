@@ -3,7 +3,6 @@ import { fileURLToPath } from "url";
 import urls from "rehype-urls";
 import slug from "rehype-slug";
 import autoLinkHeadings from "rehype-autolink-headings";
-import addClasses from "rehype-add-classes";
 import { visit } from "unist-util-visit";
 import { h } from "hastscript";
 import rehypeSlug from "rehype-slug";
@@ -70,7 +69,6 @@ export default {
     slug, // adds slug to <h1>-<h6> elements
     autoLinkHeadings, // adds a <a> around slugged <h1>-<h6> elements
     rehypeSlug,
-    addClasses,
     rehypePrism,
     rehypeCodeTitles,
   ],

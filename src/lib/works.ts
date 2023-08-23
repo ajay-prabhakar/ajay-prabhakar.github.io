@@ -1,4 +1,10 @@
-export type Categories = "sveltekit" | "svelte";
+export type Categories =
+  | "sveltekit"
+  | "svelte"
+  | "Web Development"
+  | "Open Source"
+  | "Mobile App"
+  | "Productivity";
 
 export interface Project {
   title: string;

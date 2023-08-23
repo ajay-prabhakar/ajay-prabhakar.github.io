@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19d49d50-6db5-409b-82b1-e251140bcad7" name="Changes" comment="add work postcss">
+    <list default="true" id="19d49d50-6db5-409b-82b1-e251140bcad7" name="Changes" comment="add projects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mdsvex.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/mdsvex.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/works.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/works.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projects/portfolio-site.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/Landing.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Landing.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/work/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/work/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/work/Links.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/work/[slug]/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/work/[slug]/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/work/[slug]/work.postcss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/global.postcss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/global.postcss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/svelte.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +138,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690479483018</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add projects">
+      <created>1690486086456</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1690486086456</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add projects">
+      <created>1690486095934</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1690486095934</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +179,7 @@
     <MESSAGE value="add work" />
     <MESSAGE value="add remark plugins" />
     <MESSAGE value="add work postcss" />
-    <option name="LAST_COMMIT_MESSAGE" value="add work postcss" />
+    <MESSAGE value="add projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="add projects" />
   </component>
 </project>

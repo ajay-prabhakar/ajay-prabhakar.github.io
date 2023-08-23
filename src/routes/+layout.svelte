@@ -10,6 +10,7 @@
   import "../styles/global.postcss";
   import "../styles/theme.postcss";
   import "../styles/code.postcss";
+  import Loading from "./Loading.svelte";
 
   const { page } = getStores();
   let element: HTMLElement;
@@ -31,6 +32,8 @@
 <svelte:window
   on:hashchange={() => updateFragmentLinkTarget(window.location.href, element)}
 />
+
+<Loading />
 
 <div class="container" bind:this={element}>
   <div class="navbar" bind:this={element}>
@@ -74,6 +77,6 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #000000; 
+    background-color: #000000;
   }
 </style>
