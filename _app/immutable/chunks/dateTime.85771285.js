@@ -1,0 +1,1 @@
+const u=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],c=["January","February","March","April","May","June","July","August","Sepember","October","November","December"];function y(a,t=!1){const s=t?c:u,e=new Date(a),n=e.getDate(),r=s[e.getMonth()],o=e.getFullYear();return t||o!==new Date().getFullYear()?`${r} ${n}, ${o}`:`${r} ${n}`}export{y as f};
