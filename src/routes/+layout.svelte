@@ -3,6 +3,7 @@
   import { updateFragmentLinkTarget } from "$lib/link";
   import { onMount } from "svelte";
   import Nav from "../components/Nav.svelte";
+  import Analytics from "../components/Analytics.svelte";
 
   // import "../app.css";
 
@@ -35,7 +36,10 @@
 
 <Loading />
 
+
 <div class="container" bind:this={element}>
+  <Analytics/>
+
   <div class="navbar" bind:this={element}>
     <Nav />
   </div>
