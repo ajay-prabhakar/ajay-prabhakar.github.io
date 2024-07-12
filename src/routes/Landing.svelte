@@ -1,7 +1,7 @@
 <script lang="ts">
   import Icon from "../components/Icon.svelte";
   import Logo from "../components/Logo.svelte";
-  import { mdiGithub, mdiLinkedin, mdiOpenInNew, mdiTwitter } from "@mdi/js";
+  import { mdiFileDocument, mdiGithub, mdiLinkedin, mdiOpenInNew, mdiTwitter } from "@mdi/js";
 </script>
 
 <section class="landing">
@@ -48,6 +48,17 @@
     >
       <Icon title="Twitter Icon" path={mdiTwitter} size="1.5em" />
       <span>Twitter</span>
+      <Icon path={mdiOpenInNew} />
+    </a>
+
+    <a
+      href="/resume.pdf"
+      title="Resume"
+      target="_blank"
+      rel="noopener"
+    >
+      <Icon title="Resume Icon" path={mdiFileDocument} size="1.5em" />
+      <span>Resume</span>
       <Icon path={mdiOpenInNew} />
     </a>
   </div>

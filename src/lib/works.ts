@@ -4,7 +4,10 @@ export type Categories =
   | "Web Development"
   | "Open Source"
   | "Mobile App"
-  | "Productivity";
+  | "Productivity"
+  | "Flutter"
+  | "UI/UX"
+  | "Dart";
 
 export interface Project {
   title: string;

@@ -35,18 +35,20 @@
         class:navigating-to={$work.navigatingTo}
         sveltekit:prefetch
       >
-        work
+        Work
       </a>
     </li>
     <li>
       <a
-        href="/blog"
+        href="https://medium.com/@chromicle"
         class="nav-link"
         aria-current={$blog.isCurrent ? "page" : undefined}
         class:navigating-to={$blog.navigatingTo}
         sveltekit:prefetch
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        blog
+        Blog
       </a>
     </li>
     <li>
@@ -57,7 +59,7 @@
         class:navigating-to={$about.navigatingTo}
         sveltekit:prefetch
       >
-        about
+        About
       </a>
     </li>
   </ul>
