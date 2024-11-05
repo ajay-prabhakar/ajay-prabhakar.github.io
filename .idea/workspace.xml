@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19d49d50-6db5-409b-82b1-e251140bcad7" name="Changes" comment="Change blog link">
+    <list default="true" id="19d49d50-6db5-409b-82b1-e251140bcad7" name="Changes" comment="Add analytics">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720749304783</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add analytics">
+      <option name="closed" value="true" />
+      <created>1720757894117</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1720757894117</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +209,7 @@
     <MESSAGE value="add projects" />
     <MESSAGE value="add social profile links" />
     <MESSAGE value="Change blog link" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change blog link" />
+    <MESSAGE value="Add analytics" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add analytics" />
   </component>
 </project>
