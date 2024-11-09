@@ -9,12 +9,11 @@
     Hi, I'm <br /> Ajay Prabhakar
   </h1>
   <p class="description">
-    I'm a full-stack engineer at Nuclei. I care about Mobile Development and UI
+    I'm a SDE at Nuclei. I care about Mobile Development and UI
     Things.
   </p>
   <p class="description">
-    In my free time I like to learn more about programming, write stories, and
-    explore new media.
+    Currently, I’m focusing on iOS and Flutter Development at Nuclei and building applications powered by LLM Models.
   </p>
   <hr class="bold" />
   <div class="links">
