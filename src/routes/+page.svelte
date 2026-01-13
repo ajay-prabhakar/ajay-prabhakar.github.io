@@ -37,7 +37,7 @@
 
 <Meta
   title="Ajay Prabhakar"
-  description="Ajay Prabhakar is a full-stack engineer in Nuclei."
+  description="Ajay Prabhakar is a SDE 2 at Navi, working on iOS at the UPI & Payments team."
   image={new URL("/embed.png", BASE_URL).href}
   isRoot={true}
 />

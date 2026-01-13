@@ -25,51 +25,62 @@
   >
     <Logo size="1.5em" color="var(--color-primary-400)" />
   </a>
-  <div class="divider" aria-hidden="true" />
-  <ul>
-    <li>
-      <a
-        href="/work"
-        class="nav-link"
-        aria-current={$work.isCurrent ? "page" : undefined}
-        class:navigating-to={$work.navigatingTo}
-        sveltekit:prefetch
-      >
-        Work
-      </a>
-    </li>
-    <li>
-      <a
-        href="https://medium.com/@chromicle"
-        class="nav-link"
-        aria-current={$blog.isCurrent ? "page" : undefined}
-        class:navigating-to={$blog.navigatingTo}
-        sveltekit:prefetch
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Blog
-      </a>
-    </li>
-    <li>
-      <a
-        href="/about"
-        class="nav-link"
-        aria-current={$about.isCurrent ? "page" : undefined}
-        class:navigating-to={$about.navigatingTo}
-        sveltekit:prefetch
-      >
-        About
-      </a>
-    </li>
-  </ul>
+  
+  <div class="nav-right">
+    <ul>
+      <li>
+        <a
+          href="/work"
+          class="nav-link"
+          aria-current={$work.isCurrent ? "page" : undefined}
+          class:navigating-to={$work.navigatingTo}
+          sveltekit:prefetch
+        >
+          Work
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://medium.com/@chromicle"
+          class="nav-link"
+          aria-current={$blog.isCurrent ? "page" : undefined}
+          class:navigating-to={$blog.navigatingTo}
+          sveltekit:prefetch
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Blog
+        </a>
+      </li>
+      <li>
+        <a
+          href="/about"
+          class="nav-link"
+          aria-current={$about.isCurrent ? "page" : undefined}
+          class:navigating-to={$about.navigatingTo}
+          sveltekit:prefetch
+        >
+          About
+        </a>
+      </li>
+    </ul>
+  </div>
 </nav>
 
 <style lang="postcss">
   nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: calc(1.5 * var(--line-space)) 0;
+  }
+
+  .logo {
+    transition: transform 0.2s var(--bounce-curve);
+  }
+
+  .logo:hover {
+    transform: scale(1.1);
   }
 
   .logo :global(.svg-icon) {
@@ -78,78 +89,68 @@
     align-items: center;
   }
 
-  .divider {
-    height: 1em;
-    width: 1px;
-    background: var(--color-text-200);
-    margin: 0 2em;
-    flex-shrink: 0;
+  .nav-right {
+    display: flex;
+    align-items: center;
   }
 
-  ul,
-  ol {
+  ul {
     display: flex;
-
-    margin-bottom: 0px;
+    gap: 0.5rem;
+    margin-bottom: 0;
+    background: var(--color-background-200);
+    padding: 0.35rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--border-subtle);
   }
 
   li {
     display: block;
     position: relative;
-    cursor: pointer;
-    margin-left: 0px;
-
-    &:not(:last-of-type) {
-      margin-right: 1.5em;
-    }
+    margin-left: 0;
+    padding: 0;
   }
 
   .nav-link {
     display: block;
-    padding: 0.5em 0;
+    padding: 0.5rem 1rem;
     position: relative;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-300);
+    border-radius: 0.5rem;
+    transition: all 0.2s var(--standard-curve);
+  }
 
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      height: 2px;
-      width: 0;
-      bottom: 0;
-      background-color: var(--color-primary-400);
-      transition: width 70ms var(--standard-curve);
+  .nav-link:hover {
+    color: var(--color-text-400);
+    background: var(--color-background-100);
+  }
+
+  .nav-link[aria-current="page"] {
+    color: var(--color-primary-400);
+    background: rgba(0, 255, 136, 0.1);
+  }
+
+  .nav-link.navigating-to {
+    color: var(--color-primary-400);
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    animation: pulse 1s infinite;
+  }
+
+  @media screen and (max-width: 30em) {
+    ul {
+      gap: 0.25rem;
+      padding: 0.25rem;
     }
 
-    &:hover::after {
-      width: 33%;
-    }
-
-    &:is([aria-current], .navigating-to)::after {
-      width: 100% !important;
-    }
-
-    &.navigating-to::after {
-      @keyframes load {
-        0% {
-          background-position: 0% 0%;
-        }
-        50% {
-          background-position: 100% 0%;
-        }
-        100% {
-          background-position: 0% 0%;
-        }
-      }
-
-      background: linear-gradient(
-        90deg,
-        var(--color-primary-400),
-        var(--color-primary-200),
-        var(--color-primary-400)
-      );
-      background-size: 300% 300%;
-
-      animation: 1s infinite load var(--deceleration-curve);
+    .nav-link {
+      padding: 0.4rem 0.75rem;
+      font-size: 0.85rem;
     }
   }
 </style>
